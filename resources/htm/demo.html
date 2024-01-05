@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Portfolio </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li{
+            list-style-type: none;
+        }
+      
+        body{
+            background-color: #fff;
+            color: #000;
+            font-family: sans-serif;
+            text-align: left ;
+        }
+
+        .head-logo{
+            width: 50%;
+            border: 1px solid red;
+        }
+
+        .navigation{
+            width: 50%;
+            border: 1px solid red;
+        }
+
+        header{
+            display: flex; 
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .navigation nav ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navigation nav ul li{
+            padding-left: 12px;
+        }
+
+        .head-logo figure img{
+           width: 50px;
+           height: 50px;
+        }
+
+        .mobileNav{
+            display: none;
+        }
+
+    @media only screen and (max-width: 600px) {          
+            body {
+                background-color: lightblue;
+        }
+
+        .navigation{
+            display: none;
+        }
+
+        .mobileNav{
+               display: block;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="head-logo">
+            <figure>
+                <img src="https://unsplash.it/900" alt="logo.jpg">
+            </figure>
+
+        </div>
+
+        <div class="navigation" id="navid">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Contact</li>
+                    <li>Projects</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mobileNav">
+
+        </div>
+
+
+
+    </header>
+
+    <script>
+    
+        // var w = window.innerWidth;
+        // var h = window.innerHeight;
+
+        // // // event handler 
+
+        // if(w < 600){
+        // console.log("yes");
+        // var element = document.getElementById("navid");
+        // element.classList.remove("navigation");
+        // element.classList.add("mobileNav");
+    
+        // }else{
+        //     var element = document.getElementById("navid");
+        // element.classList.remove("mobileNav");
+        // element.classList.add("navigation");
+        // }
+
+        // addEventListener
+
+// Define a function to handle the window resize event
+function handleResize() {
+    var w = window.innerWidth;
+
+    // Access the element by ID
+    var element = document.getElementById("navid");
+
+    // Check the window width and apply styles accordingly
+    if (w < 600) {
+        console.log("yes");
+        element.classList.remove("navigation");
+        element.classList.add("mobileNav");
+    } else {
+        element.classList.remove("mobileNav");
+        element.classList.add("navigation");
+    }
+}
+
+// Attach the event listener to the window's resize event
+window.addEventListener('resize', handleResize);
+
+// Call the function initially to set the styles based on the initial window size
+handleResize();
+
+
+
+    </script>    
+
+
+    
+</body>
+</html>
