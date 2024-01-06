@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+
+    // variables
+    let liValue;
+    
+    // Design Book Solution Cover
     const backCover = "https://raw.githubusercontent.com/yana-music/CSITSolution/main/solutionBookCover/2079KECCOVER/KEC2079BACKCOVER.jpg";
     const frontCover = "https://raw.githubusercontent.com/yana-music/CSITSolution/main/solutionBookCover/2079KECCOVER/KEC2079FRONTCOVER.jpg";
 
@@ -9,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check if the username and semester are already saved in localStorage
     const savedUsername = localStorage.getItem("username");
-
     var savedSemester = localStorage.getItem("semester");
     const semesterStatus = savedSemester ? undefined : "not selected";
 
@@ -27,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    // Dsiplay the info of the username
     function displayInfo(username, savedSemester) {
         if (savedSemester === null) {
             document.getElementById("greeting").innerHTML = `Welcome Back ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h3> Semester: ${savedSemester}`;
@@ -74,61 +80,61 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstSem = [
         // Semester 1
 
-        { name: "Introduction to IT", years: ["Introduction to IT PDF"] },
-        { name: "C Programming", years: ["Coming Soon!"] },
-        { name: "Digital Logic", years: ["Coming Soon!"] },
-        { name: "Maths-I", years: ["Maths_I_Book_Solution"] },
-        { name: "Physics", years: ["Physics_Book_Solution"] },
+        { name: "🚀 Introduction to IT", years: ["Introduction to IT PDF"] },
+        { name: "🅒 C Programming", years: ["Coming Soon!"] },
+        { name: "🚦Digital Logic", years: ["Coming Soon!"] },
+        { name: "♾️ Maths-I", years: ["Maths_I_Book_Solution"] },
+        { name: "⚛ Physics", years: ["Physics_Book_Solution"] },
     ];
     // Semester 2
     const secondSem = [
         {
-            name: "Discrete Math",
+            name: "∑ Discrete Math",
             years: ["DS_MATH_2078_BS_TU", "DS_MATH_2076_BS_TU", "DS_MATH_2075_BS_TU"],
         },
         {
-            name: "Object Oriented Programming",
+            name: "🧬 Object Oriented Programming",
             years: ["OOP_2078_BS_TU", "OOP_2076_BS_TU", "OOP_2075_BS_TU"],
         },
         {
-            name: "MicroProcessor",
+            name: "🔄 MicroProcessor",
             years: ["MicroProcessor_2078_BS_TU", "MicroProcessor_2076_BS_TU", "MicroProcessor_2075_BS_TU"],
         },
         {
-            name: "Mathematics - II",
+            name: "🔢 Mathematics - II",
             years: ["Mathematics_II_2078_BS_TU", "Mathematics_II_2076_BS_TU", "Mathematics_II_2075_BS_TU"],
         },
         {
-            name: "Statistics - I",
+            name: "📊 Statistics - I",
             years: ["STATISTICS_I_2078_BS_TU", "STATISTICS_I_2076_BS_TU", "STATISTICS_I_2075_BS_TU"],
         },
     ];
     // Semester 3
     const thirdSem = [
         // Courses for semester 3...
-        { name: "Data Structure and Algorithm", years: ["DSA_2077_BS_TU","DSA_2078_BS_TU" ] },
-        { name: "Numerical Method", years: ["NM_2075_BS_TU", "NM_2077_BS_TU"] },
-        { name: "Computer Graphics", years: ["CG_2075_BS_TU", "CG_2077_BS_TU"] },
-        { name: "Computer Architecture", years: ["CA_2078_BS_TU", "CA_2077_BS_TU"] },
-        { name: "Statistics II ", years: ["STATS_II_2075_BS_TU", "STATS_II_2077_BS_TU"] },
+        { name: "🔗 Data Structure and Algorithm", years: ["DSA_2077_BS_TU","DSA_2078_BS_TU" ] },
+        { name: "🧮 Numerical Method", years: ["NM_2075_BS_TU", "NM_2077_BS_TU"] },
+        { name: "🌌 Computer Graphics", years: ["CG_2075_BS_TU", "CG_2077_BS_TU"] },
+        { name: "🏗️ Computer Architecture", years: ["CA_2078_BS_TU", "CA_2077_BS_TU"] },
+        { name: "📈 Statistics II ", years: ["STATS_II_2075_BS_TU", "STATS_II_2077_BS_TU"] },
     ];
     // Semester 4
     const fourthSem = [
         // Courses for semester 4...
-        { name: "Theory of Computation", years: ["Coming Soon!"] },
-        { name: "Database And Management System", years: ["Coming Soon!"] },
-        { name: "Artificial Intelligence	", years: ["Coming Soon!"] },
-        { name: "Computer Network", years: ["Coming Soon!"] },
-        { name: "Operating System", years: ["Coming Soon!"] },
+        { name: "🧠 Theory of Computation", years: ["Coming Soon!"] },
+        { name: "⛁ Database And Management System", years: ["Coming Soon!"] },
+        { name: "🤖 Artificial Intelligence	", years: ["Coming Soon!"] },
+        { name: "🛜 Computer Network", years: ["Coming Soon!"] },
+        { name: "⚙️ Operating System", years: ["Coming Soon!"] },
     ];
     // Semester 5
     const fifthSem = [
-        { name: "Design and Analysis of Algorithms", years: ["Coming Soon!"] },
-        { name: "System Analysis and Design", years: ["Coming Soon!"] },
-        { name: "Cryptography", years: ["Coming Soon!"] },
-        { name: "Web Technology", years: ["Coming Soon!"] },
+        { name: "💡 Design and Analysis of Algorithms", years: ["Coming Soon!"] },
+        { name: "🔍 System Analysis and Design", years: ["Coming Soon!"] },
+        { name: "🔐 Cryptography", years: ["Coming Soon!"] },
+        { name: "🌐 Web Technology", years: ["Coming Soon!"] },
         { name: "Theory of C", years: ["Coming Soon!"] },
-        { name: "Elictive I", years: ["Coming Soon!"] },
+        { name: "Elective I", years: ["Coming Soon!"] },
     ];
     // Semester 6
     const sixthSem = [
@@ -415,9 +421,12 @@ document.addEventListener("DOMContentLoaded", function () {
                             }
                         }
 
+                        alert(`Click Okay.You Selected ${liValue}.`);
+
                         if (imageArray.length > 0) {
                             const imageArrayJson = JSON.stringify(imageArray);
-                            localStorage.setItem("imageArray", imageArrayJson);
+                            const localstoragekey = liValue;
+                            localStorage.setItem(localstoragekey, imageArrayJson);
                             // console.log("image array json ", imageArrayJson);
                             displayImages(imageArray); // Call displayImages after fetching
                         }
@@ -511,14 +520,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     liElements.forEach((li) => {
                         li.addEventListener("click", async (event) => {
-                            const liValue = event.target.textContent.trim();
+                            liValue = event.target.textContent.trim();
                             // alert(liValue);
                             const variableName = liValue.split(" ").join("_");
 
                             if (urls[variableName]) {
                                 //  alert(`Click Okay.You Selected ${liValue}.`);
                                 // Clear the local storage
-                                localStorage.removeItem("imageArray");
+                                if(urls[variableName] === localstoragekey || urls[variableName]){
+                                    alert("match foiund");
+
+                              
+                                    
+                                localStorage.removeItem(localstoragekey);
                                 showLoading();
 
                                 // Clear the imageArray
@@ -529,6 +543,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 // Set the new baseImageUrl
                                 baseImageUrl = urls[variableName];
+
+                                }
 
                                 try {
                                     // Fetch and store new images with the updated baseImageUrl
