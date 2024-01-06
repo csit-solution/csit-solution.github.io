@@ -1,10 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-
-    // variables
-    let liValue;
-    
-    // Design Book Solution Cover
     const backCover = "https://raw.githubusercontent.com/yana-music/CSITSolution/main/solutionBookCover/2079KECCOVER/KEC2079BACKCOVER.jpg";
     const frontCover = "https://raw.githubusercontent.com/yana-music/CSITSolution/main/solutionBookCover/2079KECCOVER/KEC2079FRONTCOVER.jpg";
 
@@ -15,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check if the username and semester are already saved in localStorage
     const savedUsername = localStorage.getItem("username");
+
     var savedSemester = localStorage.getItem("semester");
     const semesterStatus = savedSemester ? undefined : "not selected";
 
@@ -32,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    // Dsiplay the info of the username
     function displayInfo(username, savedSemester) {
         if (savedSemester === null) {
             document.getElementById("greeting").innerHTML = `Welcome Back ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h3> Semester: ${savedSemester}`;
@@ -75,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
     // Aakash Stha
     const firstSem = [
@@ -421,12 +416,9 @@ document.addEventListener("DOMContentLoaded", function () {
                             }
                         }
 
-                        alert(`Click Okay.You Selected ${liValue}.`);
-
                         if (imageArray.length > 0) {
                             const imageArrayJson = JSON.stringify(imageArray);
-                            const localstoragekey = liValue;
-                            localStorage.setItem(localstoragekey, imageArrayJson);
+                            localStorage.setItem("imageArray", imageArrayJson);
                             // console.log("image array json ", imageArrayJson);
                             displayImages(imageArray); // Call displayImages after fetching
                         }
@@ -520,19 +512,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     liElements.forEach((li) => {
                         li.addEventListener("click", async (event) => {
-                            liValue = event.target.textContent.trim();
+                            const liValue = event.target.textContent.trim();
                             // alert(liValue);
                             const variableName = liValue.split(" ").join("_");
 
                             if (urls[variableName]) {
                                 //  alert(`Click Okay.You Selected ${liValue}.`);
                                 // Clear the local storage
-                                if(urls[variableName] === localstoragekey || urls[variableName]){
-                                    alert("match foiund");
-
-                              
-                                    
-                                localStorage.removeItem(localstoragekey);
+                                localStorage.removeItem("imageArray");
                                 showLoading();
 
                                 // Clear the imageArray
@@ -543,8 +530,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 // Set the new baseImageUrl
                                 baseImageUrl = urls[variableName];
-
-                                }
 
                                 try {
                                     // Fetch and store new images with the updated baseImageUrl
