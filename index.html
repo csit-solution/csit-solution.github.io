@@ -118,13 +118,28 @@
          text-align: center;
          }
          /* Use a media query to hide the content for screens smaller than 720px */
-         @media (max-width: 720px) {
-         main {
-         display: none;
-         }
-         .notice{
-         display: block;
-         }
+         @media (max-width: 990px) {
+            .right-img img{
+               z-index: 1;
+               filter: blur(2px);
+            }
+            .mid{
+               left: 30%;
+               z-index: 2;
+            }
+            h1{
+               font-size: 20px;
+            }
+            h4{
+               font-size: 26px;
+               font-weight: bold;
+            }
+            h5{
+               font-size: 20px;
+            }
+          .notice, .left-img img{
+            display: none;
+          }
          }
       </style>
    </head>
