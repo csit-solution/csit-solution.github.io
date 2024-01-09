@@ -273,14 +273,14 @@
   body{
   overflow: auto!important;
   }
+  .desktopDev{
+    display: none;
+  }
   #sliderImage, #choosensolutionHighLights{
   display: none;
   }
   #heightManu{
   height: auto!important;
-  }
-  iframe {
-  min-height: calc(100vh - 300px);
   }
   body {
   overflow: auto;
