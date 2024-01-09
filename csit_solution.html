@@ -118,7 +118,7 @@
       <div class="container-fluid">
          <br/>
          <div class="row">
-            <div class="col-12 col-md-3 overflow-auto  border-end "  id="heightManu">
+            <div class="col-12 col-md-3 overflow-auto  border-end order-1"  id="heightManu">
                <div class="row d-flex align-items-center">
                   <div class="col-4 col-md-6">
                      <figure>
@@ -169,7 +169,7 @@
                <div class="stored-urls overflow-auto" id="sliderHighlightImage">
                </div>
             </div>
-            <div class="col-md-6 col-12 p-3">
+            <div class="col-md-6 col-12 p-3 order-sm-2 order-3">
                <div id="loader" class="text-center">
                   <!-- Add the spinner and loading text -->
                   <div class="spinner-border text-info" role="status">
@@ -215,7 +215,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-12 col-md-3  overflow-auto  border-start c" id="heightManu">
+            <div class="col-12 col-md-3  overflow-auto  border-start c order-2 " id="heightManu">
                <h4>Subject Past Quest Solutions</h4>
                <div class="ul-main  overflow-auto border p-2 rounded-1 " >
                   <ul id="main-list" >
@@ -223,7 +223,7 @@
                   </ul>
                </div>
                <!-- Cover Part -->
-               <div>
+               <div class="desktopDev">
                   <figure  class="coverPages d-flex p-0 d-none">
                      <img  id="frontCover" src="" alt="img"> 
                      <img  id="backCover" src="" alt="img">
@@ -233,7 +233,7 @@
                      <h5> <i class="fa-brands fa-connectdevelop"></i> Developer Section</h5>
                      <button class="btn btn-outline-success" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Click for Developer Section</button>
                   </div>
-                  <div class="row">
+                  <div class="row" id="DesktopDev">
                      <div class="col">
                         <div class="collapse multi-collapse" id="multiCollapseExample1">
                            <div class="" style="padding:0px">
@@ -270,6 +270,8 @@
          </div>
       </div>
       <br/><br/>
+      <div class="container-fluid" id="mobileDev">
+      </div>
       <footer>
          <div class=" mt-3 bg-success text-white text-center p-2">
             <h6 class="mt-1">This Web App is Created, Developed & Maintained by  <a class="text-info text-decoration-none" href="https://www.instagram.com/dilli_hangrae/"> Dilli Hang Rai </a> | version 1.1 </h6>
@@ -369,6 +371,27 @@
             // Set interval to show donation part every 15 minutes 00 seconds
             setInterval(showDonation, 900000);
          
+      </script>
+      <script>
+         // Function to check screen size and duplicate content
+         function duplicateContent() {
+             // Check if the screen size is less than 767px
+             if ($(window).width() < 767) {
+                // Create a copy of the desktopDev content and assign it a unique class name
+                var mobileDevContent = $(".desktopDev").clone().removeAttr("class").attr("id", "mobileDevContent").addClass("cloney");
+                // Append the duplicated content to the #mobileDev element
+                $("#mobileDev").append(mobileDevContent);
+             }
+         }
+         
+         // Call the function on page load and window resize
+         $(document).ready(function () {
+             duplicateContent();
+         });
+         
+         $(window).resize(function () {
+             duplicateContent();
+         });
       </script>
    </body>
 </html>
