@@ -25,19 +25,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     function displayInfo(username, savedSemester) {
         if (savedSemester === null) {
-            document.getElementById("greeting").innerHTML = `Welcome Back ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h3> Semester: ${savedSemester}`;
+            document.getElementById("greeting").innerHTML = `Welcome Back ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <br> <h4> Semester: ${savedSemester}`;
         } else if (savedSemester === "1") {
-            document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h3> Semester: ${savedSemester}st`;
+            document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h4> Semester: ${savedSemester}st`;
         } else if (savedSemester === "2") {
-            document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h3> Semester: ${savedSemester}nd`;
+            document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! 
+
+            <hr> <h4>Semester: ${savedSemester}nd`;
         } else if (savedSemester === "3") {
-            document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h3> Semester: ${savedSemester}rd`;
+            document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h4> Semester: ${savedSemester}rd`;
         } else {
-            document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h3> Semester: ${savedSemester}th`;
+            document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h4> Semester: ${savedSemester}th`;
         }
     }
 
@@ -162,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const semesterValue = localStorage.getItem("semester"); // You can replace this with your actual logic to get the semester value
 
     const listContainer = document.getElementById("main-list");
+    // const listContainerMob = document.getElementById("main-Moblist");
 
     // Add an event listener to the "Set Semester" button
     document.getElementById("semesterSelect").addEventListener("click", function () {
@@ -178,45 +182,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    // Function to create list items based on the selected semester
     function createListItems(subjects) {
-        // // Clear the existing list items
+        // Clear the existing list items
         const savedSemester = localStorage.getItem("semester");
         const selectedUsername = localStorage.getItem("username");
         
         displayInfo(selectedUsername, savedSemester);
         listContainer.innerHTML = "";
-        // Clear the existing content in the container (assuming sliderHighlightImage is defined)
-        sliderHighlightImage.innerHTML = "";
-        // Clear the imageArray to fetch new images
-        imageArray = [];
-
+        // listContainerMob.innerHTML = "";
+    
         subjects.forEach((subject) => {
             const listItem = document.createElement("li");
             listItem.classList.add("has-sub-list");
-
+    
             const iconElement = document.createElement("i");
             iconElement.classList.add("fas"); // Adding Font Awesome icon class
-
+    
             const subjectName = document.createTextNode(subject.name);
             listItem.appendChild(iconElement);
             listItem.appendChild(subjectName);
-
+    
             const subList = document.createElement("ul");
             subList.classList.add("sub-list");
-
+    
             subject.years.forEach((year) => {
                 const subListItem = document.createElement("li");
                 const yearNode = document.createTextNode(year);
                 subListItem.appendChild(yearNode);
                 subList.appendChild(subListItem);
             });
-
+    
             listItem.appendChild(subList);
-            listContainer.appendChild(listItem);
+    
+            // Append the listItem to both list containers must clone the node 
+            listContainer.appendChild(listItem.cloneNode(true));
+            // listContainerMob.appendChild(listItem);
         });
     }
+    
 
     // Add an event listener to the "Set Semester" button
     document.getElementById("semesterSelect").addEventListener("click", function () {
@@ -283,6 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const noAvailableMessage = document.createElement("li");
                 noAvailableMessage.innerHTML = "<span class='text-danger'> No subjects available for the current semester. </span>";
                 listContainer.appendChild(noAvailableMessage);
+                // listContainerMob.appendChild(noAvailableMessage);
                 break;
         }
 

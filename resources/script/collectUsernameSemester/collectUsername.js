@@ -40,7 +40,7 @@ if (!savedUsername || !savedSemester) {
 }
 
 function displayInfo(username, savedSemester) {
-    document.getElementById('greeting').innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h3> Semester: ${savedSemester}th`;
+    document.getElementById('greeting').innerHTML = `Welcome Back👋, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h4> Semester: ${savedSemester}th </h4>`;
 }
 
 function displayFirstInfo(firstUsername) {

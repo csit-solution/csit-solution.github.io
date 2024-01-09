@@ -1,109 +1,89 @@
 .image {
   max-width: 100%;
   max-width: 500px;
-}
-
-.stored-urls {
+  }
+  .stored-urls {
   margin-top: 20px;
-}
-
-.stored-urls div {
+  }
+  .stored-urls div {
   display: flex;
   flex-wrap: wrap;
-}
-
-/* .sliderss{
+  }
+  /* .sliderss{
   max-width: 500px;
   height: 500px;
-  
-
-} */
-.sliderss img {
+  } */
+  .sliderss img {
   max-width: 100%;
   height: 100%;
   /* max-width: 800px; */
   /* border: 1px solid red; */
-}
-
-#imageContainer img {
+  }
+  #imageContainer img {
   width: 60px;
   height: 60px;
-}
-
-/* Add a red border to the image with matching src */
-.highlight {
+  }
+  /* Add a red border to the image with matching src */
+  .highlight {
   border: 2px solid rgb(255, 0, 0);
-}
-
-/*Global*/
-html,
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  }
+  /*Global*/
+  body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-}
-
-/*Func*/
-
-.multi-level,
-.item ul,
-.nav input[type="checkbox"] {
+  }
+  /*Func*/
+  .multi-level,
+  .item ul,
+  .nav input[type="checkbox"] {
   display: none;
-}
-#menu:checked ~ .multi-level,
-.item input:checked ~ ul {
+  }
+  #menu:checked ~ .multi-level,
+  .item input:checked ~ ul {
   display: block;
-}
-
-/*Arrow*/
-
-.arrow {
+  }
+  /*Arrow*/
+  .arrow {
   width: 12px;
   height: 12px;
   vertical-align: middle;
   float: left;
   z-index: 0;
   margin: 17px 1em 0 2em;
-}
-.item input + .arrow {
+  }
+  .item input + .arrow {
   transform: rotate(-90deg);
   transition: 0.1s;
-}
-.item input:checked + .arrow {
+  }
+  .item input:checked + .arrow {
   transform: rotate(0deg);
   transition: 0.1s;
-}
-
-/*Styles*/
-
-label:hover {
+  }
+  /*Styles*/
+  label:hover {
   cursor: pointer;
-}
-label {
+  }
+  label {
   width: 100%;
   display: block;
   z-index: 3;
   position: relative;
-}
-.nav {
+  }
+  .nav {
   width: 100%;
   background-color: white;
   overflow-x: hidden;
   border-bottom: 1px solid #cfd8dc;
-}
-
-#nav-icon {
+  }
+  #nav-icon {
   font-size: 28px;
   line-height: 50px;
   padding-left: 1em;
   color: white;
   background-color: #f44336;
-}
-
-.nav ul,
-.nav li,
-label {
+  }
+  .nav ul,
+  .nav li,
+  label {
   line-height: 50px;
   margin: 0;
   padding: 0 2em;
@@ -112,11 +92,11 @@ label {
   color: #90a4ae;
   font-weight: 100;
   width: 100%;
-}
-.item ul {
+  }
+  .item ul {
   padding: 0 0.25em;
-}
-.nav li a {
+  }
+  .nav li a {
   line-height: 50px;
   margin: 0;
   padding: 0 4em;
@@ -124,142 +104,116 @@ label {
   text-decoration: none;
   color: #90a4ae;
   font-weight: 100;
-}
-
-.menu label {
+  }
+  .menu label {
   margin: 0;
-}
-
-
-ul {
+  }
+  ul {
   list-style-type: none;
   padding-left: 0;
-}
-
-li {
+  }
+  li {
   position: relative;
   cursor: pointer;
   padding: 8px;
   border-bottom: 1px solid #ccc;
   margin: 2px;
-}
-
-li:hover {
+  }
+  li:hover {
   background-color: #ffffff;
-}
-
-.sub-list {
+  }
+  .sub-list {
   display: none;
   padding-left: 20px;
-}
-
-li i {
+  }
+  li i {
   position: absolute;
   right: 0px;
-}
-
-li.has-sub-list i:before {
+  }
+  li.has-sub-list i:before {
   content: "\f107"; /* Font Awesome icon for arrow right */
-}
-
-li.has-sub-list.expanded i:before {
+  }
+  li.has-sub-list.expanded i:before {
   content: "\f106"; /* Font Awesome icon for arrow down */
-}
-
-.sub-list.visible {
+  }
+  .sub-list.visible {
   display: block;
-}
-
-.ul-main {
+  }
+  .ul-main {
   box-shadow: -1px 1px 10px -4px #b0beb0;
-
-}
-
-#prevBtnCustom2,
-#nextBtnCustom2 {
+  }
+  #prevBtnCustom2,
+  #nextBtnCustom2 {
   height: auto;
   width: auto;
   margin: 1px;
-}
-
-.stored-urls img {
+  }
+  .stored-urls img {
   width: 40px;
   height: 40px;
   padding: 5px;
   margin: 5px;
   border: 1px solid #00b398;
-}
-
-#slider,
-.slideC,
-#fullscreenContainer {
+  }
+  #slider,
+  .slideC,
+  #fullscreenContainer {
   /* height: 70vh; */
   overflow: auto;
-}
-
-#fullscreenContainer {
+  }
+  #fullscreenContainer {
   height: 70vh;
-}
-
-#sliderImage {
+  }
+  #sliderImage {
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
   display: block;
-}
-
-#sliderHighlightImage {
+  }
+  /* #sliderHighlightImage {
   height: 95vh;
   overflow: auto;
-}
-
-.social-media-links i {
+  } */
+  .social-media-links i {
   font-size: 24px;
   margin: 3px;
   color: #e6e6e6;
-}
-
-#loadingOverlay {
+  }
+  #loadingOverlay {
   position: relative;
-}
-
-.customload {
+  }
+  /* .customload {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.spinner-border {
+  } */
+  .spinner-border {
   --bs-spinner-width: 3rem;
   --bs-spinner-height: 3rem;
-}
-
-#HighlightsLo {
+  }
+  #HighlightsLo {
   --bs-spinner-width: 2rem;
   --bs-spinner-height: 2rem;
-}
-
-img {
+  }
+  img {
   max-width: 100%;
-}
-
-.coverPages img {
+  }
+  .coverPages img {
   padding: 5px;
   max-width: 100px;
   height: 100px;
-}
-
-#messa {
-  display: none;
-}
-/* @media only screen and (max-width: 600px) {
-  #messa {
-      display: block;
   }
-} */
-
-.pdf-container {
+  #messa {
+  display: none;
+  }
+  /* @media only screen and (max-width: 600px) {
+  #messa {
+  display: block;
+  }
+  } */
+  /* 
+  .pdf-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -267,71 +221,76 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: none;
-}
-
-.pdf-header {
+  } */
+  .pdf-header {
   background: #fff;
   padding: 10px;
   text-align: right;
-}
-
-.pdf-content {
+  }
+  .pdf-content {
   text-align: center;
-}
-
-canvas {
+  }
+  canvas {
   border: 1px solid #000;
-}
-
-.sub-list {
+  }
+  .sub-list {
   display: none; /* Initially hide sub-lists */
-}
-
-.show-sub-list {
+  }
+  .show-sub-list {
   display: block; /* Show sub-lists when the class is present */
-}
-
-/* Initially, set the down chevron icon */
-.has-sub-list i:before {
+  }
+  /* Initially, set the down chevron icon */
+  .has-sub-list i:before {
   content: "\f107"; /* Assuming "\f107" corresponds to the "fa-chevron-down" icon */
-}
-
-/* Apply the up chevron icon when the list item is expanded */
-.has-sub-list.expanded i:before {
+  }
+  /* Apply the up chevron icon when the list item is expanded */
+  .has-sub-list.expanded i:before {
   content: "\f106"; /* Assuming "\f106" corresponds to the "fa-chevron-up" icon */
-}
-
-iframe {
+  }
+  iframe {
   min-height: 450px;
   height: 100%;
-}
-
-
-
-
-@media screen and (min-width: 720px) {
+  }
+  #mobHeader{
+  display: none;
+  }
+  #heightManu{
+  height: calc(100vh - 200px);
+  }
+  @media screen and (min-width: 767px) {
   .mobile-nav {
-      display: none;
+  display: none;
   }
-}
-
-@media screen and (max-width: 720px) {
-  .hideMob, #sliderImage, #choosensolutionHighLights, #fullscreenContainer, #buttonss{
-    display: none;
+  .deskHead{
+  display: none;
   }
-
-  h4{
-    font-size: 14px;
+  #heightManu{
+  height: calc(100vh - 200px);
   }
-
+  }
+  @media screen and (max-width: 767px) {
+  body{
+  overflow: auto!important;
+  }
+  #sliderImage, #choosensolutionHighLights, #fullscreenContainer, #buttonss{
+  display: none;
+  }
+  #heightManu{
+  height: auto;
+  }
   iframe {
-    min-height: calc(100vh - 300px);
+  min-height: calc(100vh - 300px);
   }
-  /* #body {
-      display: none;
-  } */
-
+  body {
+  overflow: auto;
+  }
+  .marquee {
+  display: none;
+  }
+  footer{
+  padding: 10px;
+  }
   footer h6, footer span, .social-media-links i{
-    font-size: 16px;
+  font-size: 15px;
   }
-}
+  }
