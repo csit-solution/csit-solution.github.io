@@ -272,8 +272,9 @@
   body{
   overflow: auto!important;
   }
+    header,
   #sliderImage, #choosensolutionHighLights, #fullscreenContainer, #buttonss{
-  display: none;
+  display: none!important;
   }
   #heightManu{
   height: auto!important;
