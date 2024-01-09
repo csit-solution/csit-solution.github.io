@@ -268,13 +268,13 @@
   height: calc(100vh - 200px);
   }
   }
-  @media  (max-width: 767px) {
+
+  @media (max-width: 767px) {
   body{
   overflow: auto!important;
   }
-    header,
-  #sliderImage, #choosensolutionHighLights, #fullscreenContainer, #buttonss{
-  display: none!important;
+  #sliderImage, #choosensolutionHighLights{
+  display: none;
   }
   #heightManu{
   height: auto!important;
