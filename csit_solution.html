@@ -373,14 +373,26 @@
          
       </script>
       <script>
+         // Variable to track whether content has been cloned
+         var contentCloned = false;
+         
          // Function to check screen size and duplicate content
          function duplicateContent() {
-             // Check if the screen size is less than 767px
-             if ($(window).width() < 767) {
-                // Create a copy of the desktopDev content and assign it a unique class name
-                var mobileDevContent = $(".desktopDev").clone().removeAttr("class").attr("id", "mobileDevContent").addClass("cloney");
-                // Append the duplicated content to the #mobileDev element
-                $("#mobileDev").append(mobileDevContent);
+             // Check if the screen size is less than 767px and content has not been cloned
+             if ($(window).width() < 767 && !contentCloned) {
+                 // Create a copy of the desktopDev content and assign it a unique class name
+                 var mobileDevContent = $(".desktopDev").clone().removeAttr("class").attr("id", "mobileDevContent").addClass("yourCompletelyNewClassName");
+         
+                 // Append the duplicated content to the #mobileDev element
+                 $("#mobileDev").append(mobileDevContent);
+         
+                 // Set contentCloned to true to avoid further cloning
+                 contentCloned = true;
+             } else if ($(window).width() >= 767 && contentCloned) {
+                 // If the screen size is larger than or equal to 767px and content has been cloned
+                 // Remove the cloned content and reset the contentCloned variable
+                 $("#mobileDevContent").remove();
+                 contentCloned = false;
              }
          }
          
@@ -392,6 +404,7 @@
          $(window).resize(function () {
              duplicateContent();
          });
+               
       </script>
    </body>
 </html>
