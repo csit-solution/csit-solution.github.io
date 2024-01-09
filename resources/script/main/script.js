@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     function displayInfo(username, savedSemester) {
@@ -91,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
             years: ["DS_MATH_2078_BS_TU", "DS_MATH_2076_BS_TU", "DS_MATH_2075_BS_TU"],
         },
         {
-            name: "🧬 Object Oriented Programming",
+            name: "🧬Object Oriented Programming",
             years: ["OOP_2078_BS_TU", "OOP_2076_BS_TU", "OOP_2075_BS_TU"],
         },
         {
@@ -131,35 +130,35 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "🔍 System Analysis and Design", years: ["Coming Soon!"] },
         { name: "🔐 Cryptography", years: ["Coming Soon!"] },
         { name: "🌐 Web Technology", years: ["Coming Soon!"] },
-        { name: "Theory of C", years: ["Coming Soon!"] },
-        { name: "Elective I", years: ["Coming Soon!"] },
+        { name: "🕹️ Simulation and Modeling", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective I", years: ["Coming Soon!"] },
     ];
     // Semester 6
     const sixthSem = [
         // Courses for semester 6...
-        { name: "Software Engineering", years: ["Coming Soon!"] },
-        { name: "E- Governance", years: ["Coming Soon!"] },
-        { name: "NET Centric Computing", years: ["Coming Soon!"] },
-        { name: "Compiler Design and Construction", years: ["Coming Soon!"] },
-        { name: "Technical Writing", years: ["Coming Soon!"] },
-        { name: "Elective CourseII", years: ["Coming Soon!"] },
+        { name: "🧑‍💻 Software Engineering", years: ["Coming Soon!"] },
+        { name: "🖇️ E- Governance", years: ["Coming Soon!"] },
+        { name: "📡 NET Centric Computing", years: ["Coming Soon!"] },
+        { name: "📦 Compiler Design and Construction", years: ["Coming Soon!"] },
+        { name: "📝 Technical Writing", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective CourseII", years: ["Coming Soon!"] },
     ];
     // Semester 7
     const seventhSem = [
         // Courses for semester 7...
-        { name: "Advanced Java Programming", years: ["coming soon"] },
-        { name: "Data Warehousing and Data Mining", years: ["Coming Soon!"] },
-        { name: "Principles of Management", years: ["Coming Soon!"] },
-        { name: "Project Work", years: ["Coming Soon!"] },
-        { name: "Elective Course III", years: ["Coming Soon!"] },
+        { name: "☕️ Advanced Java Programming", years: ["coming soon"] },
+        { name: "🔍 Data Warehousing and Data Mining", years: ["Coming Soon!"] },
+        { name: "🤝 Principles of Management", years: ["Coming Soon!"] },
+        { name: "📆 Project Work", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective Course III", years: ["Coming Soon!"] },
     ];
     // Semester 8
     const eightSem = [
         // Courses for semester 8...
-        { name: "Advanced Database", years: ["Coming Soon!"] },
-        { name: "Internship", years: ["Coming Soon!"] },
-        { name: "Elective IV", years: ["Coming Soon!"] },
-        { name: "Elective V", years: ["Coming Soon!"] },
+        { name: "🗄️ Advanced Database", years: ["Coming Soon!"] },
+        { name: "💼 Internship", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective IV", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective V", years: ["Coming Soon!"] },
     ];
 
     const semesterValue = localStorage.getItem("semester"); // You can replace this with your actual logic to get the semester value
