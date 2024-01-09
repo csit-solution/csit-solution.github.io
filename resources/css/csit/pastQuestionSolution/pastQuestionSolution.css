@@ -268,7 +268,7 @@
   height: calc(100vh - 200px);
   }
   }
-  @media screen and (max-width: 767px) {
+  @media  (max-width: 767px) {
   body{
   overflow: auto!important;
   }
@@ -276,7 +276,7 @@
   display: none;
   }
   #heightManu{
-  height: auto;
+  height: auto!important;
   }
   iframe {
   min-height: calc(100vh - 300px);
@@ -285,7 +285,7 @@
   overflow: auto;
   }
   .marquee {
-  display: none;
+  display: none!important;
   }
   footer{
   padding: 10px;
