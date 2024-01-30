@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Semester 4
     const fourthSem = [
         // Courses for semester 4...
-        { name: "🧠 Theory of Computation", years: ["Chapter_1"] },
+        { name: "🧠 Theory of Computation", years: ["Chapter_1", "Chapter_2", "Chapter_3", "Chapter_4", "Chapter_5"] },
         { name: "⛁ Database And Management System", years: ["Coming Soon!"] },
         { name: "🤖 Artificial Intelligence	", years: ["Coming Soon!"] },
         { name: "🛜 Computer Network", years: ["Coming Soon!"] },
