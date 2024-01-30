@@ -346,11 +346,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         // STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
                         // STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
-                        Chapter_1 : "./resources/notes/4thSem/TOC/Theory of Computation Handwritten notes/Chapter-1/CH-1-",
-                        Chapter_2 : "./resources/notes/4thSem/TOC/Theory of Computation Handwritten notes/Chapter-2/CH-2-",
-                        Chapter_3 : "./resources/notes/4thSem/TOC/Theory of Computation Handwritten notes/Chapter-3/CH-3-",
-                        Chapter_4 : "./resources/notes/4thSem/TOC/Theory of Computation Handwritten notes/Chapter-4/CH-4-",
-                        Chapter_5 : "./resources/notes/4thSem/TOC/Theory of Computation Handwritten notes/TM-Complexity-Classes-Numericals/TOC-Notes-",
+                        Chapter_1 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
+                        Chapter_2 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-2/CH-2-",
+                        Chapter_3 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-3/CH-3-",
+                        Chapter_4 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-4/CH-4-",
+                        Chapter_5 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/TM-Complexity-Classes-Numericals/TOC-Notes-",
                     };
 
                     let baseImageUrl;
