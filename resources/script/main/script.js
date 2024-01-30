@@ -314,60 +314,25 @@ document.addEventListener("DOMContentLoaded", function () {
                     const thirdSemParentUrl = "./resources/CSITSolution/pastyearsolutions/thirdSemester"
 
                     const urls = {
-                      // DS_MATH_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-",
-                      // DS_MATH_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-",
-                      // DS_MATH_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-",
+                      DS_MATH_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-",
+                      DS_MATH_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-",
+                      DS_MATH_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-",
 
-                      // OOP_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2078/oop-2078-",
-                      // OOP_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2076/oop-2076-",
-                      // OOP_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2075/oop-2075-",
+                      OOP_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2078/oop-2078-",
+                      OOP_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2076/oop-2076-",
+                      OOP_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2075/oop-2075-",
 
-                      // Mathematics_II_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2078/Maths-II-2078-",
-                      // Mathematics_II_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2076/Maths-II-2076-",
-                      // Mathematics_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2075/Maths-II-2075-",
+                      Mathematics_II_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2078/Maths-II-2078-",
+                      Mathematics_II_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2076/Maths-II-2076-",
+                      Mathematics_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2075/Maths-II-2075-",
 
-                      // MicroProcessor_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2078/microprocessor-2078-",
-                      // MicroProcessor_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2076/microprocessor-2076-",
-                      // MicroProcessor_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2075/microprocessor-2075-",
+                      MicroProcessor_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2078/microprocessor-2078-",
+                      MicroProcessor_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2076/microprocessor-2076-",
+                      MicroProcessor_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2075/microprocessor-2075-",
 
-                      // STATISTICS_I_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2078/STATS-I-2078-",
-                      // STATISTICS_I_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2076/STATS-I-2076-",
-                      // STATISTICS_I_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2075/STATS-I-2075-",
-
-                      // DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
-                      // DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
-
-                      // CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
-                      // CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
-
-                      // CA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2078/CA-2078-",
-                      // CA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2077/CA-2077-",
-
-                      // NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
-                      // NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
-
-                      // STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
-                      // STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
-
-                      DS_MATH_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-`,
-                      DS_MATH_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-`,
-                      DS_MATH_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-`,
-
-                      OOP_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/OOP/2078/oop-2078-`,
-                      OOP_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/OOP/2076/oop-2076-`,
-                      OOP_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/OOP/2075/oop-2075-`,
-
-                      Mathematics_II_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Maths-II/2078/Maths-II-2078-`,
-                      Mathematics_II_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Maths-II/2076/Maths-II-2076-`,
-                      Mathematics_II_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Maths-II/2075/Maths-II-2075-`,
-
-                      MicroProcessor_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Microprocessor/2078/microprocessor-2078-`,
-                      MicroProcessor_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Microprocessor/2076/microprocessor-2076-`,
-                      MicroProcessor_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Microprocessor/2075/microprocessor-2075-`,
-
-                      STATISTICS_I_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/STAT-I/2078/STATS-I-2078-`,
-                      STATISTICS_I_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/STAT-I/2076/STATS-I-2076-`,
-                      STATISTICS_I_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/STAT-I/2075/STATS-I-2075-`,
+                      STATISTICS_I_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2078/STATS-I-2078-",
+                      STATISTICS_I_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2076/STATS-I-2076-",
+                      STATISTICS_I_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2075/STATS-I-2075-",
 
                       // DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
                       // DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
@@ -384,20 +349,55 @@ document.addEventListener("DOMContentLoaded", function () {
                       // STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
                       // STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
 
-                      DSA_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-`,
-                      DSA_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-`,
+                      // DS_MATH_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-`,
+                      // DS_MATH_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-`,
+                      // DS_MATH_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-`,
 
-                      CG_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/CG/2075/CG-2075-`,
-                      CG_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/CG/2077/CG-2077-`,
+                      // OOP_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/OOP/2078/oop-2078-`,
+                      // OOP_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/OOP/2076/oop-2076-`,
+                      // OOP_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/OOP/2075/oop-2075-`,
 
-                      CA_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/CA/2078/CA-2078-`,
-                      CA_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/CA/2077/CA-2077-`,
+                      // Mathematics_II_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Maths-II/2078/Maths-II-2078-`,
+                      // Mathematics_II_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Maths-II/2076/Maths-II-2076-`,
+                      // Mathematics_II_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Maths-II/2075/Maths-II-2075-`,
 
-                      NM_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/NM/2075/NM-2075-`,
-                      NM_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/NM/2077/NM-2077-`,
+                      // MicroProcessor_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Microprocessor/2078/microprocessor-2078-`,
+                      // MicroProcessor_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Microprocessor/2076/microprocessor-2076-`,
+                      // MicroProcessor_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/Microprocessor/2075/microprocessor-2075-`,
 
-                      STATS_II_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-`,
-                      STATS_II_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-`,
+                      // STATISTICS_I_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/STAT-I/2078/STATS-I-2078-`,
+                      // STATISTICS_I_2076_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/STAT-I/2076/STATS-I-2076-`,
+                      // STATISTICS_I_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/secondSemester/STAT-I/2075/STATS-I-2075-`,
+
+                      DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
+                      DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
+
+                      CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
+                      CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
+
+                      CA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2078/CA-2078-",
+                      CA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2077/CA-2077-",
+
+                      NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
+                      NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
+
+                      STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
+                      STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
+
+                      // DSA_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-`,
+                      // DSA_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-`,
+
+                      // CG_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/CG/2075/CG-2075-`,
+                      // CG_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/CG/2077/CG-2077-`,
+
+                      // CA_2078_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/CA/2078/CA-2078-`,
+                      // CA_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/CA/2077/CA-2077-`,
+
+                      // NM_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/NM/2075/NM-2075-`,
+                      // NM_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/NM/2077/NM-2077-`,
+
+                      // STATS_II_2075_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-`,
+                      // STATS_II_2077_BS_TU: `./resources/CSITSolution/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-`,
                     };
 
                     let baseImageUrl;
