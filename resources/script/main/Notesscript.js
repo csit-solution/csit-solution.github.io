@@ -355,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         // https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-1.JPG
 
-                        Chapter_1 : "https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
+                        Chapter_1 : "./notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
                         Chapter_2 : "https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennote/Chapter-2/CH-2-",
                         Chapter_3 : "https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennote/Chapter-3/CH-3-",
                         Chapter_4 : "https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennote/Chapter-4/CH-4-",
@@ -404,7 +404,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         let currentIndex = 0;
 
                         while (true) {
-                            const imageUrl = `${baseImageUrl}${currentIndex + 1}.jpg`;
+                            const imageUrl = `${baseImageUrl}${currentIndex + 1}.JPG`;
 
                             // console.log("Fetching image:", imageUrl);
 
