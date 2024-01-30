@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function displayInfo(username, savedSemester) {
         if (savedSemester === null) {
-            document.getElementById("greeting").innerHTML = `Welcome Back ${username}.<br> <span> You are doing great! Keep on Studying!  <hr> <br> <h4> Semester: ${savedSemester}`;
+            document.getElementById("greeting").innerHTML = `Welcome Back ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <br> <h4> Semester: ${savedSemester}`;
         } else if (savedSemester === "1") {
             document.getElementById("greeting").innerHTML = `Welcome Back, ${username}.<br> <span> You are doing great! Keep on Studying! <hr> <h4> Semester: ${savedSemester}st`;
         } else if (savedSemester === "2") {
@@ -74,92 +74,92 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // Aakash Stha
-    // const firstSem = [
-    //     // Semester 1
+    const firstSem = [
+        // Semester 1
 
-    //     { name: "🚀 Introduction to IT", years: ["not available"] },
-    //     { name: "🅒 C Programming", years: ["Coming Soon!"] },
-    //     { name: "🚦Digital Logic", years: ["Coming Soon!"] },
-    //     { name: "♾️ Maths-I", years: ["Maths_I_Book_Solution"] },
-    //     { name: "⚛ Physics", years: ["Physics_Book_Solution"] },
-    // ];
+        { name: "🚀 Introduction to IT", years: ["Introduction to IT PDF"] },
+        { name: "🅒 C Programming", years: ["Coming Soon!"] },
+        { name: "🚦Digital Logic", years: ["Coming Soon!"] },
+        { name: "♾️ Maths-I", years: ["Maths_I_Book_Solution"] },
+        { name: "⚛ Physics", years: ["Physics_Book_Solution"] },
+    ];
     // Semester 2
-    // const secondSem = [
-    //     {
-    //         name: "∑ Discrete Math",
-    //         years: ["not available"],
-    //     },
-    //     {
-    //         name: "🧬Object Oriented Programming",
-    //         years: ["not available"],
-    //     },
-    //     {
-    //         name: "🔄 MicroProcessor",
-    //         years: ["not available"],
-    //     },
-    //     {
-    //         name: "🔢 Mathematics - II",
-    //         years: ["not available"],
-    //     },
-    //     {
-    //         name: "📊 Statistics - I",
-    //         years: ["not available"],
-    //     },
-    // ];
+    const secondSem = [
+        {
+            name: "∑ Discrete Math",
+            years: ["DS_MATH_2078_BS_TU", "DS_MATH_2076_BS_TU", "DS_MATH_2075_BS_TU"],
+        },
+        {
+            name: "🧬Object Oriented Programming",
+            years: ["OOP_2078_BS_TU", "OOP_2076_BS_TU", "OOP_2075_BS_TU"],
+        },
+        {
+            name: "🔄 MicroProcessor",
+            years: ["MicroProcessor_2078_BS_TU", "MicroProcessor_2076_BS_TU", "MicroProcessor_2075_BS_TU"],
+        },
+        {
+            name: "🔢 Mathematics - II",
+            years: ["Mathematics_II_2078_BS_TU", "Mathematics_II_2076_BS_TU", "Mathematics_II_2075_BS_TU"],
+        },
+        {
+            name: "📊 Statistics - I",
+            years: ["STATISTICS_I_2078_BS_TU", "STATISTICS_I_2076_BS_TU", "STATISTICS_I_2075_BS_TU"],
+        },
+    ];
     // Semester 3
     const thirdSem = [
         // Courses for semester 3...
-        { name: "🔗 Data Structure and Algorithm", years: ["Coming soon" ] },
-        { name: "🧮 Numerical Method", years: ["Coming soon"] },
-        { name: "🌌 Computer Graphics", years: ["Coming soon"] },
-        { name: "🏗️ Computer Architecture", years: ["Coming soon"] },
-        { name: "📈 Statistics II ", years: ["Coming soon"] },
+        { name: "🔗 Data Structure and Algorithm", years: ["DSA_2077_BS_TU","DSA_2078_BS_TU" ] },
+        { name: "🧮 Numerical Method", years: ["NM_2075_BS_TU", "NM_2077_BS_TU"] },
+        { name: "🌌 Computer Graphics", years: ["CG_2075_BS_TU", "CG_2077_BS_TU"] },
+        { name: "🏗️ Computer Architecture", years: ["CA_2078_BS_TU", "CA_2077_BS_TU"] },
+        { name: "📈 Statistics II ", years: ["STATS_II_2075_BS_TU", "STATS_II_2077_BS_TU"] },
     ];
     // Semester 4
     const fourthSem = [
         // Courses for semester 4...
-        { name: "🧠 Theory of Computation", years: ["Chapter_1","Chapter_2","Chapter_3", "Chapter_4",   "Chapter_5" ] },
+        { name: "🧠 Theory of Computation", years: ["Chapter_1"] },
         { name: "⛁ Database And Management System", years: ["Coming Soon!"] },
         { name: "🤖 Artificial Intelligence	", years: ["Coming Soon!"] },
         { name: "🛜 Computer Network", years: ["Coming Soon!"] },
-        { name: "⚙️ Operating System",  years: ["Coming soon",]},
+        { name: "⚙️ Operating System", years: ["Coming Soon!"] },
     ];
     // Semester 5
-    // const fifthSem = [
-    //     { name: "💡 Design and Analysis of Algorithms", years: ["Coming Soon!"] },
-    //     { name: "🔍 System Analysis and Design", years: ["Coming Soon!"] },
-    //     { name: "🔐 Cryptography", years: ["Coming Soon!"] },
-    //     { name: "🌐 Web Technology", years: ["Coming Soon!"] },
-    //     { name: "🕹️ Simulation and Modeling", years: ["Coming Soon!"] },
-    //     { name: "🗳️ Elective I", years: ["Coming Soon!"] },
-    // ];
+    const fifthSem = [
+        { name: "💡 Design and Analysis of Algorithms", years: ["Coming Soon!"] },
+        { name: "🔍 System Analysis and Design", years: ["Coming Soon!"] },
+        { name: "🔐 Cryptography", years: ["Coming Soon!"] },
+        { name: "🌐 Web Technology", years: ["Coming Soon!"] },
+        { name: "🕹️ Simulation and Modeling", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective I", years: ["Coming Soon!"] },
+    ];
     // Semester 6
-    // const sixthSem = [
-    //     // Courses for semester 6...
-    //     { name: "🧑‍💻 Software Engineering", years: ["Coming Soon!"] },
-    //     { name: "🖇️ E- Governance", years: ["Coming Soon!"] },
-    //     { name: "📡 NET Centric Computing", years: ["Coming Soon!"] },
-    //     { name: "📦 Compiler Design and Construction", years: ["Coming Soon!"] },
-    //     { name: "📝 Technical Writing", years: ["Coming Soon!"] },
-    //     { name: "🗳️ Elective CourseII", years: ["Coming Soon!"] },
-    // ];
+    const sixthSem = [
+        // Courses for semester 6...
+        { name: "🧑‍💻 Software Engineering", years: ["Coming Soon!"] },
+        { name: "🖇️ E- Governance", years: ["Coming Soon!"] },
+        { name: "📡 NET Centric Computing", years: ["Coming Soon!"] },
+        { name: "📦 Compiler Design and Construction", years: ["Coming Soon!"] },
+        { name: "📝 Technical Writing", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective CourseII", years: ["Coming Soon!"] },
+    ];
     // Semester 7
-    // const seventhSem = [
-    //     // Courses for semester 7...
-    //     { name: "☕️ Advanced Java Programming", years: ["coming soon"] },
-    //     { name: "🔍 Data Warehousing and Data Mining", years: ["Coming Soon!"] },
-    //     { name: "🤝 Principles of Management", years: ["Coming Soon!"] },
-    //     { name: "📆 Project Work", years: ["Coming Soon!"] },
-    //     { name: "🗳️ Elective Course III", years: ["Coming Soon!"] },
-    // ];
-    // // Semester 8
-    // const eightSem = [
-    //     // Courses for semester 8...
-    //     { name: "🗄️ Advanced Database", years: ["Coming Soon!"] },
-    //     { name: "💼 Internship", years: ["Coming Soon!"] },
-    //     { name: "🗳️ Elective IV", years: ["Coming Soon!"] },
-    //     { name: "🗳️ Elective V", years: ["Coming Soon!"] },
-    // ];
+    const seventhSem = [
+        // Courses for semester 7...
+        { name: "☕️ Advanced Java Programming", years: ["coming soon"] },
+        { name: "🔍 Data Warehousing and Data Mining", years: ["Coming Soon!"] },
+        { name: "🤝 Principles of Management", years: ["Coming Soon!"] },
+        { name: "📆 Project Work", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective Course III", years: ["Coming Soon!"] },
+    ];
+    // Semester 8
+    const eightSem = [
+        // Courses for semester 8...
+        { name: "🗄️ Advanced Database", years: ["Coming Soon!"] },
+        { name: "💼 Internship", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective IV", years: ["Coming Soon!"] },
+        { name: "🗳️ Elective V", years: ["Coming Soon!"] },
+    ];
 
     const semesterValue = localStorage.getItem("semester"); // You can replace this with your actual logic to get the semester value
 
@@ -311,56 +311,44 @@ document.addEventListener("DOMContentLoaded", function () {
                     const sliderHighlightImage = document.getElementById("sliderHighlightImage");
 
                     const urls = {
-                        // DS_MATH_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-",
-                        // DS_MATH_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-",
-                        // DS_MATH_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-",
+                        DS_MATH_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-",
+                        DS_MATH_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-",
+                        DS_MATH_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-",
 
-                        // OOP_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2078/oop-2078-",
-                        // OOP_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2076/oop-2076-",
-                        // OOP_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2075/oop-2075-",
+                        OOP_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2078/oop-2078-",
+                        OOP_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2076/oop-2076-",
+                        OOP_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2075/oop-2075-",
 
-                        // Mathematics_II_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2078/Maths-II-2078-",
-                        // Mathematics_II_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2076/Maths-II-2076-",
-                        // Mathematics_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2075/Maths-II-2075-",
+                        Mathematics_II_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2078/Maths-II-2078-",
+                        Mathematics_II_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2076/Maths-II-2076-",
+                        Mathematics_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2075/Maths-II-2075-",
 
-                        // MicroProcessor_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2078/microprocessor-2078-",
-                        // MicroProcessor_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2076/microprocessor-2076-",
-                        // MicroProcessor_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2075/microprocessor-2075-",
+                        MicroProcessor_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2078/microprocessor-2078-",
+                        MicroProcessor_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2076/microprocessor-2076-",
+                        MicroProcessor_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2075/microprocessor-2075-",
 
-                        // STATISTICS_I_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2078/STATS-I-2078-",
-                        // STATISTICS_I_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2076/STATS-I-2076-",
-                        // STATISTICS_I_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2075/STATS-I-2075-",
-
-
-                        // DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
-                        // DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
-
-                        // CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
-                        // CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
-
-                        // CA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2078/CA-2078-",
-                        // CA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2077/CA-2077-",
-
-                        // NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
-                        // NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
-
-                        // STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
-                        // STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
-                        // Chapter_1 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
-                        // Chapter_2 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-2/CH-2-",
-                        // Chapter_3 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-3/CH-3-",
-                        // Chapter_4 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-4/CH-4-",
-                        // Chapter_5 : "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/TM-Complexity-Classes-Numericals/TOC-Notes-",
+                        STATISTICS_I_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2078/STATS-I-2078-",
+                        STATISTICS_I_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2076/STATS-I-2076-",
+                        STATISTICS_I_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2075/STATS-I-2075-",
 
 
-                        // https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-1.JPG
+                        DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
+                        DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
 
-                        Chapter_1 : "./notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
-                        Chapter_2 : "https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennote/Chapter-2/CH-2-",
-                        Chapter_3 : "https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennote/Chapter-3/CH-3-",
-                        Chapter_4 : "https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennote/Chapter-4/CH-4-",
-                        Chapter_5 : "https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/notes/4thSem/TOC/TheoryofComputationHandwrittennote/TM-Complexity-Classes-Numericals/TOC-Notes-",
+                        CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
+                        CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
+
+                        CA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2078/CA-2078-",
+                        CA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2077/CA-2077-",
+
+                        NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
+                        NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
+
+                        STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
+                        STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
                         
+                        // Chapter_1: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
+                        Chapter_1: "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
                     };
 
                     let baseImageUrl;
@@ -536,6 +524,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             if (urls[variableName]) {
                                 //  alert(`Click Okay.You Selected ${liValue}.`);
                                 // Clear the local storage
+                                localStorage.setItem("previous", imageArray);
                                 localStorage.removeItem("imageArray");
                                 showLoading();
 
@@ -570,7 +559,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     document.getElementById("loader").style.display = "none";
                                     document.getElementById("loaders").style.display = "none";
                                 } catch (error) {
-                                    //console.error("An error occurred:", error);
+                                    console.error("An error occurred:", error);
                                     //  alert('An error occurred. Please check the browser console.');
                                 }
                             }
