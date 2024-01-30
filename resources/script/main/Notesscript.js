@@ -347,8 +347,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
                         STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
                         
-                        // Chapter_1: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
-                        Chapter_1: "./resources/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
+                    Chapter_1: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
+              
                     };
 
                     let baseImageUrl;
