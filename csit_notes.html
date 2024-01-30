@@ -36,17 +36,6 @@
    <meta name="theme-color" content="#ffffff">
    <meta property="og:locale" content="en_US">
 
-
-   <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-58J72831LP"></script>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'G-58J72831LP');
-   </script>
-
    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon_io/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon_io/android-chrome-192x192.png">
    <link rel="manifest" href="./resources/favicon_io/site.webmanifest">
@@ -161,9 +150,9 @@
          <hr class="mt-2">
       </header>
       <div class="container-fluid ">
-         <button class="btn btn-outline-success mb-1" onclick=goBack()>
+<!--          <button class="btn btn-outline-success mb-1" onclick=goBack()>
             Go Back
-         </button>
+         </button> -->
 
          <div class="row">
             <div class="col-12 col-md-2 overflow-auto  border-end order-1" id="heightManu">
@@ -507,7 +496,7 @@
          var currentYear = new Date().getFullYear();
 
          // Update the copyright text
-         document.getElementById("copyright-text").innerHTML = "This note is prepared and powered by a T.U. Professor and Er. Manoj Kumar Guragai. <br/> &copy; " + currentYear + " All rights reserved. Unauthorized use or reproduction of this content is prohibited.";
+         document.getElementById("copyright-text").innerHTML = "Theory of Computation note is prepared and powered by a T.U. Professor and Er. Manoj Kumar Guragai. <br/> &copy; " + currentYear + " All rights reserved. Unauthorized use or reproduction of this content is prohibited.";
 
 
          const goBack = () => {
