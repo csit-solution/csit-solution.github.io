@@ -125,10 +125,9 @@
          <p class="pt-2 m-0 marquee text-white">
             This is only a lite Version of KEC's Solution for BSc.CSIT Student.Currently,Only a few Semester Solution is available. App may be slower due to high traffic.Thanks | @dilli_hangrae 
          </p>
-         <hr class="mt-2">
+
       </header>
       <div class="container-fluid">
-         <br/>
          <div class="row">
             <div class="col-12 col-md-3 overflow-auto  border-end order-1"  id="heightManu">
                <div class="row d-flex align-items-center">
@@ -243,6 +242,19 @@
                      <img  id="frontCover" src="" alt="img"> 
                      <img  id="backCover" src="" alt="img">
                   </figure>
+         
+
+
+                  </div>
+                  <hr>
+                  <div class="row">
+                     <div class="col-12 d-flex align-items-center">
+                        <h5> <i class="fa-solid fa-file-pdf"></i> Subjects Notes </h5> &nbsp;&nbsp;
+                        <button class="btn btn-outline-danger"  data-toggle="" data-target="" onclick="redirectToNotesPage()">
+                         Click For Notes
+                        </button>
+                     </div>
+                  </div>
                   <hr>
                   <div>
                      <h5> <i class="fa-brands fa-connectdevelop"></i> Developer Section</h5>
@@ -270,6 +282,9 @@
                         </div>
                      </div>
                   </div>
+
+
+
                   <hr/>
                   <div class="row">
                      <div class="col-12">
@@ -424,6 +439,10 @@ $(window).resize(function () {
     duplicateContent();
 });
 
+    function redirectToNotesPage() {
+        // Redirect to the specified URL
+        window.location.href = './csit_notes.html';
+    }
 </script>
 
    </body>

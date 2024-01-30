@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Lite CSIT Solution App | Notes </title>
+   <meta name="description"
+      content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+   <meta name="keywords"
+      content="CSIT, solution, past questions solutions, BSc.CSIT, web application, csitsolution, csitsolution github">
+   <meta name="author" content="Dili Hang Rai">
+   <meta name="robots" content="index, follow">
+   <meta name="googlebot" content="index, follow">
+   <!-- Open Graph Meta Tags -->
+   <meta property="og:title" content="Lite CSIT Solution App">
+   <meta property="og:description"
+      content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+   <meta property="og:image"
+      content="https://raw.githubusercontent.com/Dilli822/dilli822.github.io/main/resources/img/appMetaCover/Lite CSIT Solution App Front Page.png">
+   <meta property="og:image:alt" content="Lite CSIT Solution App Front Page">
+   <meta property="og:url" content="https://dilli822.github.io/csit_solutionLite.html">
+   <meta property="og:type" content="website">
+   <meta property="fb:app_id" content="1115582239317761">
+   <!-- Twitter Card Meta Tags -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Lite CSIT Solution App">
+   <meta name="twitter:description"
+      content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+   <meta name="twitter:image"
+      content="https://raw.githubusercontent.com/Dilli822/dilli822.github.io/main/resources/img/appMetaCover/Lite CSIT Solution App Front Page.png">
+   <!-- Additional Meta Tags -->
+   <meta name="application-name" content="Lite CSIT Solution App">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   <meta property="og:locale" content="en_US">
+
+
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-58J72831LP"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-58J72831LP');
+   </script>
+
+   <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon_io/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon_io/android-chrome-192x192.png">
+   <link rel="manifest" href="./resources/favicon_io/site.webmanifest">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./resources/css/csit/pastQuestionSolution/pastQuestionSolution.css">
+   <style>
+      body {
+         overflow: hidden;
+      }
+
+      .marquee {
+         white-space: nowrap;
+         font-size: 14px;
+         overflow: hidden;
+         /* position: relative; */
+         animation: marquee 35s linear infinite;
+      }
+
+      .marquee p {
+         display: inline-block;
+         padding-right: 100%;
+      }
+
+      @keyframes marquee {
+         0% {
+            transform: translateX(100%);
+         }
+
+         100% {
+            transform: translateX(-100%);
+         }
+      }
+
+      .modal-open .container-fluid {
+         opacity: 0;
+      }
+
+      @keyframes glowAndMove {
+         0% {
+            text-shadow: 0 0 10px #00db2c;
+            transform: translateX(0);
+            transform: translateY(0);
+         }
+
+         50% {
+            text-shadow: 0 0 20px #187bd1;
+            transform: translateX(10px);
+            transform: translateY(2px);
+         }
+
+         100% {
+            text-shadow: 0 0 10px #ff00a6;
+            transform: translateX(0);
+            transform: translateY(0);
+         }
+      }
+
+      @keyframes glow {
+         0% {
+            text-shadow: 0 0 10px #ff0000;
+         }
+
+         50% {
+            text-shadow: 0 0 20px #ff0000;
+         }
+
+         100% {
+            text-shadow: 0 0 10px #ff0000;
+         }
+      }
+
+      #donate,
+      .logo {
+         animation: glow 1500ms infinite;
+         /* Adjust the duration as needed */
+         animation: glowAndMove 1500ms infinite;
+         /* Adjust the duration as needed */
+      }
+   </style>
+</head>
+
+<body>
+   <!-- Add this code inside the body tag, preferably after the main content -->
+   <div class="modal fade" id="usernameModal" tabindex="-1" role="dialog" aria-labelledby="usernameModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="usernameModalLabel">Welcome CSIT Aspirant! This is your first time. Please,
+                  Enter Your Username and Semester</h5>
+               <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <input type="text" id="usernameInput" class="form-control" placeholder="Username" />
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-outline-success" data-dismiss="modal"
+                  id="saveUsername">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <main id="content">
+      <header class="bg-success">
+         <p class="pt-2 m-0 marquee text-white">
+            This is only a lite Version of CSIT Solution App for BSc.CSIT Student.Currently,Only a few Semester Notes
+            available. App may be slower due to high traffic.Thanks | @dilli_hangrae
+         </p>
+         <hr class="mt-2">
+      </header>
+      <div class="container-fluid ">
+         <button class="btn btn-outline-success mb-1" onclick=goBack()>
+            Go Back
+         </button>
+
+         <div class="row">
+            <div class="col-12 col-md-2 overflow-auto  border-end order-1" id="heightManu">
+               <div class="row d-flex align-items-center">
+                  <div class="col-4 col-md-6">
+                     <figure>
+                        <img src="./resources/img/logos/main/logocsit.jpg" alt="csit-solution" class="logo"
+                           style="width: 100%;">
+                     </figure>
+                  </div>
+                  <div class="col-8 col-md-12">
+                     <h5 id="greeting"></h5>
+                  </div>
+               </div>
+               <div>
+                  <div class="row">
+                     <hr>
+                     <!-- <h5>Select Your Semester: </h5> -->
+                     <div class="col-6 col-md-12">
+                        <!-- Add a dropdown for semester selection -->
+                        <select id="semesterDropdown" class="form-control mt-2">
+                           <!-- <label> Choose Your Semester: </label> -->
+                           <option value="">Select Your Semester</option>
+                           <option value="1">1st Semester</option>
+                           <option value="2">2nd Semester</option>
+                           <!-- Add options for up to 8th semester -->
+                           <option value="3">3rd Semester</option>
+                           <option value="4" selected>4th Semester</option>
+                           <option value="5">5th Semester</option>
+                           <option value="6">6th Semester</option>
+                           <option value="7">7th Semester</option>
+                           <option value="8">8th Semester</option>
+                        </select>
+                     </div>
+                     <div class="col-6 col-md-12">
+                        <button class="btn btn-outline-success mt-2 w-100" id="semesterSelect"> Set Semester </button>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <div class="" id="welcomeMessageContainer">
+                  <div> <span class="h6" id="welcomeMessage"></span> </div>
+               </div>
+               <h5 class="pastQuestionHighlights"> Notes Highlights:</h5>
+               <hr>
+               <div id="loaders" class="text-center">
+                  <div class="spinner-border text-success" role="status">
+                     <span class="sr-only">Loading...</span>
+                  </div>
+                  <p>Loading... <br> <span>Please Wait...</span> </p>
+               </div>
+               <div class="stored-urls overflow-auto" id="sliderHighlightImage">
+               </div>
+            </div>
+
+
+            <div class="col-md-7 col-12 p-3 order-sm-2 order-3">
+               <div id="loader" class="text-center">
+                  <!-- Add the spinner and loading text -->
+                  <div class="spinner-border text-info" role="status">
+                     <span class="sr-only">Loading...</span>
+                  </div>
+                  <p>Loading...<br> <span>Please Wait...</span> </p>
+               </div>
+               <div class="slideC" id="slideC">
+                  <div>
+                     <h5 class="text-center" id="choosensolutionHighLights"> </h5>
+                  </div>
+                  <div class=" m-0 p-0" id="ifram">
+                     <h4 class="text-center fw-light m-0 p-0"> Notes Section | Set the Semester to View the Notes </h4>
+                     <hr>
+
+                     <!-- <h5 class="text-center">  </h5> -->
+                  </div>
+                  <div id="whole-Slider">
+                     <div id="slider">
+                        <div id="fullscreenContainer" style="position: relative; display: none;">
+                           <img id="sliderImage" src="" alt="">
+                           <button id="closeFullscreenBtn"
+                              style="position: absolute; top: 10px; right: 10px; background-color: #fff; border: none; cursor: pointer;">
+                              <i class="fas fa-times"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="buttonss" style="position: relative; display: none;">
+                  <div style="margin-top: 10px; text-align: center;">
+                     <button id="prevBtnCustom2" type="button" class="btn btn-outline-primary">Previous</button>
+                     <button id="nextBtnCustom2" type="button" class="btn btn-outline-success">Next</button>
+                     <button id="sliderImageBtn" type="button" class="btn btn-outline-info">View Full Screen </button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-md-3  overflow-auto  border-start c order-2 " id="heightManu">
+               <h4>Semester Subjects Notes </h4>
+               <div class="ul-main  overflow-auto border p-2 rounded-1 ">
+                  <ul id="main-list">
+                     <!--  Dynamic UL LI LIST FOR NTH SEMESTER SUBJECTS -->
+                  </ul>
+               </div>
+               <!-- Cover Part -->
+               <div class="desktopDev">
+                  <figure class="coverPages d-flex p-0 d-none">
+                     <img id="frontCover" src="" alt="img">
+                     <img id="backCover" src="" alt="img">
+                  </figure>
+                  <hr>
+
+
+               </div>
+
+
+               <div class="row">
+                  <div class="col-12">
+                     <p class="m-0" id=""> <i class="fa-solid fa-warning"></i> Warning: <br />"
+                        <span id="copyright-text"></span>
+                        "
+                     </p>
+                  </div>
+               </div>
+               <hr />
+
+               <div>
+                  <h5> <i class="fa-brands fa-connectdevelop"></i> Developer Section</h5>
+                  <button class="btn btn-outline-success" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                     role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Click for Developer
+                     Section</button>
+               </div>
+               <div class="row" id="DesktopDev">
+                  <div class="col">
+                     <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="" style="padding:0px">
+                           <hr />
+                           <!-- Vertically centered modal -->
+                           <h6 class=" mb-1"> App FlowChart</h6>
+                           <!-- Button trigger modal -->
+                           <a type="button" class="text-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                              class="p-1 text-danger mt-0" data-toggle="modal"> <i class="far fa-file-pdf"></i> View
+                              FlowChart </a>
+                           <a class=" border border-black mt-0" data-toggle="modal">
+                              <a class="p-1 text-success"
+                                 href="./resources/docs/FlowCharts/Lite CSIT App Solution FlowChart.pdf"
+                                 download="App FlowChart.pdf">
+                                 Download <i class="fas fa-download"></i>
+                              </a>
+                              <h6 class="mt-3 mb-1"> App Documentation </h6>
+                              <a type="button" class="text-danger" data-bs-toggle="modal" data-bs-target="#appDoc"
+                                 class="p-1 text-danger mt-0" data-toggle="modal"> <i class="far fa-file-pdf"></i> <span
+                                    class=""> View Documentation</span> </a>
+                              <a class=" border border-black mt-0" data-toggle="modal">
+                                 <a class="p-1 text-success"
+                                    href="./resources/docs/projectDocs/Project Documentation_ CSIT Solution Lite Demo Version Web App.pdf"
+                                    download="App Documentation.pdf">Download <i class="fas fa-download"></i> </a>
+                              </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+               <hr />
+               <div class="row">
+                  <div class="col-12">
+                     <h5 id="donate"> <i class="fa-solid fa-circle-dollar-to-slot"></i> Donate/Aid for App Development
+                     </h5>
+                     <button class="btn btn-outline-danger" data-toggle="modal" data-target="#imageModal">
+                        Donate Via FonePay/E-sewa/Khalti
+                     </button>
+                  </div>
+               </div>
+
+               <hr />
+
+
+
+            </div>
+            <hr>
+         </div>
+      </div>
+      </div>
+
+      <br />
+
+      <div class="container-fluid" id="mobileDev"> </div>
+
+      <footer>
+         <div class=" mt-3 bg-success text-white text-center p-2">
+            <h6 class="mt-1">This Web App is Created, Developed & Maintained by <a
+                  class="text-info text-decoration-none" href="https://www.instagram.com/dilli_hangrae/"> Dilli Hang Rai
+               </a> | version 1.2 </h6>
+            <section class="mt-0 social-media-links">
+               <span><a> Click on the Icon to Follow & to Share the Latest Solution with me | For Queries and Advice
+                  </a></span>
+               <span><a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                        class="fab fa-instagram"></i></a></span>
+               <span><a href="https://www.youtube.com/channel/UCGMG6ppG6kBj7gp1zROQAFA" target="_blank"><i
+                        class="fab fa-youtube"></i></a></span>
+               <span><a href="https://www.linkedin.com/in/dilli-hang-rai-4724411b2/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a></span>
+               <span><a href="https://github.com/Dilli822" target="_blank"><i class="fab fa-github"></i></a></span>
+               <span><a href="https://twitter.com/dilli_hangrae" target="_blank"><i class="fab fa-twitter"
+                        aria-hidden="true"></i></a></span>
+            </section>
+         </div>
+      </footer>
+      <!-- Modal -->
+      <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"> Scan QR to Donate </h5>
+                  <button type="button" class="btn btn-outline-danger " data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body ">
+                  <div class="row">
+                     <h5>Any amount is Accepted!</h5>
+                     <div class="col d-flex">
+                        <img src="./resources/img/Donation/QR Code/esewa.jpg" alt="esewa QR"
+                           style="max-width: 100%; width: 50%;" />
+                        <img src="./resources/img/Donation/QR Code/Nabil Smart.jpg" alt="Nabil SMART"
+                           style="max-width: 100%; width: 50%;" />
+                     </div>
+                  </div>
+                  <!-- Add your images here -->
+                  <!-- Add more images as needed -->
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal modal-fullscreen fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">App FlowChart</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <iframe src="./resources/docs/FlowCharts/Lite CSIT App Solution FlowChart.pdf" width="100%"
+                     height="100%"></iframe>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal modal-fullscreen fade" id="appDoc" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">App Documentation</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <iframe
+                     src="./resources/docs/projectDocs/Project Documentation_ CSIT Solution Lite Demo Version Web App.pdf"
+                     width="100%" height="100%"></iframe>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Include Bootstrap JS and Pooper.js (required for dropdown functionality) -->
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@pooperjs/core@2.11.6/dist/umd/pooper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+      <script src="./resources/script/main/Notesscript.js"></script>
+      <script src="./resources/script/utility/fullScreenButtons.js"></script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDRXM6LQDW"></script>
+      <script>
+         // Function to show the donation part
+         function showDonation() {
+            $('#imageModal').modal('show');
+
+            // Close the modal after 3 seconds (3000 milliseconds)
+            setTimeout(function () {
+               $('#imageModal').modal('hide');
+            }, 3000);
+         }
+
+         // Set interval to show donation part every 15 minutes 00 seconds
+         setInterval(showDonation, 900000);
+
+      </script>
+
+
+      <script>
+         // Variable to track whether content has been cloned
+         var contentCloned = false;
+
+         // Function to check screen size and duplicate content
+         function duplicateContent() {
+            // Check if the screen size is less than 767px and content has not been cloned
+            if ($(window).width() < 767 && !contentCloned) {
+               // Create a copy of the desktopDev content and assign it a unique class name
+               var mobileDevContent = $(".desktopDev").clone().removeAttr("class").attr("id", "mobileDevContent").addClass("yourCompletelyNewClassName");
+
+               // Append the duplicated content to the #mobileDev element
+               $("#mobileDev").append(mobileDevContent);
+
+               // Set contentCloned to true to avoid further cloning
+               contentCloned = true;
+            } else if ($(window).width() >= 767 && contentCloned) {
+               // If the screen size is larger than or equal to 767px and content has been cloned
+               // Remove the cloned content and reset the contentCloned variable
+               $("#mobileDevContent").remove();
+               contentCloned = false;
+            }
+         }
+
+         // Call the function on page load and window resize
+         $(document).ready(function () {
+            duplicateContent();
+         });
+
+         $(window).resize(function () {
+            duplicateContent();
+         });
+
+
+
+         var currentYear = new Date().getFullYear();
+
+         // Update the copyright text
+         document.getElementById("copyright-text").innerHTML = "This note is prepared and powered by a T.U. Professor and Er. Manoj Kumar Guragai. <br/> &copy; " + currentYear + " All rights reserved. Unauthorized use or reproduction of this content is prohibited.";
+
+
+         const goBack = () => {
+            // Navigate back to the previous page
+            window.history.back();
+         };
+
+      </script>
+
+</body>
+
+</html>
