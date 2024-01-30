@@ -348,9 +348,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
                         
                     Chapter_1: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
-              
-                    };
-
+                                  Chapter_2: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-2/CH-2-",
+                                            Chapter_3: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-3/CH-3-",
+                                            Chapter_4: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-4/CH-4-",
+                               Chapter_5: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/TM-Complexity-Classes-Numericals/TOC-Notes-",
+     };    
                     let baseImageUrl;
                     let imageArray = [];
 
