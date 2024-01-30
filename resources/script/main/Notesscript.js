@@ -77,43 +77,43 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstSem = [
         // Semester 1
 
-        { name: "🚀 Introduction to IT", years: ["Introduction to IT PDF"] },
+        { name: "🚀 Introduction to IT", years: ["Notes Coming Soon!"] },
         { name: "🅒 C Programming", years: ["Coming Soon!"] },
         { name: "🚦Digital Logic", years: ["Coming Soon!"] },
-        { name: "♾️ Maths-I", years: ["Maths_I_Book_Solution"] },
-        { name: "⚛ Physics", years: ["Physics_Book_Solution"] },
+        { name: "♾️ Maths-I", years: ["Notes Coming Soon!"] },
+        { name: "⚛ Physics", years: ["Notes Coming Soon!"] },
     ];
     // Semester 2
     const secondSem = [
         {
             name: "∑ Discrete Math",
-            years: ["DS_MATH_2078_BS_TU", "DS_MATH_2076_BS_TU", "DS_MATH_2075_BS_TU"],
+            years: ["Notes Coming Soon!"],
         },
         {
             name: "🧬Object Oriented Programming",
-            years: ["OOP_2078_BS_TU", "OOP_2076_BS_TU", "OOP_2075_BS_TU"],
+            years: ["Notes Coming Soon!"],
         },
         {
             name: "🔄 MicroProcessor",
-            years: ["MicroProcessor_2078_BS_TU", "MicroProcessor_2076_BS_TU", "MicroProcessor_2075_BS_TU"],
+            years: ["Notes Coming Soon!",],
         },
         {
             name: "🔢 Mathematics - II",
-            years: ["Mathematics_II_2078_BS_TU", "Mathematics_II_2076_BS_TU", "Mathematics_II_2075_BS_TU"],
+            years: ["Notes Coming Soon!"],
         },
         {
             name: "📊 Statistics - I",
-            years: ["STATISTICS_I_2078_BS_TU", "STATISTICS_I_2076_BS_TU", "STATISTICS_I_2075_BS_TU"],
+            years: ["Notes Coming Soon!"],
         },
     ];
     // Semester 3
     const thirdSem = [
         // Courses for semester 3...
-        { name: "🔗 Data Structure and Algorithm", years: ["DSA_2077_BS_TU","DSA_2078_BS_TU" ] },
-        { name: "🧮 Numerical Method", years: ["NM_2075_BS_TU", "NM_2077_BS_TU"] },
-        { name: "🌌 Computer Graphics", years: ["CG_2075_BS_TU", "CG_2077_BS_TU"] },
-        { name: "🏗️ Computer Architecture", years: ["CA_2078_BS_TU", "CA_2077_BS_TU"] },
-        { name: "📈 Statistics II ", years: ["STATS_II_2075_BS_TU", "STATS_II_2077_BS_TU"] },
+        { name: "🔗 Data Structure and Algorithm", years: ["Notes Coming Soon!" ] },
+        { name: "🧮 Numerical Method", years: ["Notes Coming Soon!"] },
+        { name: "🌌 Computer Graphics", years: ["Notes Coming Soon!"] },
+        { name: "🏗️ Computer Architecture", years: ["Notes Coming Soon!"] },
+        { name: "📈 Statistics II ", years: ["Notes Coming Soon!"] },
     ];
     // Semester 4
     const fourthSem = [
