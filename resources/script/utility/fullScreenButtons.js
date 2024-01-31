@@ -95,15 +95,15 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-// // Create a new Date object
-// const currentDate = new Date();
+// Create a new Date object
+const currentDate = new Date();
 
-// // Get the current year
-// const year = currentDate.getFullYear();
+// Get the current year
+const year = currentDate.getFullYear();
 
-// // Select the span element with the id "currentYear" and set its content
-// const yearElement = document.getElementById("currentYear");
-// yearElement.textContent = year;
+// Select the span element with the id "currentYear" and set its content
+const yearElement = document.getElementById("currentYear");
+yearElement.textContent = year;
 
 var isHidden = true;
 document.getElementById("hideShow").style.display = "none";
@@ -146,3 +146,32 @@ function offDocumentation() {
 
  
 }
+
+let touchStartX = 0;
+
+fullscreenContainer.addEventListener("touchstart", (event) => {
+    touchStartX = event.touches[0].clientX;
+});
+
+fullscreenContainer.addEventListener("touchmove", (event) => {
+    const touchEndX = event.touches[0].clientX;
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (swipeDistance > 50) {
+        // Swipe right, go to the previous image
+        currentIndex = Math.max(currentIndex - 1, 0);
+        loadImagesInSlider(currentIndex);
+        compareAndHighlightImage();
+    } else if (swipeDistance < -50) {
+        // Swipe left, go to the next image
+        currentIndex = Math.min(currentIndex + 1, imageArray.length - 1);
+        loadImagesInSlider(currentIndex);
+        compareAndHighlightImage();
+    }
+});
+
+fullscreenContainer.addEventListener("touchend", () => {
+    touchStartX = 0;
+});
+
+
