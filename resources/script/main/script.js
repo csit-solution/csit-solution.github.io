@@ -314,307 +314,305 @@ document.addEventListener("DOMContentLoaded", function () {
                     const thirdSemParentUrl = "./resources/CSITSolution/pastyearsolutions/thirdSemester"
 
                     const urls = {
-                      DS_MATH_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-",
-                      DS_MATH_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-",
-                      DS_MATH_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-",
+                      // DS_MATH_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-",
+                      // DS_MATH_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-",
+                      // DS_MATH_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-",
 
-                      OOP_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2078/oop-2078-",
-                      OOP_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2076/oop-2076-",
-                      OOP_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2075/oop-2075-",
+                      // OOP_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2078/oop-2078-",
+                      // OOP_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2076/oop-2076-",
+                      // OOP_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/OOP/2075/oop-2075-",
 
-                      Mathematics_II_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2078/Maths-II-2078-",
-                      Mathematics_II_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2076/Maths-II-2076-",
-                      Mathematics_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2075/Maths-II-2075-",
+                      // Mathematics_II_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2078/Maths-II-2078-",
+                      // Mathematics_II_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2076/Maths-II-2076-",
+                      // Mathematics_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Maths-II/2075/Maths-II-2075-",
 
-                      MicroProcessor_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2078/microprocessor-2078-",
-                      MicroProcessor_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2076/microprocessor-2076-",
-                      MicroProcessor_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2075/microprocessor-2075-",
+                      // MicroProcessor_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2078/microprocessor-2078-",
+                      // MicroProcessor_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2076/microprocessor-2076-",
+                      // MicroProcessor_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/Microprocessor/2075/microprocessor-2075-",
 
-                      STATISTICS_I_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2078/STATS-I-2078-",
-                      STATISTICS_I_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2076/STATS-I-2076-",
-                      STATISTICS_I_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2075/STATS-I-2075-",
+                      // STATISTICS_I_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2078/STATS-I-2078-",
+                      // STATISTICS_I_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2076/STATS-I-2076-",
+                      // STATISTICS_I_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/STAT-I/2075/STATS-I-2075-",
 
-                      DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
-                      DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
+                      // DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
+                      // DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
 
-                      CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
-                      CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
+                      // CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
+                      // CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
 
-                      CA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2078/CA-2078-",
-                      CA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2077/CA-2077-",
+                      // CA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2078/CA-2078-",
+                      // CA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2077/CA-2077-",
 
-                      NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
-                      NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
+                      // NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
+                      // NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
 
-                      STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
-                      STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
+                      // STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
+                      // STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
 
-                      // DS_MATH_2078_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2078/ds-2078-`,
-                      // DS_MATH_2076_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2076/ds-2076-`,
-                      // DS_MATH_2075_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2075/ds-2075-`,
+                      DS_MATH_2078_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2078/ds-2078-`,
+                      DS_MATH_2076_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2076/ds-2076-`,
+                      DS_MATH_2075_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2075/ds-2075-`,
 
-                      // OOP_2078_BS_TU: `${SecondSemParentUrl}/OOP/2078/oop-2078-`,
-                      // OOP_2076_BS_TU: `${SecondSemParentUrl}/OOP/2076/oop-2076-`,
-                      // OOP_2075_BS_TU: `${SecondSemParentUrl}/OOP/2075/oop-2075-`,
+                      OOP_2078_BS_TU: `${SecondSemParentUrl}/OOP/2078/oop-2078-`,
+                      OOP_2076_BS_TU: `${SecondSemParentUrl}/OOP/2076/oop-2076-`,
+                      OOP_2075_BS_TU: `${SecondSemParentUrl}/OOP/2075/oop-2075-`,
 
-                      // Mathematics_II_2078_BS_TU: `${SecondSemParentUrl}/Maths-II/2078/Maths-II-2078-`,
-                      // Mathematics_II_2076_BS_TU: `${SecondSemParentUrl}Maths-II/2076/Maths-II-2076-`,
-                      // Mathematics_II_2075_BS_TU: `${SecondSemParentUrl}/Maths-II/2075/Maths-II-2075-`,
+                      Mathematics_II_2078_BS_TU: `${SecondSemParentUrl}/Maths-II/2078/Maths-II-2078-`,
+                      Mathematics_II_2076_BS_TU: `${SecondSemParentUrl}Maths-II/2076/Maths-II-2076-`,
+                      Mathematics_II_2075_BS_TU: `${SecondSemParentUrl}/Maths-II/2075/Maths-II-2075-`,
 
-                      // MicroProcessor_2078_BS_TU: `${SecondSemParentUrl}/Microprocessor/2078/microprocessor-2078-`,
-                      // MicroProcessor_2076_BS_TU: `${SecondSemParentUrl}/Microprocessor/2076/microprocessor-2076-`,
-                      // MicroProcessor_2075_BS_TU: `${SecondSemParentUrl}/Microprocessor/2075/microprocessor-2075-`,
+                      MicroProcessor_2078_BS_TU: `${SecondSemParentUrl}/Microprocessor/2078/microprocessor-2078-`,
+                      MicroProcessor_2076_BS_TU: `${SecondSemParentUrl}/Microprocessor/2076/microprocessor-2076-`,
+                      MicroProcessor_2075_BS_TU: `${SecondSemParentUrl}/Microprocessor/2075/microprocessor-2075-`,
 
-                      // STATISTICS_I_2078_BS_TU: `${SecondSemParentUrl}/STAT-I/2078/STATS-I-2078-`,
-                      // STATISTICS_I_2076_BS_TU: `${SecondSemParentUrl}/STAT-I/2076/STATS-I-2076-`,
-                      // STATISTICS_I_2075_BS_TU: `${SecondSemParentUrl}/STAT-I/2075/STATS-I-2075-`,
+                      STATISTICS_I_2078_BS_TU: `${SecondSemParentUrl}/STAT-I/2078/STATS-I-2078-`,
+                      STATISTICS_I_2076_BS_TU: `${SecondSemParentUrl}/STAT-I/2076/STATS-I-2076-`,
+                      STATISTICS_I_2075_BS_TU: `${SecondSemParentUrl}/STAT-I/2075/STATS-I-2075-`,
 
-                      DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
-                      DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
+                      // DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
+                      // DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
 
-                      CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
-                      CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
+                      // CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
+                      // CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
 
-                      CA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2078/CA-2078-",
-                      CA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2077/CA-2077-",
+                      // CA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2078/CA-2078-",
+                      // CA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CA/2077/CA-2077-",
 
-                      NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
-                      NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
+                      // NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
+                      // NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
 
-                      STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
-                      STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
+                      // STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
+                      // STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
 
-                      // DSA_2077_BS_TU: `${thirdSemParentUrl}/DSA/2077/DSA-2077-`,
-                      // DSA_2078_BS_TU: `${thirdSemParentUrl}/DSA/2078/DSA-2078-`,
+                      DSA_2077_BS_TU: `${thirdSemParentUrl}/DSA/2077/DSA-2077-`,
+                      DSA_2078_BS_TU: `${thirdSemParentUrl}/DSA/2078/DSA-2078-`,
 
-                      // CG_2075_BS_TU: `${thirdSemParentUrl}/CG/2075/CG-2075-`,
-                      // CG_2077_BS_TU: `${thirdSemParentUrl}/CG/2077/CG-2077-`,
+                      CG_2075_BS_TU: `${thirdSemParentUrl}/CG/2075/CG-2075-`,
+                      CG_2077_BS_TU: `${thirdSemParentUrl}/CG/2077/CG-2077-`,
 
-                      // CA_2078_BS_TU: `${thirdSemParentUrl}/CA/2078/CA-2078-`,
-                      // CA_2077_BS_TU: `${thirdSemParentUrl}/CA/2077/CA-2077-`,
+                      CA_2078_BS_TU: `${thirdSemParentUrl}/CA/2078/CA-2078-`,
+                      CA_2077_BS_TU: `${thirdSemParentUrl}/CA/2077/CA-2077-`,
 
-                      // NM_2075_BS_TU: `${thirdSemParentUrl}/NM/2075/NM-2075-`,
-                      // NM_2077_BS_TU: `${thirdSemParentUrl}/NM/2077/NM-2077-`,
+                      NM_2075_BS_TU: `${thirdSemParentUrl}/NM/2075/NM-2075-`,
+                      NM_2077_BS_TU: `${thirdSemParentUrl}/NM/2077/NM-2077-`,
 
-                      // STATS_II_2075_BS_TU: `${thirdSemParentUrl}/STATS-II/2075/STATS-II-2075-`,
-                      // STATS_II_2077_BS_TU: `${thirdSemParentUrl}/STATS-II/2077/STATS-II-2077-`,
+                      STATS_II_2075_BS_TU: `${thirdSemParentUrl}/STATS-II/2075/STATS-II-2075-`,
+                      STATS_II_2077_BS_TU: `${thirdSemParentUrl}/STATS-II/2077/STATS-II-2077-`,
                     };
 
                     let baseImageUrl;
                     let imageArray = [];
-          
+
                     document.getElementById("buttonss").style.display = "none";
                     document.getElementById("closeFullscreenBtn").style.display = "none";
                     document.getElementById("fullscreenContainer").style.display = "none";
                     document.getElementById("whole-Slider").style.display = "none";
                     document.getElementById("slider").style.display = "none";
-          
+
                     // section for loader hide and show
                     function showLoading() {
-                      document.getElementById("loader").style.display = "block";
-                      document.getElementById("loaders").style.display = "block";
-                      document.getElementById("ifram").style.display = "none";
-                      document.getElementById("sliderImage").style.display = "none";
-                      document.getElementById("sliderHighlightImage").style.display =
-                        "none";
-                      document.getElementById("buttonss").style.display = "none";
-                      document.getElementById("closeFullscreenBtn").style.display =
-                        "none";
-                      document.getElementById("choosensolutionHighLights").style.display =
-                        "none";
+                        document.getElementById("loader").style.display = "block";
+                        document.getElementById("loaders").style.display = "block";
+                        document.getElementById("ifram").style.display = "none";
+                        document.getElementById("sliderImage").style.display = "none";
+                        document.getElementById("sliderHighlightImage").style.display = "none";
+                        document.getElementById("buttonss").style.display = "none";
+                        document.getElementById("closeFullscreenBtn").style.display = "none";
+                        document.getElementById("choosensolutionHighLights").style.display = "none";
                     }
-          
+
                     function hideLoading() {
-                      document.getElementById("loader").style.display = "none";
-                      document.getElementById("loaders").style.display = "none";
-                      document.getElementById("sliderImage").style.display = "block";
-                      document.getElementById("sliderHighlightImage").style.display =
-                        "block";
-                      document.getElementById("choosensolutionHighLights").style.display =
-                        "block";
-          
-                      // document.get
+                        document.getElementById("loader").style.display = "none";
+                        document.getElementById("loaders").style.display = "none";
+                        document.getElementById("sliderImage").style.display = "block";
+                        document.getElementById("sliderHighlightImage").style.display = "block";
+                        document.getElementById("choosensolutionHighLights").style.display = "block";
+
+                        // document.get
                     }
-          
+
                     // initailly loading is hidden
                     hideLoading();
-          
-                    async function fetchAndStoreImages(chapter) {
-                      let baseImageUrl = urls[chapter];
-                      let imageArray = [];
-          
-                      let currentIndex = 0;
-          
-                      while (true) {
-                        const imageUrl = `${baseImageUrl}${currentIndex + 1}.jpg`;
-          
-                        try {
-                          const response = await fetch(imageUrl);
-          
-                          if (response.status === 404) {
-                            break;
-                          }
-          
-                          if (response.ok) {
-                            const imageURL = imageUrl;
-                            imageArray.push(imageURL);
-                          } else {
-                            break;
-                          }
-          
-                          currentIndex++;
-                        } catch (error) {
-                          break;
+
+                    async function fetchAndStoreImages() {
+                        // Clear the imageArray to fetch new images
+                        imageArray = [];
+
+                        let currentIndex = 0;
+
+                        while (true) {
+                            const imageUrl = `${baseImageUrl}${currentIndex + 1}.jpg`;
+
+                            // console.log("Fetching image:", imageUrl);
+
+                            try {
+                                const response = await fetch(imageUrl);
+
+                                // console.log("Response status:", response.status);
+
+                                if (response.status === 404) {
+                                    // console.log("404 Error - End of images");
+                                    break;
+                                }
+
+                                if (response.ok) {
+                                    const imageURL = imageUrl;
+                                    imageArray.push(imageURL); // Push the imageUrl, not a string
+                                } else {
+                                    // console.error(`Error fetching image at index ${currentIndex}: ${response.statusText}`);
+                                    break;
+                                }
+
+                                currentIndex++;
+                            } catch (error) {
+                                // console.error(`An error occurred while fetching the image at index ${currentIndex}: ${error}`);
+                                break;
+                            }
                         }
-                      }
-          
-                      if (imageArray.length > 0) {
-                        const imageArrayJson = JSON.stringify(imageArray);
-                        localStorage.setItem(chapter, imageArrayJson);
-                        displayImages(imageArray);
-                      }
+
+                        if (imageArray.length > 0) {
+                            const imageArrayJson = JSON.stringify(imageArray);
+                            localStorage.setItem("imageArray", imageArrayJson);
+                            // console.log("image array json ", imageArrayJson);
+                            displayImages(imageArray); // Call displayImages after fetching
+                        }
                     }
-          
-                    // Fetch and store images for each chapter when the script runs
-                    for (const chapter in urls) {
-                      fetchAndStoreImages(chapter);
-                    }
-          
+
                     // Load the imageArray from local storage
-                    function loadImagesFromLocalStorage(chapter) {
-                      const imageArrayJson = localStorage.getItem(chapter);
-                      if (imageArrayJson) {
-                        const parsedArray = JSON.parse(imageArrayJson);
-                        return [...new Set(parsedArray)];
-                      }
-                      return [];
+                    function loadImagesFromLocalStorage() {
+                        const imageArrayJson = localStorage.getItem("imageArray");
+                        if (imageArrayJson) {
+                            const parsedArray = JSON.parse(imageArrayJson);
+                            // Use a Set to remove duplicates, and then convert it back to an array
+                            return [...new Set(parsedArray)];
+                        }
+                        return []; // Return an empty array if data is not in local storage.
                     }
-          
+
+                    // console.log(imageArray);
+
                     function displayImages(imageArray) {
-                      // Clear the existing content in the container (assuming sliderHighlightImage is defined)
-                      sliderHighlightImage.innerHTML = "";
-          
-                      if (imageArray.length === 0) {
-                        // Handle the case when imageArray is empty (no images to display)
-                        const noImagesMessage = document.createElement("p");
-                        noImagesMessage.textContent = "No Solutions Available.";
-                        sliderHighlightImage.appendChild(noImagesMessage);
-                      } else {
-                        imageArray.forEach((imageUrl, index) => {
-                          const img = document.createElement("img");
-                          img.src = imageUrl;
-                          img.alt = `Image ${index + 1}`; // Provide an alt attribute for accessibility
-                          sliderHighlightImage.appendChild(img);
-                        });
-                      }
+                        // Clear the existing content in the container (assuming sliderHighlightImage is defined)
+                        sliderHighlightImage.innerHTML = "";
+
+                        if (imageArray.length === 0) {
+                            // Handle the case when imageArray is empty (no images to display)
+                            const noImagesMessage = document.createElement("p");
+                            noImagesMessage.textContent = "No Solutions Available.";
+                            sliderHighlightImage.appendChild(noImagesMessage);
+                        } else {
+                            imageArray.forEach((imageUrl, index) => {
+                                const img = document.createElement("img");
+                                img.src = imageUrl;
+                                img.alt = `Image ${index + 1}`; // Provide an alt attribute for accessibility
+                                sliderHighlightImage.appendChild(img);
+                            });
+                        }
                     }
-          
+
                     // Call this function to display images from the imageArray when needed.
                     displayImages(imageArray);
-          
+
                     // Function to compare and add a red border
                     // Add event listeners for the "Previous" and "Next" buttons
                     const prevButton = document.getElementById("prevBtnCustom2");
                     const nextButton = document.getElementById("nextBtnCustom2");
                     let currentIndex = 0;
-          
+
                     function loadImagesInSlider(index) {
-                      if (index < 0 || index >= imageArray.length) {
-                        // console.error("Invalid image index");
-                        return;
-                      }
-          
-                      const sliderImage = document.getElementById("sliderImage");
-                      sliderImage.src = imageArray[index];
+                        if (index < 0 || index >= imageArray.length) {
+                            // console.error("Invalid image index");
+
+                            return;
+                        }
+
+                        const sliderImage = document.getElementById("sliderImage");
+                        sliderImage.src = imageArray[index];
                     }
-          
+
                     prevButton.addEventListener("click", () => {
-                      currentIndex = Math.max(currentIndex - 1, 0);
-                      loadImagesInSlider(currentIndex);
-                      compareAndHighlightImage();
+                        currentIndex = Math.max(currentIndex - 1, 0);
+                        loadImagesInSlider(currentIndex);
+                        compareAndHighlightImage();
                     });
-          
+
                     nextButton.addEventListener("click", () => {
-                      currentIndex = Math.min(currentIndex + 1, imageArray.length - 1);
-                      loadImagesInSlider(currentIndex);
-                      compareAndHighlightImage();
+                        currentIndex = Math.min(currentIndex + 1, imageArray.length - 1);
+                        loadImagesInSlider(currentIndex);
+                        compareAndHighlightImage();
                     });
-          
+
                     // Initialize the slider with the first image
                     loadImagesInSlider(currentIndex);
-          
+
                     // Function to compare and add a red border to the matching image
                     function compareAndHighlightImage() {
-                      const sliderImage = document.getElementById("sliderImage");
-                      const images = document.querySelectorAll(
-                        "#sliderHighlightImage img"
-                      );
-          
-                      images.forEach((img) => {
-                        if (img.src === sliderImage.src) {
-                          // If the src attributes match, add a red border to the image
-                          img.style.border = "2px solid red";
-                          sliderImage.style.border = "2px solid #fff";
-                        } else {
-                          // If the src attributes don't match, remove the red border (if it was previously set)
-                          img.style.border = "none";
-                        }
-                      });
+                        const sliderImage = document.getElementById("sliderImage");
+                        const images = document.querySelectorAll("#sliderHighlightImage img");
+
+                        images.forEach((img) => {
+                            if (img.src === sliderImage.src) {
+                                // If the src attributes match, add a red border to the image
+                                img.style.border = "2px solid red";
+                                sliderImage.style.border = "2px solid #fff";
+                            } else {
+                                // If the src attributes don't match, remove the red border (if it was previously set)
+                                img.style.border = "none";
+                            }
+                        });
                     }
 
                     const liElements = document.querySelectorAll("li");
 
                     liElements.forEach((li) => {
                         li.addEventListener("click", async (event) => {
-                          const liValue = event.target.textContent.trim();
-                          const variableName = liValue.split(" ").join("_");
-            
-                          if (urls[variableName]) {
-                            localStorage.removeItem("imageArray");
-                            showLoading();
-                            imageArray = [];
-            
-                            baseImageUrl = urls[variableName];
-            
-                            try {
-                              const existingImageArray =
-                                loadImagesFromLocalStorage(variableName);
-            
-                              if (existingImageArray.length > 0) {
-                                imageArray = existingImageArray;
-                              } else {
-                                await fetchAndStoreImages(variableName);
-                                imageArray = loadImagesFromLocalStorage(variableName);
-                              }
-            
-                              loadImagesInSlider(0);
-                              displayImages(imageArray);
-                              compareAndHighlightImage();
-                              document.getElementById(
-                                "choosensolutionHighLights"
-                              ).textContent = `${liValue}`;
-                              document.getElementById("buttonss").style.display = "block";
-                              document.getElementById("closeFullscreenBtn").style.display =
-                                "block";
-                              document.getElementById("whole-Slider").style.display =
-                                "block";
-                              document.getElementById("slider").style.display = "block";
-                              document.getElementById("fullscreenContainer").style.display =
-                                "block";
-                              hideLoading();
-                              document.getElementById("loader").style.display = "none";
-                              document.getElementById("loaders").style.display = "none";
-                              // ... (rest of the code)
-                            } catch (error) {
-                              console.error("An error occurred:", error);
-                            } finally {
-                              hideLoading();
-                              document.getElementById("loader").style.display = "none";
-                              document.getElementById("loaders").style.display = "none";
+                            const liValue = event.target.textContent.trim();
+                            // alert(liValue);
+                            const variableName = liValue.split(" ").join("_");
+
+                            if (urls[variableName]) {
+                                //  alert(`Click Okay.You Selected ${liValue}.`);
+                                // Clear the local storage
+                                localStorage.removeItem("imageArray");
+                                showLoading();
+
+                                // Clear the imageArray
+                                imageArray = [];
+
+                                // Clear the baseImageUrl
+                                baseImageUrl = "";
+
+                                // Set the new baseImageUrl
+                                baseImageUrl = urls[variableName];
+
+                                try {
+                                    // Fetch and store new images with the updated baseImageUrl
+                                    await fetchAndStoreImages();
+
+                                    // Load and display images
+                                    imageArray = loadImagesFromLocalStorage();
+                                    loadImagesInSlider(0);
+
+                                    // Display the updated images
+                                    displayImages(imageArray);
+
+                                    compareAndHighlightImage();
+                                    document.getElementById("choosensolutionHighLights").textContent = `${liValue}`;
+                                    document.getElementById("buttonss").style.display = "block";
+                                    document.getElementById("closeFullscreenBtn").style.display = "block";
+                                    document.getElementById("whole-Slider").style.display = "block";
+                                    document.getElementById("slider").style.display = "block";
+                                    document.getElementById("fullscreenContainer").style.display = "block";
+                                    hideLoading();
+                                    document.getElementById("loader").style.display = "none";
+                                    document.getElementById("loaders").style.display = "none";
+                                } catch (error) {
+                                    //console.error("An error occurred:", error);
+                                    //  alert('An error occurred. Please check the browser console.');
+                                }
                             }
-                          }
                         });
-                      });
+                    });
                 }
             });
         });
