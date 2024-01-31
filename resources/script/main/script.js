@@ -446,7 +446,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       let currentIndex = 0;
           
                       while (true) {
-                        const imageUrl = `${baseImageUrl}${currentIndex + 1}.JPG`;
+                        const imageUrl = `${baseImageUrl}${currentIndex + 1}.jpg`;
           
                         try {
                           const response = await fetch(imageUrl);
