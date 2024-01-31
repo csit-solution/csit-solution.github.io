@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+test
+    <script>
+  // Define URLs for each chapter
+const urls = {
+  Chapter_1: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-1/CH-1-",
+  Chapter_2: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-2/CH-2-",
+  Chapter_3: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-3/CH-3-",
+  Chapter_4: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/Chapter-4/CH-4-",
+  Chapter_5: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/notes/4thSem/TOC/TheoryofComputationHandwrittennotes/TM-Complexity-Classes-Numericals/TOC-Notes-",
+};
+
+// Function to fetch and store images for a given chapter
+async function fetchAndStoreImages(chapter) {
+  let baseImageUrl = urls[chapter];
+  let imageArray = [];
+
+  let currentIndex = 0;
+
+  while (true) {
+    const imageUrl = `${baseImageUrl}${currentIndex + 1}.JPG`;
+
+    try {
+      const response = await fetch(imageUrl);
+
+      if (response.status === 404) {
+        break;
+      }
+
+      if (response.ok) {
+        const imageURL = imageUrl;
+        imageArray.push(imageURL);
+      } else {
+        break;
+      }
+
+      currentIndex++;
+    } catch (error) {
+      break;
+    }
+  }
+
+  if (imageArray.length > 0) {
+    const imageArrayJson = JSON.stringify(imageArray);
+    localStorage.setItem(chapter, imageArrayJson);
+    displayImages(imageArray);
+  }
+}
+
+// Fetch and store images for each chapter when the script runs
+for (const chapter in urls) {
+  fetchAndStoreImages(chapter);
+}
+
+// Function to display images (replace this with your actual implementation)
+function displayImages(images) {
+  // Your code to display images goes here
+  console.log("Displaying images:", images);
+}
+
+
+    </script>
+</body>
+</html>
