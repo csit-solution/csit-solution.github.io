@@ -17,7 +17,7 @@
    <meta property="og:description"
       content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
    <meta property="og:image"
-      content="https://raw.githubusercontent.com/Dilli822/dilli822.github.io/main/resources/img/appMetaCover/Lite CSIT Solution App Front Page.png">
+      content="https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/img/logos/main/CSIT%20LOGO.jpg">
    <meta property="og:image:alt" content="Lite CSIT Solution App Front Page">
    <meta property="og:url" content="https://dilli822.github.io/csit_solutionLite.html">
    <meta property="og:type" content="website">
@@ -28,13 +28,24 @@
    <meta name="twitter:description"
       content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
    <meta name="twitter:image"
-      content="https://raw.githubusercontent.com/Dilli822/dilli822.github.io/main/resources/img/appMetaCover/Lite CSIT Solution App Front Page.png">
+      content="https://raw.githubusercontent.com/csit-solution/csit-solution.github.io/main/resources/img/logos/main/CSIT%20LOGO.jpg">
    <!-- Additional Meta Tags -->
    <meta name="application-name" content="Lite CSIT Solution App">
    <meta name="msapplication-TileColor" content="#ffffff">
    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
    <meta property="og:locale" content="en_US">
+
+
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-58J72831LP"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-58J72831LP');
+   </script>
 
    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon_io/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon_io/android-chrome-192x192.png">
@@ -119,7 +130,9 @@
 </head>
 
 <body>
-   <!-- Add this code inside the body tag, preferably after the main content -->
+
+
+   <!-- Username Modal -->
    <div class="modal fade" id="usernameModal" tabindex="-1" role="dialog" aria-labelledby="usernameModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -135,13 +148,33 @@
                <input type="text" id="usernameInput" class="form-control" placeholder="Username" />
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-outline-success" data-dismiss="modal"
-                  id="saveUsername">Save</button>
+               <button type="button" class="btn btn-outline-success" onclick="saveUsername()">Save</button>
             </div>
          </div>
       </div>
    </div>
-   <main id="content">
+
+   <!-- Password Modal -->
+   <div class="modal fade" id="fadeMoDEI" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="passwordModalLabel">Enter Password to Access the Page</h5>
+               <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <input type="password" id="inp" class="form-control" placeholder="Password" />
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-outline-success" onclick="cword()">Submit</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <main id="content" style="display: none;">
       <header class="bg-success">
          <p class="pt-2 m-0 marquee text-white">
             This is only a lite Version of CSIT Solution App for BSc.CSIT Student.Currently,Only a few Semester Notes
@@ -150,9 +183,9 @@
          <hr class="mt-2">
       </header>
       <div class="container-fluid ">
-<!--          <button class="btn btn-outline-success mb-1" onclick=goBack()>
+         <button class="btn btn-outline-success mb-1" onclick=goBack()>
             Go Back
-         </button> -->
+         </button>
 
          <div class="row">
             <div class="col-12 col-md-2 overflow-auto  border-end order-1" id="heightManu">
@@ -269,7 +302,7 @@
 
                <div class="row">
                   <div class="col-12">
-                     <p class="m-0" id=""> <i class="fa-solid fa-warning"></i> Warning: <br />"
+                     <p class="mt-2" id=""> <i class="fa-solid fa-warning"></i> Warning: <br />"
                         <span id="copyright-text"></span>
                         "
                      </p>
@@ -361,6 +394,7 @@
             </section>
          </div>
       </footer>
+
       <!-- Modal -->
       <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
@@ -439,9 +473,12 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
       <script src="./resources/script/main/Notesscript.js"></script>
       <script src="./resources/script/utility/fullScreenButtons.js"></script>
+      <script src="./resources/script/fun/j-query.js"></script>
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDRXM6LQDW"></script>
+
       <script>
+
          // Function to show the donation part
          function showDonation() {
             $('#imageModal').modal('show');
@@ -496,7 +533,7 @@
          var currentYear = new Date().getFullYear();
 
          // Update the copyright text
-         document.getElementById("copyright-text").innerHTML = "Theory of Computation note is prepared and powered by a T.U. Professor and Er. Manoj Kumar Guragai. <br/> &copy; " + currentYear + " All rights reserved. Unauthorized use or reproduction of this content is prohibited.";
+         document.getElementById("copyright-text").innerHTML = "This note is prepared and powered by a T.U. Professor and Er. Manoj Kumar Guragai. <br/> &copy; " + currentYear + " All rights reserved. Unauthorized use or reproduction of this content is prohibited.";
 
 
          const goBack = () => {
@@ -505,6 +542,7 @@
          };
 
       </script>
+   </main>
 
 </body>
 
