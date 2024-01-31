@@ -95,15 +95,15 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-// Create a new Date object
-const currentDate = new Date();
+// // Create a new Date object
+// const currentDate = new Date();
 
-// Get the current year
-const year = currentDate.getFullYear();
+// // Get the current year
+// const year = currentDate.getFullYear();
 
-// Select the span element with the id "currentYear" and set its content
-const yearElement = document.getElementById("currentYear");
-yearElement.textContent = year;
+// // Select the span element with the id "currentYear" and set its content
+// const yearElement = document.getElementById("currentYear");
+// yearElement.textContent = year;
 
 var isHidden = true;
 document.getElementById("hideShow").style.display = "none";
