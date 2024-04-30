@@ -118,11 +118,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Semester 4
     const fourthSem = [
         // Courses for semester 4...
-        { name: "🧠 Theory of Computation", years: ["Coming Soon!"] },
-        { name: "⛁ Database And Management System", years: ["Coming Soon!"] },
-        { name: "🤖 Artificial Intelligence	", years: ["Coming Soon!"] },
-        { name: "🛜 Computer Network", years: ["Coming Soon!"] },
-        { name: "⚙️ Operating System", years: ["Coming Soon!"] },
+        { name: "🧠 Theory of Computation", years: ["TOC_207","TOC_207","TOC_207","TOC_207"] },
+        { name: "🛜 Computer Network", years: ["CN_207", "CN_207", "CN_207", "CN_207","CN_207"] },
+        { name: "⚙️ Operating System", years: ["OS_207", "OS_207", "OS_207", "OS_207"] },
+        { name: "⛁ Database And Management System", years: ["DBMS_207", "DBMS_207","DBMS_207","DBMS_207"] },
+        { name: "🤖 Artificial Intelligence ", years: ["AI_2076_BS_TU", "AI_2078_BS_TU", "AI_2079_BS_TU"] },
     ];
     // Semester 5
     const fifthSem = [
@@ -349,9 +349,12 @@ document.addEventListener("DOMContentLoaded", function () {
                       STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
                       STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
 
-                      // DS_MATH_2078_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2078/ds-2078-`,
-                      // DS_MATH_2076_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2076/ds-2076-`,
-                      // DS_MATH_2075_BS_TU: `${SecondSemParentUrl}/DiscreteMath/2075/ds-2075-`,
+                      AI_2076_BS_TU: `https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/AI/AI-2076/AI-2076-`,
+                      AI_2078_BS_TU: `https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/AI/AI-2078/AI-2078-`,
+                      AI_2079_BS_TU: `https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/AI/AI-2079/AI-2079-`,
+
+
+                      
 
                       // OOP_2078_BS_TU: `${SecondSemParentUrl}/OOP/2078/oop-2078-`,
                       // OOP_2076_BS_TU: `${SecondSemParentUrl}/OOP/2076/oop-2076-`,
@@ -441,10 +444,21 @@ document.addEventListener("DOMContentLoaded", function () {
                         let currentIndex = 0;
 
                         while (true) {
-                            const imageUrl = `${baseImageUrl}${currentIndex + 1}.jpg`;
-
+                            // const imageUrl = `${baseImageUrl}${currentIndex + 1}.png`;
                             // console.log("Fetching image:", imageUrl);
-
+                            const imageFormats = ['.png', '.jpg'];
+                            let imageUrl = '';
+                            for (const format of imageFormats) {
+                                imageUrl = `${baseImageUrl}${currentIndex + 1}${format}`;
+                            
+                                // Check if the image exists with this format
+                                const response = await fetch(imageUrl, { method: 'HEAD' });
+                                if (response.ok) {
+                                    // If image exists, break the loop and use this format
+                                    break;
+                                }
+                            }
+                            
                             try {
                                 const response = await fetch(imageUrl);
 
@@ -465,6 +479,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 currentIndex++;
                             } catch (error) {
+                                
                                 // console.error(`An error occurred while fetching the image at index ${currentIndex}: ${error}`);
                                 break;
                             }
