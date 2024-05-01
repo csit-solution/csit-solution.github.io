@@ -343,7 +343,7 @@
          <div class=" mt-3 bg-success text-white text-center p-2">
             <h6 class="mt-1">This Web App is Created, Developed & Maintained by <a
                   class="text-info text-decoration-none" href="https://www.instagram.com/dilli_hangrae/"> Dilli Hang Rai
-               </a> | version 1.2 </h6>
+               </a> | version 1.4 | 2023 - <span id="currentYear"> </span> </h6>
             <section class="mt-0 social-media-links">
                <span><a> Click on the Icon to Follow & to Share the Latest Solution with me | For Queries and Advice
                   </a></span>
@@ -493,6 +493,16 @@
             // Redirect to the specified URL
             window.location.href = './csit_notes.html';
          }
+
+                  // Get the current year
+         var currentYear = new Date().getFullYear();
+
+         // Find the span element with id "currentYear"
+         var currentYearSpan = document.getElementById("currentYear");
+
+         // Set the innerHTML of the span element to the current year
+         currentYearSpan.innerHTML = currentYear;
+         
       </script>
 
 </body>
