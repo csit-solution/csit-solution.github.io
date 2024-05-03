@@ -39,7 +39,7 @@
 
    <!-- Google tag (gtag.js) -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-58J72831LP"></script>
-   
+
    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon_io/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon_io/android-chrome-192x192.png">
    <link rel="manifest" href="./resources/favicon_io/site.webmanifest">
@@ -275,12 +275,21 @@
                </div>
                <hr>
                <div class="row">
+                  <h5> <i class="fa-solid fa-file-pdf"></i> Download Past Year Solutions .zip </h5>
                   <div class="col-12 d-flex align-items-center">
-                     <h5> <i class="fa-solid fa-file-pdf"></i> Subjects Notes </h5> &nbsp;&nbsp;
+                     <!-- <h5> <i class="fa-solid fa-file-pdf"></i> Subjects Notes </h5> &nbsp;&nbsp;
                      <button class="btn btn-outline-danger" data-toggle="" data-target=""
                         onclick="redirectToNotesPage()">
                         Click For Notes
+                     </button> -->
+
+
+                     <br>
+                     <button class="btn btn-outline-danger" data-toggle="" data-target=""
+                        onclick="redirectToSolutionPage()">
+                        Click For Downloading Solutions
                      </button>
+
                   </div>
                </div>
                <hr>
@@ -515,6 +524,10 @@
          gtag('js', new Date());
 
          gtag('config', 'G-8GGPYP0FYY');
+
+         function redirectToSolutionPage() {
+            window.location.href = './solutionZip.html';
+         }
       </script>
 
 </body>
