@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lite CSIT Solution App </title>
+    <meta name="description"
+        content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+    <meta name="keywords"
+        content="CSIT, solution, past questions solutions, BSc.CSIT, web application, csitsolution, csitsolution github">
+    <meta name="author" content="Dili Hang Rai">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lite CSIT Solution App">
+    <meta property="og:description"
+        content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Dilli822/dilli822.github.io/main/resources/img/appMetaCover/Lite CSIT Solution App Front Page.png">
+    <meta property="og:image:alt" content="Lite CSIT Solution App Front Page">
+    <meta property="og:url" content="https://dilli822.github.io/csit_solutionLite.html">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="1115582239317761">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lite CSIT Solution App">
+    <meta name="twitter:description"
+        content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/Dilli822/dilli822.github.io/main/resources/img/appMetaCover/Lite CSIT Solution App Front Page.png">
+    <!-- Additional Meta Tags -->
+    <meta name="application-name" content="Lite CSIT Solution App">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:locale" content="en_US">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-58J72831LP"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon_io/android-chrome-192x192.png">
+    <link rel="manifest" href="./resources/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .marquee {
+            white-space: nowrap;
+            font-size: 14px;
+            overflow: hidden;
+            /* position: relative; */
+            animation: marquee 35s linear infinite;
+        }
+
+        .marquee p {
+            display: inline-block;
+            padding-right: 100%;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .modal-open .container-fluid {
+            opacity: 0;
+        }
+
+        @keyframes glowAndMove {
+            0% {
+                text-shadow: 0 0 10px #00db2c;
+                transform: translateX(0);
+                transform: translateY(0);
+            }
+
+            50% {
+                text-shadow: 0 0 20px #187bd1;
+                transform: translateX(10px);
+                transform: translateY(2px);
+            }
+
+            100% {
+                text-shadow: 0 0 10px #ff00a6;
+                transform: translateX(0);
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #ff0000;
+            }
+
+            50% {
+                text-shadow: 0 0 20px #ff0000;
+            }
+
+            100% {
+                text-shadow: 0 0 10px #ff0000;
+            }
+        }
+
+        #donate,
+        .logo {
+            animation: glow 1500ms infinite;
+            /* Adjust the duration as needed */
+            animation: glowAndMove 1500ms infinite;
+            /* Adjust the duration as needed */
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <main id="content">
+        <header class="bg-success">
+            <p class="pt-2 m-0 marquee text-white">
+                This is only a lite Version of KEC's & Third Party Solution for BSc.CSIT Student. Currently,Only a few
+                Semester Solution is
+                available. App may be slower due to high traffic.Thanks | @dilli_hangrae
+            </p>
+            <hr class="mt-2" />
+        </header>
+        <div class="container-fluid">
+    
+            <div class="row">
+           
+                <div class="col-3">
+                    <div class="col-7">
+                        <figure>
+                            <img src="./resources/img/logos/main/logocsit.jpg" alt="csit-solution" class="logo"
+                                style="width: 100%;">
+                        </figure>
+                    </div>
+                        <hr>
+                        <div>
+                            <h3>Semester: <span  id="semester"></span></h3>
+                            <hr>
+                            <h4>Welcome, <span  id="username"></span>. You are doing great. Keep up! </h4>
+                            <hr>
+                        </div>
+              
+                </div>
+
+                <div class="col-7">
+                    <br>
+                    <h3> Download All the Solutions</h3>
+                    <br>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        1st Semester
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="./resources/docs/" download>Introduction to Technology</a></li>
+                                        <li><a href="" download>C-programming</a></li>
+                                        <li><a href="" download>Digital Logics</a></li>
+                                        <li><a href="" download>Physics</a></li>
+                                        <li><a href="" download>Mathematics-I</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        2nd Semester
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="./resources/docs/solutions/2ndSem/Microprocessor.zip" download>Microprocessor</a></li>
+                                        <li><a href="./resources/docs/solutions/2ndSem/OOP.zip" download>OOP</a></li>
+                                        <li><a href="./resources/docs/solutions/2ndSem/DiscreteMath.zip" download>Discrete Math</a></li>
+                                        <li><a href="./resources/docs/solutions/2ndSem/STAT-I.zip" download>Statistics-I</a></li>
+                                        <li><a href="./resources/docs/solutions/2ndSem/Maths-II.zip" download>Mathematics-II</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        3rd Semester
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="./resources/docs/solutions/3rdSem/CA.zip" download>Computer Architecture</a></li>
+                                        <li><a href="./resources/docs/solutions/3rdSem/CG.zip" download>Computer Graphics</a></li>
+                                        <li><a href="./resources/docs/solutions/3rdSem/STATS-II.zip" download>Statistics-II</a></li>
+                                        <li><a href="./resources/docs/solutions/3rdSem/DSA.zip" download>Data Structure and Algorithm</a></li>
+                                        <li><a href="./resources/docs/solutions/3rdSem/NM.zip" download>Numerical Method</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapse4th" aria-expanded="false" aria-controls="collapseTwo">
+                                        4th Semester
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse4th" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="./resources/docs/solutions/4thSem/TOC.zip" download>Theory of Computation</a></li>
+                                        <li><a href="./resources/docs/solutions/4thSem/CN.zip" download>Computer Networks</a></li>
+                                        <li><a href="./resources/docs/solutions/4thSem/OS.zip" download>Operating Systems</a></li>
+                                        <li><a href="./resources/docs/solutions/4thSem/DBMS.zip" download>Database Management System </a></li>
+                                        <li><a href="./resources/docs/solutions/4thSem/AI.zip" >Aritifical-Intelligence</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFifth">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapse5th" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        5th Semester
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse5th" class="collapse" aria-labelledby="headingFifth"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="./resources/docs/" download>Design Analysis and Algorithms</a></li>
+                                        <li><a href="" download>System Analysis & Design</a></li>
+                                        <li><a href="" download>Simulation & Modeling</a></li>
+                                        <li><a href="" download>Cryptography</a></li>
+                                        <li><a href="" download>Web Technology</a></li>
+                                        <li><a href="" download>Elective I</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSixth">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseSixth" aria-expanded="false"
+                                        aria-controls="collapseSixth">
+                                        6th Semester
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSixth" class="collapse" aria-labelledby="headingSixth"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                            coming soon........
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseSeventh" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        7th Semester
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSeventh" class="collapse" aria-labelledby="headingSeventh"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    coming soon........
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        8th Semester
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="" data-parent="#accordion">
+                                <div class="card-body">
+                                    coming soon........
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="mt-3 bg-success text-white text-center p-2">
+                <h6 class="mt-1">This Web App is Created, Developed & Maintained by <a
+                        class="text-info text-decoration-none" href="https://www.instagram.com/dilli_hangrae/"> Dilli
+                        Hang Rai
+                    </a> | version 1.4 | <span> 2023 - <span id="currentYear"> </span> </span></h6>
+                <section class="mt-0 social-media-links">
+                    <span><a> Click on the Icon to Follow & to Share the Latest Solution with me | For Queries and
+                            Advice
+                        </a></span>
+                    <span><a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                                class="fab fa-instagram"></i></a></span>
+                    <span><a href="https://www.youtube.com/channel/UCGMG6ppG6kBj7gp1zROQAFA" target="_blank"><i
+                                class="fab fa-youtube"></i></a></span>
+                    <span><a href="https://www.linkedin.com/in/dilli-hang-rai-4724411b2/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a></span>
+                    <span><a href="https://github.com/Dilli822" target="_blank"><i class="fab fa-github"></i></a></span>
+                    <span><a href="https://twitter.com/dilli_hangrae" target="_blank"><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a></span>
+                </section>
+            </div>
+        </footer>
+
+
+
+        <!-- Include Bootstrap JS and Pooper.js (required for dropdown functionality) -->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@pooperjs/core@2.11.6/dist/umd/pooper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+        <script>
+            var currentYear = new Date().getFullYear();
+
+            // Find the span element with id "currentYear"
+            var currentYearSpan = document.getElementById("currentYear");
+
+            // Set the innerHTML of the span element to the current year
+            currentYearSpan.innerHTML = currentYear;
+
+
+            // Check if the username and semester are already saved in localStorage
+            const savedUsername = localStorage.getItem("username");
+
+            var savedSemester = localStorage.getItem("semester");
+            document.getElementById("semester").innerHTML = savedSemester;
+
+            document.getElementById("username").innerHTML = savedUsername;
+
+        </script>
+
+
+</body>
+
+</html>
