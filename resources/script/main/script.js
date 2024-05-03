@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Courses for semester 4...
         { name: "🧠 Theory of Computation", years: ["TOC_207","TOC_207","TOC_207","TOC_207"] },
         { name: "🛜 Computer Network", years: ["CN_2076_BS_TU", "CN_2078_BS_TU", "CN_2079_BS_TU", "CN_2080_BS_TU"] },
-        { name: "⚙️ Operating System", years: ["OS_207", "OS_207", "OS_207", "OS_207"] },
+        { name: "⚙️ Operating System", years: ["OS_2076_BS_TU", "OS_2078_BS_TU", "OS_2079_BS_TU", "OS_2080_BS_TU"] },
         { name: "⛁ Database And Management System", years: ["DBMS_2076_BS_TU", "DBMS_2078_BS_TU","DBMS_2080_BS_TU"] },
         { name: "🤖 Artificial Intelligence ", years: ["AI_2076_BS_TU", "AI_2078_BS_TU", "AI_2079_BS_TU"] },
     ];
@@ -348,8 +348,11 @@ document.addEventListener("DOMContentLoaded", function () {
                       CN_2079_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/CN/CN-2079/CN-2079-",
                       CN_2080_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/CN/CN-2080/CN-2080-",
 
-                      NM_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2075/NM-2075-",
-                      NM_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/NM/2077/NM-2077-",
+                      OS_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/OS/OS-2076/OS-2076-",
+                      OS_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/OS/OS-2078/OS-2078-",
+                      OS_2079_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/OS/OS-2079/OS-2079-",
+                      OS_2080_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/OS/OS-2080/OS-2080-",
+
 
                       DBMS_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/DBMS/DBMS-2076/DBMS-2076-",
                       DBMS_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/DBMS/DBMS-2078/DBMS-2078-",
