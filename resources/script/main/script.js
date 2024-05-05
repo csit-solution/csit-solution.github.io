@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Semester 4
     const fourthSem = [
         // Courses for semester 4...
-        { name: "🧠 Theory of Computation", years: ["TOC_207","TOC_207","TOC_207","TOC_207"] },
+        { name: "🧠 Theory of Computation", years: ["TOC_2076_BS_TU","TOC_2078_BS_TU","TOC_2079_BS_TU","TOC_2080_BS_TU"] },
         { name: "🛜 Computer Network", years: ["CN_2076_BS_TU", "CN_2078_BS_TU", "CN_2079_BS_TU", "CN_2080_BS_TU"] },
         { name: "⚙️ Operating System", years: ["OS_2076_BS_TU", "OS_2078_BS_TU", "OS_2079_BS_TU", "OS_2080_BS_TU"] },
         { name: "⛁ Database And Management System", years: ["DBMS_2076_BS_TU", "DBMS_2078_BS_TU","DBMS_2080_BS_TU"] },
@@ -314,6 +314,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const thirdSemParentUrl = "./resources/CSITSolution/pastyearsolutions/thirdSemester"
 
                     const urls = {
+
                       DS_MATH_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-",
                       DS_MATH_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2076/ds-2076-",
                       DS_MATH_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2075/ds-2075-",
@@ -338,7 +339,6 @@ document.addEventListener("DOMContentLoaded", function () {
                       DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
 
 
-
                       // 4TH SEMESTER
                       CG_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2075/CG-2075-",
                       CG_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/CG/2077/CG-2077-",
@@ -347,6 +347,13 @@ document.addEventListener("DOMContentLoaded", function () {
                       CN_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/CN/CN-2078/CN-2078-",
                       CN_2079_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/CN/CN-2079/CN-2079-",
                       CN_2080_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/CN/CN-2080/CN-2080-",
+
+
+                      TOC_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/TOC/TOC-2076/TOC-2076-",
+                      TOC_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/TOS/TOC-2078/TOC-2078-",
+                      TOC_2079_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/TOC/TOC-2079/TOC-2079-",
+                      TOC_2080_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/TOC/TOC-2080/TOC-2080-",
+
 
                       OS_2076_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/OS/OS-2076/OS-2076-",
                       OS_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/OS/OS-2078/OS-2078-",
@@ -363,24 +370,6 @@ document.addEventListener("DOMContentLoaded", function () {
                       AI_2079_BS_TU: `https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/4thSemester/AI/AI-2079/AI-2079-`,
 
 
-                      
-
-                      // OOP_2078_BS_TU: `${SecondSemParentUrl}/OOP/2078/oop-2078-`,
-                      // OOP_2076_BS_TU: `${SecondSemParentUrl}/OOP/2076/oop-2076-`,
-                      // OOP_2075_BS_TU: `${SecondSemParentUrl}/OOP/2075/oop-2075-`,
-
-                      // Mathematics_II_2078_BS_TU: `${SecondSemParentUrl}/Maths-II/2078/Maths-II-2078-`,
-                      // Mathematics_II_2076_BS_TU: `${SecondSemParentUrl}Maths-II/2076/Maths-II-2076-`,
-                      // Mathematics_II_2075_BS_TU: `${SecondSemParentUrl}/Maths-II/2075/Maths-II-2075-`,
-
-                      // MicroProcessor_2078_BS_TU: `${SecondSemParentUrl}/Microprocessor/2078/microprocessor-2078-`,
-                      // MicroProcessor_2076_BS_TU: `${SecondSemParentUrl}/Microprocessor/2076/microprocessor-2076-`,
-                      // MicroProcessor_2075_BS_TU: `${SecondSemParentUrl}/Microprocessor/2075/microprocessor-2075-`,
-
-                      // STATISTICS_I_2078_BS_TU: `${SecondSemParentUrl}/STAT-I/2078/STATS-I-2078-`,
-                      // STATISTICS_I_2076_BS_TU: `${SecondSemParentUrl}/STAT-I/2076/STATS-I-2076-`,
-                      // STATISTICS_I_2075_BS_TU: `${SecondSemParentUrl}/STAT-I/2075/STATS-I-2075-`,
-
                       DSA_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2077/DSA-2077-",
                       DSA_2078_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/DSA/2078/DSA-2078-",
 
@@ -395,21 +384,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                       STATS_II_2075_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2075/STATS-II-2075-",
                       STATS_II_2077_BS_TU: "https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/thirdSemester/STATS-II/2077/STATS-II-2077-",
-
-                      // DSA_2077_BS_TU: `${thirdSemParentUrl}/DSA/2077/DSA-2077-`,
-                      // DSA_2078_BS_TU: `${thirdSemParentUrl}/DSA/2078/DSA-2078-`,
-
-                      // CG_2075_BS_TU: `${thirdSemParentUrl}/CG/2075/CG-2075-`,
-                      // CG_2077_BS_TU: `${thirdSemParentUrl}/CG/2077/CG-2077-`,
-
-                      // CA_2078_BS_TU: `${thirdSemParentUrl}/CA/2078/CA-2078-`,
-                      // CA_2077_BS_TU: `${thirdSemParentUrl}/CA/2077/CA-2077-`,
-
-                      // NM_2075_BS_TU: `${thirdSemParentUrl}/NM/2075/NM-2075-`,
-                      // NM_2077_BS_TU: `${thirdSemParentUrl}/NM/2077/NM-2077-`,
-
-                      // STATS_II_2075_BS_TU: `${thirdSemParentUrl}/STATS-II/2075/STATS-II-2075-`,
-                      // STATS_II_2077_BS_TU: `${thirdSemParentUrl}/STATS-II/2077/STATS-II-2077-`,
                     };
 
                     let baseImageUrl;
