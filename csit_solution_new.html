@@ -34,22 +34,34 @@
     <meta property="og:locale" content="en_US">
 
     <title>CSIT Solution New</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        *{
-            letter-spacing: 1px;
-        }
-        li a {
-            color: rgb(0, 109, 0) !important;
-        }
+        <style>
+            *, .lead {
+                letter-spacing: 1px;
+            }
+    
+            li a ,a, .carousel-control-prev-icon, .carousel-control-next{
+                color: rgb(0, 109, 0) !important;
+            }
+    
+            .carousel-image {
+                height: 60vh;
+                /* Adjust the height as needed */
+                object-fit: contain;
+            }
 
-        .carousel-image {
-            height: 60vh;
-            /* Adjust the height as needed */
-            object-fit: contain;
+            .goToUp{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            font-size: 45px;
+            display: flex;
+            width: 100%;
+            justify-content: end;
         }
-    </style>
+        </style>
 </head>
 
 <body>
@@ -74,12 +86,12 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#first">First</a></li>
                                 <li><a class="dropdown-item" href="#second">Second</a></li>
-                                <li><a class="dropdown-item" href="#">Third</a></li>
-                                <li><a class="dropdown-item" href="#">Fourth</a></li>
-                                <li><a class="dropdown-item" href="#">Fifth</a></li>
-                                <li><a class="dropdown-item" href="#">Sixth</a></li>
-                                <li><a class="dropdown-item" href="#">Seventh</a></li>
-                                <li><a class="dropdown-item" href="#">Eighth</a></li>
+                                <li><a class="dropdown-item" href="#third">Third</a></li>
+                                <li><a class="dropdown-item" href="#fourth">Fourth</a></li>
+                                <li><a class="dropdown-item" href="#fifth">Fifth</a></li>
+                                <li><a class="dropdown-item" href="#sixth">Sixth</a></li>
+                                <li><a class="dropdown-item" href="#seventh">Seventh</a></li>
+                                <li><a class="dropdown-item" href="#eighth">Eighth</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -88,25 +100,28 @@
                                 Old/New Syllabus
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./index.html">Old 2074 Syllabus (Percentage Marks)</a></li>
-                                <li><a class="dropdown-item" href="#">New 2078 Syllabus (GPA
-                                        Marks)</a></li>
+                                <li><a class="dropdown-item" href="./index.html">Old 2074 Syllabus</a></li>
+                                <li><a class="dropdown-item" href="./csit_solution_new.html">New 2079 Syllabus </a></li>
+                                <li>
+                                    <a class="dropdown-item" href="./indexOLD.html">Old CSIT Solution App Version</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./indexOLD.html">Old Version</a>
-                        </li>
+
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+    <span class="container goToUp ">
+        <a href="#topp"> <i class="fa-regular fa-circle-up"></i> </a>
+    </span>
 
 
-    <section class="hero bg-light">
+    <section class="hero bg-light" id="topp">
         <div class="container-sm d-flex flex-column flex-md-row justify-content-between align-items-center">
             <div class="col-md-8 col-sm-12 order-md-1 order-2 order-sm-2">
                 <h3 class="display-6">One Solution For All</h3>
@@ -157,34 +172,35 @@
         CSIT Solution Is A Valuable Educational Resource Created With Simple Frontend
         Technologies.<br>
         Aims to Provide Students With Free Solutions to Specific-Semester Question.
+        <span id="first"></span>
         <br>
-        <span class="text-center lead">
-            Powered By Norai | @dilli_hangrae
-        </span>
+        Powered By: <a href="https://www.linkedin.com/company/nor-ai" class="text-decoration-none" target="_blank">Nōrai</a>  | <a href="https://www.linkedin.com/in/dilli708/" class="text-decoration-none" target="_blank">Dilli Hang Rai</a> 
+
     </p>
+
     <br>
 
-    <section class="semester py-5 bg-light">
+    <section class="semester py-5 bg-light" >
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-md-6 mb-4 col-sm-12 order-md-1 order-2 order-sm-2" id="first">
+                <div class="col-md-6 mb-4 col-sm-12 order-md-1 order-2 order-sm-2" >
                     <h3 class="display-6">FIRST SEMESTER</h3>
                     <br>
                     <ul class="list-style">
                         <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csc-109IT.html"> CSC 109 Introduction to IT </a></li>
+                                href="./solutions/semester/first/csc-109IT.html"> CSC 114 Introduction to IT </a></li>
                         <br>
                         <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csc-110DL.html"> CSC 110 Digital Logic </a> </li><br>
+                                href="./solutions/semester/first/csc-110DL.html"> CSC 115 Digital Logic </a> </li><br>
                         <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csit-first-sem.html"> CSC 111 C-Programming</a></li>
+                                href="./solutions/semester/first/csit-first-sem.html"> CSC 116 C-Programming</a></li>
                         <br>
 
                         <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csit-first-sem.html"> MTH 112 Mathematics-I</a></li>
+                                href="./solutions/semester/first/csit-first-sem.html"> MTH 117 Mathematics-I</a></li>
                         <br>
-                        <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csit-first-sem.html"> CSC 113 Physics</a></li><br>
+                        <li id="second"> <a class="text-black text-decoration-none"
+                                href="./solutions/semester/first/csit-first-sem.html"> CSC 118 Physics</a></li><br>
                     </ul>
 
                 </div>
@@ -210,7 +226,7 @@
                 <div class="col-md-5 mb-4 col-sm-12">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <h3 class="display-6" id="second">SECOND SEMESTER</h3>
+                            <h3 class="display-6" >SECOND SEMESTER</h3>
                             <br>
                             <ul class="list-style">
                                 <li> <a class="text-black text-decoration-none"
@@ -225,7 +241,7 @@
                                 <li> <a class="text-black text-decoration-none"
                                         href="./solutions/semester/first/csit-first-sem.html"> MTH 1168
                                         Mathematics-II</a></li><br>
-                                <li> <a class="text-black text-decoration-none"
+                                <li id="third"> <a class="text-black text-decoration-none"
                                         href="./solutions/semester/first/csit-first-sem.html"> STA 169 Statistics-I</a>
                                 </li><br>
                             </ul>
@@ -242,20 +258,20 @@
                         <br>
                         <ul class="list-style">
                             <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csc-109IT.html"> CSC 206 Data Structure and Algorithms </a>
+                                    href="./solutions/semester/first/csc-109IT.html"> CSC 211 Data Structure and Algorithms </a>
                             </li> <br>
                             <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csc-110DL.html"> CSC 207 Numerical Method </a> </li>
+                                    href="./solutions/semester/first/csc-110DL.html"> CSC 212 Numerical Method </a> </li>
                             <br>
                             <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csit-first-sem.html"> CSC 208 Computer Architecture </a>
+                                    href="./solutions/semester/first/csit-first-sem.html"> CSC 213 Computer Architecture </a>
                             </li><br>
 
                             <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csit-first-sem.html"> CSC 209 Computer Graphics</a>
+                                    href="./solutions/semester/first/csit-first-sem.html"> CSC 214 Computer Graphics</a>
                             </li><br>
-                            <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csit-first-sem.html"> STA 210 Statistics-II</a></li><br>
+                            <li id="fourth"> <a class="text-black text-decoration-none"
+                                    href="./solutions/semester/first/csit-first-sem.html"> STA 215 Statistics-II</a></li><br>
                         </ul>
 
                     </div>
@@ -288,19 +304,19 @@
                                 <br>
                                 <ul class="list-style">
                                     <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csc-109IT.html"> CSC 257 Theory of Computation
+                                            href="./solutions/semester/first/csc-109IT.html"> CSC 262 Theory of Computation
                                         </a></li> <br>
                                     <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csc-110DL.html"> CSC 258 Computer Networks
+                                            href="./solutions/semester/first/csc-110DL.html"> CSC 263 Computer Networks
                                             </a> </li><br>
                                     <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 259 Operating Systems 
+                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 264 Operating Systems 
                                  </a></li><br>
                                     <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 260 Database Management System
+                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 265 Database Management System
                          </a></li><br>
-                                    <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 261 Artificial Intelligence
+                                    <li id="fifth"> <a class="text-black text-decoration-none"
+                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 266 Artificial Intelligence
                                           </a></li><br>
                                 </ul>
                             </div>
@@ -319,138 +335,209 @@
                         <br>
                         <ul class="list-style">
                             <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csc-109IT.html"> CSC 109 Introduction to IT </a>
+                                    href="./solutions/semester/first/csc-109IT.html"> CSC 325 Design and Analysis of Algorithms </a>
                             </li> <br>
                             <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csc-110DL.html"> CSC 110 Digital Logic </a> </li>
+                                    href="./solutions/semester/first/csc-110DL.html"> CSC 326 System Analysis and Design </a> </li>
                             <br>
                             <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csit-first-sem.html"> CSC 111 C-Programming</a>
+                                    href="#"> CSC 327 Cryptography</a>
                             </li><br>
 
                             <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csit-first-sem.html"> MTH 112 Mathematics-I</a>
+                                    href="#"> CSC 328 Simulation and Modeling</a>
                             </li><br>
-                            <li> <a class="text-black text-decoration-none"
-                                    href="./solutions/semester/first/csit-first-sem.html"> CSC 113 Physics</a></li><br>
+                            <li id="sixth"> <a class="text-black text-decoration-none"
+                                    href="#"> CSC 329 Web Technology</a></li><br>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Electives I
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Multimedia Computing (CSC330)</a></li>
+                                            <li><a class="dropdown-item" href="#">Wireless Networking (CSC331)</a></li>
+                                            <li><a class="dropdown-item" href="#">Image Processing (CSC332)</a></li>
+                                            <li><a class="dropdown-item" href="#">Knowledge Management (CSC333)</a></li>
+                                            <li><a class="dropdown-item" href="#">Society and Ethics in Information Technology (CSC334)</a></li>
+                                            <li id="sixth"><a class="dropdown-item" href="#">Microprocessor Based Design (CSC335)</a></li>
+                                        </ul>
+                                    </li>
+                                    <br>
                         </ul>
 
                     </div>
-                    <div class="col-md-6 col-sm-12  order-md-1 order-2 order-sm-1 ">
-                        <div class="col-md-12 col-sm-12 mb-3">
+                    <div class="col-md-6 col-sm-12  order-md-1  order-sm-1 ">
+                        <div class="col-md-12 col-sm-12 mb-5">
                             <img src="https://cdn.stocksnap.io/img-thumbs/960w/paper-notes_4BQYVBZ5VK.jpg"
                                 alt="First Semester Image" class="img-fluid rounded">
                         </div>
                     </div>
                 </div>
                 <hr>
-                <br><br> <br><br>
+  
 
                 <div class="row d-flex align-items-center mt-3">
 
                     <div class="col-md-6 col-sm-12">
-                        <div class="col-12 mb-3">
+                        <div class="col-md-11 col-sm-12 mb-3">
                             <img src="https://cdn.stocksnap.io/img-thumbs/960w/laptop-apple_Z086QPPWUL.jpg"
                                 alt="First Semester Image" class="img-fluid rounded mb-5">
                         </div>
 
                     </div>
 
-                    <div class="col-md-6 mb-4 col-sm-12">
+                    <div class="col-md-6 mb-4 col-sm-12" id="">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <h3 class="display-6" id="second">SIXTH SEMESTER</h3>
+                                <h3 class="display-6" >SIXTH SEMESTER</h3>
                                 <br>
                                 <ul class="list-style">
                                     <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csc-109IT.html"> CSC 165 Discrete Structure
+                                            href="#"> CSC 375 Software Engineering
                                         </a></li> <br>
-                                    <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csc-110DL.html"> CSC 166 Object Oriented
-                                            Programming </a> </li><br>
-                                    <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csit-first-sem.html"> CSC 167
-                                            MicroProcessor</a></li><br>
-                                    <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csit-first-sem.html"> MTH 1168
-                                            Mathematics-II</a></li><br>
-                                    <li> <a class="text-black text-decoration-none"
-                                            href="./solutions/semester/first/csit-first-sem.html"> STA 169
-                                            Statistics-I</a></li><br>
-                                </ul>
+                                        <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 376 Complier Design and Construction
+                                        </a></li> <br>
+                                        <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 377 E-Governance
+                                        </a></li> <br>
+                                        <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 378 NET Centric Computing
+                                        </a></li> <br>
+                                        <li> <a class="text-black text-decoration-none"
+                                            href="#"> CSC 379 Technical Writing
+                                        </a></li> <br>
+
+        
+                                            <li class="nav-item dropdown" id="seventh">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Electives II
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Applied Logic (CSC380)</a></li>
+                                                    <li><a class="dropdown-item" href="#">E-commerce (CSC381)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Automation and Robotics (CSC382)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Neural Networks (CSC383)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Computer Hardware Design (CSC384)</a></li>
+                                                    <li><a class="dropdown-item" href="#">Cognitive Science (CSC385)</a></li>
+                                                </ul>
+                                            </li>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-
+            <hr>
 
 
             <div class="row d-flex align-items-center">
-                <div class="col-md-6 mb-4 col-sm-12  order-md-1 order-2 order-sm-2" id="first">
+                <div class="col-md-6 mb-4 col-sm-12  order-md-1 order-2 order-sm-2" id="#">
                     <h3 class="display-6">SEVENTH SEMESTER</h3>
                     <br>
                     <ul class="list-style">
                         <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csc-109IT.html"> CSC 109 Introduction to IT </a>
+                                href="./solutions/semester/first/csc-109IT.html"> CSC 419 Advanced Java Programming </a>
                         </li> <br>
                         <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csc-110DL.html"> CSC 110 Digital Logic </a> </li>
+                                href="./solutions/semester/first/csc-110DL.html"> CSC 420 Data Warehousing and Data Mining </a> </li>
                         <br>
                         <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csit-first-sem.html"> CSC 111 C-Programming</a>
+                                href="#"> CSC 421 Principles of Management </a>
                         </li><br>
 
                         <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csit-first-sem.html"> MTH 112 Mathematics-I</a>
+                                href="#"> CSC 422 Project Work </a>
                         </li><br>
-                        <li> <a class="text-black text-decoration-none"
-                                href="./solutions/semester/first/csit-first-sem.html"> CSC 113 Physics</a></li><br>
+
+
+                            <li class="nav-item dropdown" id="seventh">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Electives III
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Information Retrieval (CSC423)</a></li>
+                                    <li><a class="dropdown-item" href="#">Database Administration (CSC424)</a></li>
+                                    <li><a class="dropdown-item" href="#">Software Project Management (CSC425)</a></li>
+                                    <li><a class="dropdown-item" href="#">Network Security (CSC426)</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital System Design (CSC427)</a></li>
+                                    <li><a class="dropdown-item" href="#"> International Marketing (MGT428)</a></li>
+                                </ul>
+                            </li>
+                            <br>
+
                     </ul>
 
                 </div>
                 <div class="col-md-6 col-sm-12  order-md-1 order-sm-1">
-                    <div class="col-md-12 col-sm-12 mb-2">
+                    <div class="col-md-12 col-sm-12 mb-5">
                         <img src="https://cdn.stocksnap.io/img-thumbs/960w/notepad-graph%20paper_L2KBJB91D6.jpg"
                             alt="First Semester Image" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
             <hr>
-            <br><br> <br><br>
+         
 
             <div class="row d-flex align-items-center mt-3">
 
-                <div class="col-md-6 col-sm-12 mb-3">
-                    <div class="col-12">
+                <div class="col-md-6 col-sm-12">
+                    <div class="col-md-11 col-sm-12">
                         <img src="https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_1280.jpg"
                             alt="First Semester Image" class="img-fluid rounded mb-5">
                     </div>
 
                 </div>
 
-                <div class="col-md-6 mb-4 col-sm-12">
+                <div class="col-md-6 mb-4 col-sm-12" id="eighth">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <h3 class="display-6" id="second">EIGHTH SEMESTER</h3>
+                            <h3 class="display-6" id="eighth">EIGHTH SEMESTER</h3>
                             <br>
                             <ul class="list-style">
                                 <li> <a class="text-black text-decoration-none"
-                                        href="./solutions/semester/first/csc-109IT.html"> CSC 165 Discrete Structure
+                                        href="./solutions/semester/first/csc-109IT.html"> CSC 475 Advanced Database
                                     </a></li> <br>
-                                <li> <a class="text-black text-decoration-none"
-                                        href="./solutions/semester/first/csc-110DL.html"> CSC 166 Object Oriented
-                                        Programming </a> </li><br>
-                                <li> <a class="text-black text-decoration-none"
-                                        href="./solutions/semester/first/csit-first-sem.html"> CSC 167
-                                        MicroProcessor</a></li><br>
-                                <li> <a class="text-black text-decoration-none"
-                                        href="./solutions/semester/first/csit-first-sem.html"> MTH 1168
-                                        Mathematics-II</a></li><br>
-                                <li> <a class="text-black text-decoration-none"
-                                        href="./solutions/semester/first/csit-first-sem.html"> STA 169
-                                        Statistics-I</a></li><br>
+                                    <li> <a class="text-black text-decoration-none"
+                                        href="./solutions/semester/first/csc-109IT.html"> CSC 476 Internship
+                                    </a></li> <br>
+
+                                    <li class="nav-item dropdown" id="seventh">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Electives IV
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Advanced Networking with IPV6 (CSC477)</a></li>
+                                            <li><a class="dropdown-item" href="#">Distributed Networking (CSC478)</a></li>
+                                            <li><a class="dropdown-item" href="#">Game Technology (CSC479)</a></li>
+                                            <li><a class="dropdown-item" href="#">Distributed and Object Oriented Database (CSC480)</a></li>
+                                            <li><a class="dropdown-item" href="#">Introduction to Cloud Computing (CSC481)</a></li>
+                                            <li><a class="dropdown-item" href="#">Geographical Information System (CSC482)</a></li>
+                                        </ul>
+                                    </li>
+                                    <br>
+
+
+                                    <li class="nav-item dropdown" id="seventh">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Electives V
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Decision Support System and Expert System (CSC483)</a></li>
+                                            <li><a class="dropdown-item" href="#">Mobile Application Development (CSC484)</a></li>
+                                            <li><a class="dropdown-item" href="#">Real Time Systems (CSC485)</a></li>
+                                            <li><a class="dropdown-item" href="#">Network and System Administration (CSC486)</a></li>
+                                            <li><a class="dropdown-item" href="#">Embedded Systems Programming (CSC487)</a></li>
+                                            <li><a class="dropdown-item" href="#">International Business Management (MGT488)</a></li>
+                                        </ul>
+                                    </li>
+                                    <br>
                             </ul>
                         </div>
                     </div>
@@ -464,7 +551,7 @@
         <p class="text-center lead">
             All CopyRight Reserved &copy;
             2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
-            Powered By Norai | Dilli Hang Rai
+            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a>  | <a href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a> 
         </p>
     </footer>
 

@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Syllabus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2, h3, h4 {
+            color: #2e6c80;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="syllabus-container"></div>
+
+    <script src="syllabus.js"></script>
+<script>
+
+
+
+const syllabusData = {
+    title: "Introduction to Information Technology",
+    details: [
+        { label: "Course Title", value: "Introduction to Information Technology" },
+        { label: "Full Marks", value: "60 + 20 + 20" },
+        { label: "Course No", value: "CSC109" },
+        { label: "Pass Marks", value: "24 + 8 + 8" },
+        { label: "Nature of the Course", value: "Theory + Lab" },
+        { label: "Credit Hrs", value: "3" },
+        { label: "Semester", value: "I" },
+    ],
+    description: "This course covers the basic concepts of computers and information technology including introduction, hardware, software, memory, input/output, data representation, database, networks and data communication, Internet, multimedia, and computer security.",
+    objectives: "The main objective of this course is to provide students knowledge of fundamental concepts of computers and information technology.",
+    contents: [
+        {
+            unit: 
+            "Unit 1: Introduction to Computer (3 Hrs.)",
+            
+            topics: [
+                "Introduction, Digital and Analog Computers, Characteristics of Computer,History of Computer, Generations of Computer, Classification of Computer,The Computer System,Application of Computers",
+
+            ]
+        },
+
+        {
+            unit: 
+            "Unit 2: Introduction to Computer (3 Hrs.)",
+            
+            topics: [
+                "Introduction, Digital and Analog Computers, Characteristics of Computer,History of Computer, Generations of Computer, Classification of Computer,The Computer System,Application of Computers",
+
+            ]
+        },
+
+        // Add more units here following the same structure
+    ],
+    laboratory: "After completing this course, students should have practical knowledge of different hardware components of computer, operating systems, Word Processors, Spreadsheets, Presentation Graphics, Database Management Systems, and Internet and its services.",
+    textbooks: ["Computer Fundamentals, Anita Goel, Pearson Education India"],
+    references: [
+        "Introduction to Computers, Peter Norton, 7th Edition, McGraw Hill Education",
+        "Computer Fundamental, Pradeep K. Sinha and Priti Sinha",
+        "Data Mining Concepts and Techniques, Third Edition, Jiawei Han, Micheline Kamber and Jian Pei",
+        "Cloud Computing Bible, Barrie Sosinsky, Wiley"
+    ]
+};
+
+function renderSyllabus(data) {
+    const container = document.getElementById('syllabus-container');
+
+    const title = document.createElement('h2');
+    title.textContent = data.title;
+    container.appendChild(title);
+
+    data.details.forEach(detail => {
+        const detailParagraph = document.createElement('p');
+        detailParagraph.innerHTML = `<strong>${detail.label}:</strong> ${detail.value}`;
+        container.appendChild(detailParagraph);
+    });
+
+    const description = document.createElement('h3');
+    description.textContent = "Course Description:";
+    container.appendChild(description);
+
+    const descriptionText = document.createElement('p');
+    descriptionText.textContent = data.description;
+    container.appendChild(descriptionText);
+
+    const objectives = document.createElement('h3');
+    objectives.textContent = "Course Objectives:";
+    container.appendChild(objectives);
+
+    const objectivesText = document.createElement('p');
+    objectivesText.textContent = data.objectives;
+    container.appendChild(objectivesText);
+
+    const contents = document.createElement('h3');
+    contents.textContent = "Course Contents:";
+    container.appendChild(contents);
+
+    const contentsList = document.createElement('ul');
+    data.contents.forEach(content => {
+        const contentItem = document.createElement('li');
+        contentItem.innerHTML = `<strong>${content.unit}</strong>`;
+        const topicsList = document.createElement('ul');
+        content.topics.forEach(topic => {
+            const topicItem = document.createElement('li');
+            topicItem.textContent = topic;
+            topicsList.appendChild(topicItem);
+        });
+        contentItem.appendChild(topicsList);
+        contentsList.appendChild(contentItem);
+    });
+    container.appendChild(contentsList);
+
+    const laboratory = document.createElement('h3');
+    laboratory.textContent = "Laboratory Works:";
+    container.appendChild(laboratory);
+
+    const laboratoryText = document.createElement('p');
+    laboratoryText.textContent = data.laboratory;
+    container.appendChild(laboratoryText);
+
+    const textbooks = document.createElement('h3');
+    textbooks.textContent = "Text Books:";
+    container.appendChild(textbooks);
+
+    const textbooksList = document.createElement('ul');
+    data.textbooks.forEach(book => {
+        const bookItem = document.createElement('li');
+        bookItem.textContent = book;
+        textbooksList.appendChild(bookItem);
+    });
+    container.appendChild(textbooksList);
+
+    const references = document.createElement('h3');
+    references.textContent = "Reference Books:";
+    container.appendChild(references);
+
+    const referencesList = document.createElement('ul');
+    data.references.forEach(reference => {
+        const referenceItem = document.createElement('li');
+        referenceItem.textContent = reference;
+        referencesList.appendChild(referenceItem);
+    });
+    container.appendChild(referencesList);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderSyllabus(syllabusData);
+});
+</script>
+
+</body>
+</html>
