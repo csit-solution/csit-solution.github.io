@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="A lightweight web application using only JavaScript, HTML, and CSS. This application will help and serve as a resource for accessing solutions to the past questions for all semester of the BSc.CSIT program’s Students.">
     <meta name="keywords"
@@ -59,15 +61,23 @@
             width: 100%;
             justify-content: end;
         }
+
+        @media (max-width: 767px) {
+            .lead{
+                font-size: 14px!important;
+                padding: 10px!important;
+                margin: 0!important;
+            }
+        }
     </style>
         <script type="text/javascript">
-            // Function to show alert before rendering the page
-            function showAlert() {
-                alert("Welcome to the page! This is the update version of CSIT Solution Site.Full Site Coming Soon!!");
-            }
+            // // Function to show alert before rendering the page
+            // function showAlert() {
+            //     alert("Welcome to the page! This is the update version of CSIT Solution Site.Full Site Coming Soon!!");
+            // }
     
-            // Call the alert function when the page loads
-            window.onload = showAlert;
+            // // Call the alert function when the page loads
+            // window.onload = showAlert;
         </script>
 </head>
 
@@ -136,7 +146,7 @@
     <section class="hero bg-light" id="topp">
         <div class="container-sm d-flex flex-column flex-md-row justify-content-between align-items-center">
             <div class="col-md-8 col-sm-12 order-md-1 order-2 order-sm-2">
-                <h3 class="display-6">One Solution For All</h3>
+                <h3 class="display-6 mt-3">One Solution For All</h3>
                 <h2 class="display-3">CSIT SOLUTION</h2>
                 <p class="lead" id="todayDate">N/A</p>
             </div>
