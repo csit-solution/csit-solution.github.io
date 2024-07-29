@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSIT Solution ~ CSC11 C </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 70px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Old/New Syllabus
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" id="oldSyllabus">Old 2074 Syllabus</a></li>
+                                <li><a class="dropdown-item" href="#" id="newSyllabus">New 2079 Syllabus</a></li>
+                                <li><a class="dropdown-item" href="#" id="oldAppVersion">Old CSIT Solution App
+                                        Version</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">Old 2074 Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">New 2079 Syllabus</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Old 2074 Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">New 2079 Syllabus</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a id="syllabus" class="dropdown-item mb-3" href="#">Syllabus</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="content" class="col-md-9 col-sm-12">
+                <!-- Dynamic content will be displayed here -->
+    
+                <h2>C Programming</h2>
+                <p>
+                    Course Title: C Programming <br>
+                    Full Marks: 60 + 20 + 20 <br>
+                    Course No: CSC110 <br>
+                    Pass Marks: 24 + 8 + 8 <br>
+                    Nature of the course: Theory + Lab <br>
+                    Credit Hrs.: 3 <br>
+                    Semester: I <br>
+                </p>
+                <p>
+                    <strong>Course Description:</strong> This course covers the concepts of structured programming using C <br>
+                    programming language. <br>
+                </p>
+                <p>
+                    <strong>Course Objective:</strong> This course is designed to familiarize students to the techniques of <br>
+                    programming in C. <br>
+                </p>
+                <p>
+                    <strong>Course Contents:</strong><br>
+                    <strong>Unit 1: Problem Solving with Computer (2 Hrs.)</strong><br>
+                    Problem analysis, Algorithms and Flowchart, Coding, Compilation and Execution, History of C, <br>
+                    Structure of C program, Debugging, Testing and Documentation <br>
+                    <br>
+                    <strong>Unit 2: Elements of C (4 Hrs.)</strong><br>
+                    C Standards (ANSI C and C99), C Character Set, C Tokens, Escape sequence, Delimiters, <br>
+                    Variables, Data types (Basic, Derived, and User Defined), Structure of a C program, Executing a <br>
+                    C program, Constants/ Literals, Expressions, Statements and Comments. <br>
+                    <br>
+                    <strong>Unit 3: Input and Output (2 Hrs.)</strong><br>
+                    Conversion specification, Reading a character, Writing a character, I/O operations, Formatted <br>
+                    I/O <br>
+                    <br>
+                    <strong>Unit 4: Operators and Expression (4 Hrs.)</strong><br>
+                    Arithmetic operator, Relational operator, Logical or Boolean operator, Assignment Operator, <br>
+                    Ternary operator, Bitwise operator, Increment or Decrement operator, Conditional operator, <br>
+                    Special Operators (sizeof and comma), Evaluation of Expression, Operator Precedence and <br>
+                    Associativity. <br>
+                    <br>
+                    <strong>Unit 5: Control Statement (4 Hrs.)</strong><br>
+                    Conditional Statements, Decision Making and Branching, Decision Making and Looping, Exit <br>
+                    function, Break and Continue. <br>
+                    <br>
+                    <strong>Unit 6: Arrays (6 Hrs.)</strong><br>
+                    Introduction to Array, Types of Array (Single Dimensional and Multidimensional), Declaration <br>
+                    and Memory Representation of Array, Initialization of array, Character Array and Strings, <br>
+                    Reading and Writing Strings, Null Character, String Library Functions (string length, string <br>
+                    copy, string concatenation, string compare) <br>
+                    <br>
+                    <strong>Unit 7: Functions (5 Hrs.)</strong><br>
+                    Library Functions, User defined functions, Function prototype, Function call, and Function <br>
+                    Definition, Nested and Recursive Function, Function Arguments and Return Types, Passing <br>
+                    Arrays to Function, Passing Strings to Function, Passing Arguments by Value, Passing <br>
+                    Arguments by Address, Scope visibility and lifetime of a variable, Local and Global Variable, <br>
+                    <br>
+                    <strong>Unit 8: Structure and Union (5 Hrs.)</strong><br>
+                    Introduction, Array of structure, Passing structure to function, Passing array of structure to <br>
+                    function, Structure within structure (Nested Structure), Union, Pointer to structure <br>
+                    <br>
+                    <strong>Unit 9: Pointers (6 Hrs.)</strong><br>
+                    Introduction, The & and * operator, Declaration of pointer, Chain of Pointers, Pointer <br>
+                    Arithmetic, Pointers and Arrays, Pointers and Character Strings, Array of Pointers, Pointers as <br>
+                    Function Arguments, Function Returning pointers, Pointers and Structures, Dynamic Memory <br>
+                    Allocation <br>
+                    <br>
+                    <strong>Unit 10: File Handling in C (4 Hrs.)</strong><br>
+                    Concept of File, Opening and closing of File, Input Output Operations in File, Random access in <br>
+                    File, Error Handling in Files <br>
+                    <br>
+                    <strong>Unit 11: Introduction to Graphics (3 Hrs.)</strong><br>
+                    Concepts of Graphics, Graphics Initialization and Modes, Graphics Function <br>
+                </p>
+                <p>
+                    <strong>Laboratory Works:</strong><br>
+                    This course requires a lot of programming practices. Each topic must be followed by a practical <br>
+                    session. Some practical sessions include programming to: <br>
+                    &bull; Create, compile and run simple C programs, handle different data types available in C, <br>
+                    perform arithmetic operations in C, perform formatted input and output operations, <br>
+                    perform character input and output operations. <br>
+                    &bull; Perform logical operations, create decision making programs, create loops to repeat task. <br>
+                    &bull; Create user-defined functions, create recursive functions, work with automatic, global <br>
+                    and static variables, create, manipulate arrays and matrices (single and multi- <br>
+                    dimensional), work with pointers, dynamically allocate de-allocate storage space during <br>
+                    runtime, manipulate strings (character arrays) using various string handling functions. <br>
+                    &bull; Create and use structures and files to keep record of students, employees etc. <br>
+                </p>
+                <p>
+                    <strong>Text Books:</strong><br>
+                    1. Byron Gottfried: "Programming with C," Second Edition, McGraw Hill <br>
+                    Education. <br>
+                    2. Herbert Schildt, C The Complete Reference, Fourth Edition, Osborne/McGraw- <br>
+                    Hill Publication. <br>
+                </p>
+                <p>
+                    <strong>Reference Books:</strong><br>
+                    1. Paul Deitel, Harvey Deitel, C: How to Program, Eighth Edition, Pearson <br>
+                    Publication. <br>
+                    2. Al Kelley, Ira Pohl: "A Book on C", Fourth Edition, Pearson Education. <br>
+                    3. Brian W. Keringhan, Dennis M. Ritchie, The C programming Language, <br>
+                    Second Edition, PHI Publication. <br>
+                    4. Ajay Mittal, Programming in C: A Practical Approach, Pearson Publication <br>
+                    5. Stephen G. Kochan, Programming in C, CBS publishers & distributors. <br>
+                    6. E. Balagurusamy, Programming in ANSI C, Third Edition, TMH publishing <br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy;
+            2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
+            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+            pastYearSolution: ``,
+            questions: ``,
+            pastYearSolution2075: `sds`,
+            pastYearSolution2076: `sds 2076`,
+            pastYearQuestion2074:
+                `<br>
+            <h4>Past Year Question Solution 2074</h4><p>  <br>
+
+                   <iframe src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf" title="PDF Viewer" style="height: 100vh; width: 100%;"></iframe>
+                 </p>`,
+
+            pastYearQuestion2075: `<br><h2>Notes</h2><p>Here is the content for the notes.</p>`,
+            notes: `<br><h2>Notes</h2><p>Here is the content for the notes.</p>`,
+            syllabus: `
+    
+               <h2>C Programming</h2>
+    <p>
+        Course Title: C Programming <br>
+        Full Marks: 60 + 20 + 20 <br>
+        Course No: CSC110 <br>
+        Pass Marks: 24 + 8 + 8 <br>
+        Nature of the course: Theory + Lab <br>
+        Credit Hrs.: 3 <br>
+        Semester: I <br>
+    </p>
+    <p>
+        <strong>Course Description:</strong> This course covers the concepts of structured programming using C <br>
+        programming language. <br>
+    </p>
+    <p>
+        <strong>Course Objective:</strong> This course is designed to familiarize students to the techniques of <br>
+        programming in C. <br>
+    </p>
+    <p>
+        <strong>Course Contents:</strong><br>
+        <strong>Unit 1: Problem Solving with Computer (2 Hrs.)</strong><br>
+        Problem analysis, Algorithms and Flowchart, Coding, Compilation and Execution, History of C, <br>
+        Structure of C program, Debugging, Testing and Documentation <br>
+        <br>
+        <strong>Unit 2: Elements of C (4 Hrs.)</strong><br>
+        C Standards (ANSI C and C99), C Character Set, C Tokens, Escape sequence, Delimiters, <br>
+        Variables, Data types (Basic, Derived, and User Defined), Structure of a C program, Executing a <br>
+        C program, Constants/ Literals, Expressions, Statements and Comments. <br>
+        <br>
+        <strong>Unit 3: Input and Output (2 Hrs.)</strong><br>
+        Conversion specification, Reading a character, Writing a character, I/O operations, Formatted <br>
+        I/O <br>
+        <br>
+        <strong>Unit 4: Operators and Expression (4 Hrs.)</strong><br>
+        Arithmetic operator, Relational operator, Logical or Boolean operator, Assignment Operator, <br>
+        Ternary operator, Bitwise operator, Increment or Decrement operator, Conditional operator, <br>
+        Special Operators (sizeof and comma), Evaluation of Expression, Operator Precedence and <br>
+        Associativity. <br>
+        <br>
+        <strong>Unit 5: Control Statement (4 Hrs.)</strong><br>
+        Conditional Statements, Decision Making and Branching, Decision Making and Looping, Exit <br>
+        function, Break and Continue. <br>
+        <br>
+        <strong>Unit 6: Arrays (6 Hrs.)</strong><br>
+        Introduction to Array, Types of Array (Single Dimensional and Multidimensional), Declaration <br>
+        and Memory Representation of Array, Initialization of array, Character Array and Strings, <br>
+        Reading and Writing Strings, Null Character, String Library Functions (string length, string <br>
+        copy, string concatenation, string compare) <br>
+        <br>
+        <strong>Unit 7: Functions (5 Hrs.)</strong><br>
+        Library Functions, User defined functions, Function prototype, Function call, and Function <br>
+        Definition, Nested and Recursive Function, Function Arguments and Return Types, Passing <br>
+        Arrays to Function, Passing Strings to Function, Passing Arguments by Value, Passing <br>
+        Arguments by Address, Scope visibility and lifetime of a variable, Local and Global Variable, <br>
+        <br>
+        <strong>Unit 8: Structure and Union (5 Hrs.)</strong><br>
+        Introduction, Array of structure, Passing structure to function, Passing array of structure to <br>
+        function, Structure within structure (Nested Structure), Union, Pointer to structure <br>
+        <br>
+        <strong>Unit 9: Pointers (6 Hrs.)</strong><br>
+        Introduction, The & and * operator, Declaration of pointer, Chain of Pointers, Pointer <br>
+        Arithmetic, Pointers and Arrays, Pointers and Character Strings, Array of Pointers, Pointers as <br>
+        Function Arguments, Function Returning pointers, Pointers and Structures, Dynamic Memory <br>
+        Allocation <br>
+        <br>
+        <strong>Unit 10: File Handling in C (4 Hrs.)</strong><br>
+        Concept of File, Opening and closing of File, Input Output Operations in File, Random access in <br>
+        File, Error Handling in Files <br>
+        <br>
+        <strong>Unit 11: Introduction to Graphics (3 Hrs.)</strong><br>
+        Concepts of Graphics, Graphics Initialization and Modes, Graphics Function <br>
+    </p>
+    <p>
+        <strong>Laboratory Works:</strong><br>
+        This course requires a lot of programming practices. Each topic must be followed by a practical <br>
+        session. Some practical sessions include programming to: <br>
+        &bull; Create, compile and run simple C programs, handle different data types available in C, <br>
+        perform arithmetic operations in C, perform formatted input and output operations, <br>
+        perform character input and output operations. <br>
+        &bull; Perform logical operations, create decision making programs, create loops to repeat task. <br>
+        &bull; Create user-defined functions, create recursive functions, work with automatic, global <br>
+        and static variables, create, manipulate arrays and matrices (single and multi- <br>
+        dimensional), work with pointers, dynamically allocate de-allocate storage space during <br>
+        runtime, manipulate strings (character arrays) using various string handling functions. <br>
+        &bull; Create and use structures and files to keep record of students, employees etc. <br>
+    </p>
+    <p>
+        <strong>Text Books:</strong><br>
+        1. Byron Gottfried: "Programming with C," Second Edition, McGraw Hill <br>
+        Education. <br>
+        2. Herbert Schildt, C The Complete Reference, Fourth Edition, Osborne/McGraw- <br>
+        Hill Publication. <br>
+    </p>
+    <p>
+        <strong>Reference Books:</strong><br>
+        1. Paul Deitel, Harvey Deitel, C: How to Program, Eighth Edition, Pearson <br>
+        Publication. <br>
+        2. Al Kelley, Ira Pohl: "A Book on C", Fourth Edition, Pearson Education. <br>
+        3. Brian W. Keringhan, Dennis M. Ritchie, The C programming Language, <br>
+        Second Edition, PHI Publication. <br>
+        4. Ajay Mittal, Programming in C: A Practical Approach, Pearson Publication <br>
+        5. Stephen G. Kochan, Programming in C, CBS publishers & distributors. <br>
+        6. E. Balagurusamy, Programming in ANSI C, Third Edition, TMH publishing <br>
+    </p>
+
+            `,
+            oldSyllabus: `<h2>Old 2074 Syllabus</h2><p>Here is the content for the old 2074 syllabus.</p>`,
+            newSyllabus: `<h2>New 2079 Syllabus</h2><p>Here is the content for the new 2079 syllabus.</p>`,
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`
+        };
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+        // Set current year in the footer
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
