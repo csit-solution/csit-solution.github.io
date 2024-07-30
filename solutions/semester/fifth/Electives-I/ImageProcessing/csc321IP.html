@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC321 IP ~ CSIT Solution </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2068">IP 2068</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2071">IP 2071</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2073">IP 2073</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">IP 2074</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">IP 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">IP 2076</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080">Solution2080</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 321 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 333 New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            &nbsp; &nbsp; &nbsp;
+
+            <div id="content" class="col-md-8 col-sm-12">
+                <!-- Dynamic content will be displayed here -->
+                <div class="text-center">
+                    <strong style="font-size: 24px;">Image Processing</strong>
+                </div>
+                <div class="mt-4">
+                    <p><strong>Course Title:</strong> Image Processing</p>
+                    <p><strong>Course No:</strong> CSC321</p>
+                    <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                    <p><strong>Semester:</strong> V</p>
+                    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                    <p><strong>Credit Hrs:</strong> 3</p>
+                </div>
+                <div class="mt-4">
+                    <strong>Course Description</strong>
+                    <p>This course covers the investigation, creation and manipulation of digital images by computer.
+                        The course consists of theoretical material introducing the mathematics of images and imaging.
+                        Topics include representation of two-dimensional data, time and frequency domain
+                        representations, filtering and enhancement, the Fourier transform, convolution, interpolation.
+                        The student will become familiar with Image Enhancement, Image Restoration, Image Compression,
+                        Morphological Image Processing, Image Segmentation, Representation and Description, and Object
+                        Recognition.</p>
+                </div>
+                <div class="mt-4">
+                    <strong>Course Objectives</strong>
+                    <p>The objective of this course is to make students able to:</p>
+                    <ul>
+                        <li>Develop a theoretical foundation of Digital Image Processing concepts.</li>
+                        <li>Provide mathematical foundations for digital manipulation of images; image acquisition;
+                            preprocessing; segmentation; Fourier domain processing; and compression.</li>
+                        <li>Gain experience and practical techniques to write programs for digital manipulation of
+                            images; image acquisition; pre-processing; segmentation; Fourier domain processing; and
+                            compression.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <strong>Course Contents</strong>
+                    <div>
+                        <strong>Unit 1: Introduction (5 Hrs.)</strong>
+                        <ul>
+                            <li>Digital Image: Definition of digital image, pixels, representation of digital image in
+                                spatial domain as well as in matrix form. (1 hr)</li>
+                            <li>Fundamental steps in Image Processing: Block diagram of fundamental steps in digital
+                                image processing, application of digital image processing system, Elements of Digital
+                                Image Processing systems. (1 hr)</li>
+                            <li>Element of perception: Structure of the Human, Image Formation in the Eye, Brightness
+                                Adaptation and Discrimination. (1 hr)</li>
+                            <li>Sampling and Quantization: Basic Concepts in Sampling and Quantization, Representing
+                                Digital Images, Spatial and Gray-Level Resolution. (1 hr)</li>
+                            <li>Some basic relationships like Neighbors: Neighbors of a Pixel, Adjacency, Connectivity,
+                                Regions, and Boundaries, Distance Measures between pixels. (1 hr)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 2: Image Enhancement and Filter in Spatial Domain (8 Hrs.)</strong>
+                        <ul>
+                            <li>Basic Gray Level Transformations: Point operations, Contrast stretching, clipping and
+                                thresholding, digital negative, intensity level slicing, log transformation, power law
+                                transformation, bit plane slicing. (2 hrs)</li>
+                            <li>Histogram Processing: Unnormalized and Normalized Histogram, Histogram Equalization, Use
+                                of Histogram Statistics for Image Enhancement. (1 hr)</li>
+                            <li>Spatial operations: Basics of Spatial Filtering, Linear filters, Spatial Low pass
+                                smoothing filters, Averaging, Weighted Averaging, Non-Linear filters, Median filter,
+                                Maximum and Minimum filters, Midpoint and Alpha trimmed mean filters; High pass
+                                sharpening filters, High boost filter, high frequency emphasis filter, Gradient based
+                                filters, Robert Cross Gradient Operators, Prewitt filters, Sobel filters, Second
+                                Derivative filters, Laplacian filters. (4 hrs)</li>
+                            <li>Magnification by replication and interpolation. (1 hr)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 3: Properties of Fourier Transform (8 Hrs.)</strong>
+                        <ul>
+                            <li>Introduction: Introduction to Fourier Transform and the frequency Domain, 1-D and 2-D
+                                Continuous Fourier transform, 1-D and 2-D Discrete Fourier transform. (1 hr)</li>
+                            <li>Fast Fourier Transform: Computing and Visualizing the 2D DFT (Time Complexity of DFT),
+                                Derivation of 1-D Fast Fourier Transform, Time Complexity of FFT, Concept of
+                                Convolution, Correlation and Padding. (2 hrs)</li>
+                            <li>Other Transforms: Hadamard transform, Haar transform and Discrete Cosine transform. (2
+                                hrs)</li>
+                            <li>Smoothing Frequency Domain Filters: Ideal Low Pass Filter, Butterworth Low Pass Filter,
+                                Gaussian Low Pass Filter. (1 hr)</li>
+                            <li>Sharpening Frequency Domain Filters: Ideal High Pass Filter, Butterworth High Pass
+                                Filter, Gaussian High Pass Filter, Laplacian Filter. (2 hrs)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 4: Image Restoration and Compression (8 Hrs.)</strong>
+                        <ul>
+                            <li>Image Restoration: Introduction, Models for Image degradation and restoration process,
+                                Noise Models (Gaussian, Rayleigh, Erlang, Exponential, Uniform and Impulse), Estimation
+                                of Noise Parameters. (2 hrs)</li>
+                            <li>Restoration Filters: Mean Filters: Arithmetic, Geometric, Harmonic and Contraharmonic
+                                Mean Filters; Order Statistics Filters: Median, Min and Max, Midpoint and Alpha trimmed
+                                mean filters; Band pass and Band Reject filters: Ideal, Butterworth and Gaussian Band
+                                pass and Band Reject filters. (2 hrs)</li>
+                            <li>Image Compression: Introduction, Definition of Compression Ratio, Relative Data
+                                Redundancy, Average Length of Code; Redundancies in Image: Coding Redundancy (Huffman
+                                Coding), Interpixel Redundancy (Run Length Coding) and Psychovisual Redundancy (4-bit
+                                Improved Gray Scale Coding: IGS Coding Scheme). (4 hrs)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 5: Morphological Operations (2 Hrs.)</strong>
+                        <ul>
+                            <li>Introduction to Morphological Image Processing: Definition of Fit and Hit. (1 hr)</li>
+                            <li>Dilation and Erosion, Opening and Closing. (1 hr)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 6: Image Segmentation (8 Hrs.)</strong>
+                        <ul>
+                            <li>Discontinuity Based Techniques: Point Detection, Line Detection, Edge Detection using
+                                Gradient and Laplacian Filters, Mexican Hat Filters, Edge Linking and Boundary
+                                Detection, Hough Transform. (3 hrs)</li>
+                            <li>Similarity Based Techniques: Thresholding: Global, Local and Adaptive; Region Based
+                                Segmentation: Region Growing Algorithm, Region Split and Merge Algorithm. (4 hrs)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 7: Representation and Description (5 Hrs.)</strong>
+                        <ul>
+                            <li>Representations, Description and Recognition: Introduction to some descriptors: Chain
+                                codes, Signatures, Shape Numbers, Fourier Descriptors. (2 hrs)</li>
+                            <li>Pattern Recognition: Overview of Pattern Recognition with block diagram; Patterns and
+                                pattern classes, Decision-Theoretic Methods, Introduction to Neural Networks and Neural
+                                Network based Image Recognition. (3 hrs)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>Laboratory Works</strong>
+                    <p>Students are required to develop programs in related topics using suitable programming languages
+                        such as MatLab or Python or other similar programming languages.</p>
+                </div>
+                <div class="mt-4">
+                    <strong>Text Books</strong>
+                    <ul>
+                        <li>Rafael C. Gonzalez and Richard E. Woods, “Digital Image Processing”, Pearson Edition, Latest
+                            Edition.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <strong>Reference Books</strong>
+                    <ul>
+                        <li>I. Pitas, "Digital Image Processing Algorithms", Prentice Hall, Latest Edition.</li>
+                        <li>A. K. Jain, “Fundamentals of Digital Image Processing”, Prentice Hall of India Pvt. Ltd.,
+                            Latest Edition.</li>
+                        <li>K. Castlemann, “Digital Image Processing”, Prentice Hall of India Pvt. Ltd., Latest Edition.
+                        </li>
+                        <li>P. Monique and M. Dekker, “Fundamentals of Pattern Recognition”, Latest Edition.</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="mt-4">
+                    <h4>Model Question</h4>
+                    <strong>Section A</strong>
+                    <p>Attempt any two questions. (2 × 10 = 20)</p>
+                    <ol>
+                        <li>Differentiation between Discrete Fourier Transform (DFT) and Fast Fourier Transform (FFT).
+                            Explain the FFT algorithm for one-dimensional case. [3+7=10]</li><br>
+                        <li>Given the following frequency table obtained from the histogram of a 16 X 16, 8 level
+                            image.<br>
+                            <pre>
+                            M   0  1   2  3  4  5  6  7
+                            Nm  15 6  70 16 31 35 32 51
+                            </pre>
+                            Determine:
+                            <ul>
+                                <li>The mean and variance of the image intensity levels. [5]</li>
+                                <li>Image Histogram Equalization. [5]</li>
+                            </ul>
+                        </li><br>
+                        <li>Write a brief note on the application of image processing in medical imaging. [10]</li><br>
+                        <li>Write the algorithm for the median filter. How is it different from the mean filter?
+                            [5+5=10]</li>
+                    </ol>
+                    <strong>Section B</strong>
+                    <p>Attempt any six questions. (6 × 5 = 30)</p>
+                    <ol>
+                        <li>What is Histogram Equalization? [5]</li><br>
+                        <li>Explain the concept of “Image Degradation Model”. [5]</li><br>
+                        <li>Write a brief note on "Region Growing" technique in image segmentation. [5]</li><br>
+                        <li>Discuss any two noise models used in image restoration. [5]</li><br>
+                        <li>Differentiate between "Smoothing" and "Sharpening" filters. [5]</li><br>
+                        <li>Explain the concept of "Morphological Operations". [5]</li><br>
+                        <li>Write the procedure for "Adaptive Thresholding". [5]</li><br>
+                        <li>Explain "Dilation" and "Erosion" operations in morphological image processing. [5]</li>
+                    </ol>
+                </div>
+
+            </div>
+    </section>
+    <br>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy;
+            2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
+            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `<h2 class="text-left">  Discrete Structure Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+            pastYearSolution2075: `IP Solution 2075 `,
+            pastYearSolution2076: `IP Solution 2076`,
+
+            pastYearQuestion2068: `
+
+                <div class="">
+        <header class="text-center mb-4">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2068</p>
+        </header>
+
+        <div class="row mb-4">
+            <div class="col">
+                <p><strong>Bachelor Level/Third Year/Six Semester/Science</strong></p>
+                <p><strong>Computer Science and Information Technology</strong></p>
+                <p><strong>(CSc. 363 - Image Processing)</strong></p>
+            </div>
+            <div class="col text-end">
+                <p>Full Marks: 60</p>
+                <p>Pass Marks: 24</p>
+                <p>Time: 3 hours</p>
+            </div>
+        </div>
+
+        <p class="mb-4"><em>Attempt any Ten questions.</em></p>
+
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Explain the digital image processing with example. [6]</li>
+            <li class="list-group-item">Define the fourier transform. Explain the Hadamard transform with example. [2+4]</li>
+            <li class="list-group-item">What do you mean by visual perception? What are the elements of visual perception? Explain. [3+3]</li>
+            <li class="list-group-item">Explain the template matching with algorithm and example. [6]</li>
+            <li class="list-group-item">What is image coding? Explain the Run length coding with example. [2+4]</li>
+            <li class="list-group-item">Mention the different types of character recognition and explain it. [6]</li>
+            <li class="list-group-item">What is pattern recognition? Explain the applications of neural networks in pattern recognition. [2+4]</li>
+            <li class="list-group-item">Define the edge detection. What do you mean by template matching? Explain. [2+4]</li>
+            <li class="list-group-item">How dilation and erosion are applied in region filling and boundary extraction? Explain. [6]</li>
+            <li class="list-group-item">
+                Write short notes on: [3+3]
+                <ol type="a">
+                    <li>Features extraction</li>
+                    <li>Wavelet transform</li>
+                </ol>
+            </li>
+            <li class="list-group-item">
+                Differentiate between: [3+3]
+                <ol type="a">
+                    <li>high pass and band pass filtering</li>
+                    <li>line detection and edge detection</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    `,
+
+            pastYearQuestion2071: `
+            <div class="">
+    <header class="text-center mb-4">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2071</p>
+    </header>
+
+    <div class="row mb-4">
+        <div class="col">
+            <p><strong>Bachelor Level / Fifth Semester / Science</strong></p>
+            <p><strong>Computer Science and Information Technology ( CSC321 )</strong></p>
+            <p><strong>( Image Processing )</strong></p>
+        </div>
+        <div class="col text-end">
+            <p>Full Marks: 60</p>
+            <p>Pass Marks: 24</p>
+            <p>Time: 3 hours</p>
+        </div>
+    </div>
+
+    <p class="mb-4"><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p class="mb-4"><em>The figures in the margin indicate full marks.</em></p>
+    <p class="mb-4"><strong>Attempt any ten questions:</strong> [6 x 10 = 60]</p>
+
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">What is digital image and digital image processing? Explain. [6]</li>
+        <li class="list-group-item">
+            Explain the adjacency and path of image pixels. Calculate the 8-adjacent and m-adjacent path from (1,3) to (3,2) for the following image on V{0,1}.
+            <br><br>
+            0  2  1 <br>
+            0  2  0 <br>
+            0  0  1 <br> [6]
+        </li>
+        <li class="list-group-item">
+            What is Histogram Modeling? Compute the histogram equalization of the given data.
+            <br><br>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Gray Level</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No. of pixels</td>
+                        <td>5320</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>525</td>
+                        <td>1236</td>
+                        <td>956</td>
+                        <td>856</td>
+                        <td>128</td>
+                    </tr>
+                </tbody>
+            </table> [6]
+        </li>
+        <li class="list-group-item">What do you mean by image enhancement? Explain the operation of Power law (Gamma) transformation with example. [6]</li>
+        <li class="list-group-item">
+            Construct Huffman code for each gray level given and find the compression ratio and coding efficiency.
+            <br><br>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Gray Level</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No. of Pixels</td>
+                        <td>30</td>
+                        <td>35</td>
+                        <td>38</td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>38</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+            </table> [6]
+        </li>
+        <li class="list-group-item">What is boundary? Explain spatial averaging filter. [6]</li>
+        <li class="list-group-item">What is Hough transform? How it is useful in line detection? Explain with example. [6]</li>
+        <li class="list-group-item">How edges are detected using the gradient operators? Explain with suitable example. [6]</li>
+        <li class="list-group-item">What is pattern and pattern recognition? Explain the steps and application areas of pattern recognition system. [6]</li>
+        <li class="list-group-item">
+            Write short notes on:
+            <ol type="a">
+                <li>Features extraction</li>
+                <li>Wavelet transform</li>
+            </ol> [6]
+        </li>
+    </ol>
+</div>
+
+            `,
+
+            pastYearQuestion2073: `<div class="">
+    <header class="text-center mb-4">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2073</p>
+    </header>
+
+    <div class="row mb-4">
+        <div class="col">
+            <p><strong>Bachelor Level / Fifth Semester / Science</strong></p>
+            <p><strong>Computer Science and Information Technology ( CSC321 )</strong></p>
+            <p><strong>( Image Processing )</strong></p>
+        </div>
+        <div class="col text-end">
+            <p>Full Marks: 60</p>
+            <p>Pass Marks: 24</p>
+            <p>Time: 3 hours</p>
+        </div>
+    </div>
+
+    <p class="mb-4"><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p class="mb-4"><em>The figures in the margin indicate full marks.</em></p>
+    <p class="mb-4"><strong>Attempt any ten questions:</strong> [6 x 10 = 60]</p>
+
+    <ol>
+        <li>Differentiate between digital image representation and digital image processing. [6]</li></br>
+        <li>Explain the fast Fourier with example. [6]</li></br>
+        <li>What do you mean by image enhancement? Explain the Histogram Modeling with example. [6]</li></br>
+        <li>What do you mean by image coding? Explain the process of predictive coding. [6]</li></br>
+        <li>Explain the features extraction with an appropriate example. Why is feature extraction important in image processing? Explain. [6]</li></br>
+        <li>Explain edge detection using templates with a practical example. [6]</li></br>
+        <li>Explain segmentation by thresholding. Explain how you can apply segmentation in line detection. [6]</li></br>
+        <li>Explain the Hadamard transform with example. [6]</li></br>
+        <li>Explain predictive and inter-frame coding with example. [6]</li></br>
+        <li>Differentiate between Hopfield nets and Hamming nets. [6]</li> </br>
+        <li>
+            Differentiate between:
+            <ol type="a">
+                <li>Sampling and quantization</li>
+                <li>High pass and band pass filtering</li>
+            </ol> [6]
+        </li>
+    </ol>
+</div>
+`,
+            pastYearQuestion2074: `<div class="">
+    <header class="text-center mb-4">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2074</p>
+    </header>
+
+    <div class="row mb-4">
+        <div class="col">
+            <p><strong>Bachelor Level / Fifth Semester / Science</strong></p>
+            <p><strong>Computer Science and Information Technology ( CSC321 )</strong></p>
+            <p><strong>( Image Processing )</strong></p>
+        </div>
+        <div class="col text-end">
+            <p>Full Marks: 60</p>
+            <p>Pass Marks: 24</p>
+            <p>Time: 3 hours</p>
+        </div>
+    </div>
+
+    <p class="mb-4"><em>Candidates are required to give their answers in their own words as far as practicable.</em></p>
+    <p class="mb-4"><em>The figures in the margin indicate full marks.</em></p>
+    <p class="mb-4"><strong>Attempt any ten questions:</strong> [6 x 10 = 60]</p>
+
+    <ol>
+        <li>Explain how you can convert an analog image into a digital image. How many images of size 2400X1600 with 256 gray levels can be stored in a 1024 MB storage space? (3 + 3) [6]</li><br>
+        <li>Explain the Haar Transform with suitable example. (6) [6]</li><br>
+        <li>Explain the power law transformations. Write the algorithm for the implementation of median filter in spatial domain. (2 + 4) [6]</li><br>
+        <li>What do you mean by low pass filtering in digital image processing? Explain it with suitable example. Show how you can convert low pass filter to high pass filter with suitable block diagram. (6) [6]</li><br>
+        <li>What do you mean by Lossy Predictive Coding? Explain it with a suitable block diagram. (6) [6]</li><br>
+        <li>Explain in detail the procedure for implementing Butterworth High Pass filter in Frequency domain. (6) [6]</li><br>
+        <li>What is zooming? Explain the process of zooming by interpolation method. (6) [6]</li><br>
+        <li>Explain in detail the region split and merge techniques for image segmentation. List the problems associated with region split and merge technique. (4 + 2) [6]</li><br>
+        <li>Explain in detail the template matching using Correlation. (4 + 2) [6]</li><br>
+        <li>What is a gradient filter? Explain the Sobel gradient filter in detail along with its algorithm for implementation. (1 + 5) [6]</li><br>
+        <li>
+            Write short notes on: (3 + 3) [6]<br>
+            a) Pattern Recognition and its applications<br>
+            b) Neural Network
+        </li>
+    </ol>
+</div>
+`,
+
+            pastYearQuestion2075: `    <div class="">
+        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2075</p>
+            <h6>Bachelor Level / Third Year / Six Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSc.363)</h6>
+            <h6>(Image Processing)</h6>
+            <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
+        </div>
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        <h5>Attempt any ten questions.</h5>
+        <ol>
+            <li>
+                <p>What is a digital image? Draw and explain the block diagram of a typical digital image processing system in brief. <span class="font-weight-bold">(1+5)</span></p>
+            </li>
+            <li>
+                <p>Define Discrete Cosine Transform (DCT). Differentiate between Discrete Fourier Transform (DFT) and Fast Fourier Transform (FFT). <span class="font-weight-bold">(2+4)</span></p>
+            </li>
+            <li>
+                <p>Explain the term "Log and inverse log transformation" techniques for the purpose of image enhancement. Explain the average spatial filter along with a suitable algorithm for its implementation. <span class="font-weight-bold">(2+4)</span></p>
+            </li>
+            <li>
+                <p>Explain the term Contrast Stretching and the Histogram Equalization. <span class="font-weight-bold">(3+3)</span></p>
+            </li>
+            <li>
+                <p>What do you mean by Lossless Predictive Coding? Explain it with a suitable block diagram. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Explain the detailed procedure for implementing Butterworth Low Pass filter in Frequency domain. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>What is zooming? Explain the process of zooming by replication method. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Explain in detail the region growing techniques for image segmentation. List the problems associated with the region growing technique. <span class="font-weight-bold">(4+2)</span></p>
+            </li>
+            <li>
+                <p>What are the components of a pattern recognition system? Explain with relevant diagrams. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Derive the equation for Laplacian filter and write the algorithm for its implementation. <span class="font-weight-bold">(6)</span></p>
+            </li>
+            <li>
+                <p>Write short notes on: <span class="font-weight-bold">(3+3)</span></p>
+                <ul>
+                    <li>Neural Network</li>
+                    <li>Global Thresholding</li>
+                </ul>
+            </li>
+        </ol>
+    </div>`,
+
+            pastYearQuestion2076: ` 
+  <div class="">
+    <div class="text-center">
+        <h4>Tribhuvan University</h4>
+        <h5>Institute of Science and Technology</h5>
+        <p>2076</p>
+        <h6>Bachelor Level / Fifth Semester / Science</h6>
+        <h6>Computer Science and Information Technology (CSC321)</h6>
+        <h6>(Image Processing)</h6>
+        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
+    </div>
+    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+    <p><strong>The figures in the margin indicate full marks.</strong></p>
+    <div class="mt-4">
+        <strong>Section A</strong><br>
+        <p><strong>Long Answer Questions</strong></p>
+        <p><strong>Attempt any two questions (2 x 10 = 20):</strong></p>
+        <ol>
+            <li>
+                <p>Explain "power law transformation" techniques for the purpose of image enhancement. Explain the mean filter along with a suitable algorithm for its implementation. <span class="font-weight-bold">(4+6)</span></p>
+            </li>
+            <li>
+                <p>What is Fourier Transform and how can you apply it in digital image processing? Explain the different properties of the Fourier Transform. <span class="font-weight-bold">(4+6)</span></p>
+            </li>
+            <li>
+                <p>Explain the adaptive thresholding and region split and merge techniques for image segmentation. <span class="font-weight-bold">(5+5)</span></p>
+            </li>
+        </ol>
+    </div>
+    <div class="mt-4">
+        <strong>Section B</strong><br>
+        <p><strong>Short Answer Questions</strong></p>
+        <p><strong>Attempt any eight questions (8 x 5 = 40):</strong></p>
+        <ol>
+            <li>
+                <p>Discuss the various applications and problems associated with digital image processing in brief. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Discuss the algorithm for histogram equalization. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>How will you implement Butterworth high pass frequency domain filter for image sharpening in the frequency domain? Describe in brief. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain the first derivative filter with a suitable example. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain Contra-harmonic Mean Filters used for image restoration. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Describe lossless predictive coding model with a suitable block diagram. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Explain opening and closing morphological operations in brief. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Discuss the magnification of an image using interpolation technique. <span class="font-weight-bold">(5)</span></p>
+            </li>
+            <li>
+                <p>Discuss Neural Network based image recognition system with the help of a simple perceptron. <span class="font-weight-bold">(5)</span></p>
+            </li>
+        </ol>
+    </div>
+</div>
+
+
+        `,
+
+            pastYearQuestion2080: `
+         
+        `,
+
+            pastYearSolution: `<h2 class="text-left">  Discrete Structure Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+            pastYearSolution2075: ``,
+            pastYearSolution2076: ``,
+            pastYearSolution2079: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
+            pastYearSolution2080: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
+            pastYearSolution2078: `
+             <style>
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: contain;
+      width: 100%;
+    }
+    .carousel-thumbnails img {
+      cursor: pointer;
+      width: 50%;
+      max-height: 100px;
+      opacity: 0.6;
+    }
+    .carousel-thumbnails img.active, .carousel-thumbnails img:hover {
+      opacity: 1;
+      border: 1px solid green!important;
+    }
+      
+    .carousel-control-prev,
+    .carousel-control-next {
+      bottom: 0;
+      top: auto;
+    }
+  </style>
+
+<body>
+  <h5 style="text-align:center">2078 DS Solution</h5>
+<div class="">
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
+      
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-1.jpg" class="d-block w-100" alt="The Woods" onclick="showModal(this.src, 'The Woods')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-2.jpg" class="d-block w-100" alt="Cinque Terre" onclick="showModal(this.src, 'Cinque Terre')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-3.jpg" class="d-block w-100" alt="Mountains and fjords" onclick="showModal(this.src, 'Mountains and fjords')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-4.jpg" class="d-block w-100" alt="Northern Lights" onclick="showModal(this.src, 'Northern Lights')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-5.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-6.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-7.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-8.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-9.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-10.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-11.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-12.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-13.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-14.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-15.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-16.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-17.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+      
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-18.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-19.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+
+
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="sr-only btn btn-success" type="button">Prev</button>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="sr-only btn btn-success" type="button">Next</button>
+    </a>
+  </div>
+
+  </hr>
+  </br>
+
+  <div class="row mt-3 carousel-thumbnails border">
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-1.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="0" alt="The Woods">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-2.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="1" alt="Cinque Terre">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-3.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-4.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-5.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-6.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-7.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-8.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-9.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-10.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+
+</div>
+
+  <div class="row mt-3 carousel-thumbnails border">
+            <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-11.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-12.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+
+
+  </div>
+
+          <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-13.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-14.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-15.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-16.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-17.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-18.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-19.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+
+    </div>
+
+
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--- <h5 class="modal-title" id="imageModalLabel">Image Zoom</h5>--->
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+`,
+            oldSyllabus: `<h2>Old 2074 Syllabus</h2><p>Here is the content for the old 2074 syllabus.</p>`,
+            newSyllabus: `<h2>New 2079 Syllabus</h2><p>Here is the content for the new 2079 syllabus.</p>`,
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+                 <div class="text-center">
+    <strong style="font-size: 24px;">Image Processing</strong>
+</div>
+<div class="mt-4">
+    <p><strong>Course Title:</strong> Image Processing</p>
+    <p><strong>Course No:</strong> CSC321</p>
+    <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+    <p><strong>Semester:</strong> V</p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Credit Hrs:</strong> 3</p>
+</div>
+<div class="mt-4">
+    <strong>Course Description</strong>
+    <p>This course covers the investigation, creation and manipulation of digital images by computer. The course consists of theoretical material introducing the mathematics of images and imaging. Topics include representation of two-dimensional data, time and frequency domain representations, filtering and enhancement, the Fourier transform, convolution, interpolation. The student will become familiar with Image Enhancement, Image Restoration, Image Compression, Morphological Image Processing, Image Segmentation, Representation and Description, and Object Recognition.</p>
+</div>
+<div class="mt-4">
+    <strong>Course Objectives</strong>
+    <p>The objective of this course is to make students able to:</p>
+    <ul>
+        <li>Develop a theoretical foundation of Digital Image Processing concepts.</li>
+        <li>Provide mathematical foundations for digital manipulation of images; image acquisition; preprocessing; segmentation; Fourier domain processing; and compression.</li>
+        <li>Gain experience and practical techniques to write programs for digital manipulation of images; image acquisition; pre-processing; segmentation; Fourier domain processing; and compression.</li>
+    </ul>
+</div>
+<div class="mt-4">
+    <strong>Course Contents</strong>
+    <div>
+        <strong>Unit 1: Introduction (5 Hrs.)</strong>
+        <ul>
+            <li>Digital Image: Definition of digital image, pixels, representation of digital image in spatial domain as well as in matrix form. (1 hr)</li>
+            <li>Fundamental steps in Image Processing: Block diagram of fundamental steps in digital image processing, application of digital image processing system, Elements of Digital Image Processing systems. (1 hr)</li>
+            <li>Element of perception: Structure of the Human, Image Formation in the Eye, Brightness Adaptation and Discrimination. (1 hr)</li>
+            <li>Sampling and Quantization: Basic Concepts in Sampling and Quantization, Representing Digital Images, Spatial and Gray-Level Resolution. (1 hr)</li>
+            <li>Some basic relationships like Neighbors: Neighbors of a Pixel, Adjacency, Connectivity, Regions, and Boundaries, Distance Measures between pixels. (1 hr)</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 2: Image Enhancement and Filter in Spatial Domain (8 Hrs.)</strong>
+        <ul>
+            <li>Basic Gray Level Transformations: Point operations, Contrast stretching, clipping and thresholding, digital negative, intensity level slicing, log transformation, power law transformation, bit plane slicing. (2 hrs)</li>
+            <li>Histogram Processing: Unnormalized and Normalized Histogram, Histogram Equalization, Use of Histogram Statistics for Image Enhancement. (1 hr)</li>
+            <li>Spatial operations: Basics of Spatial Filtering, Linear filters, Spatial Low pass smoothing filters, Averaging, Weighted Averaging, Non-Linear filters, Median filter, Maximum and Minimum filters, High pass sharpening filters, High boost filter, high frequency emphasis filter, Gradient based filters, Robert Cross Gradient Operators, Prewitt filters, Sobel filters, Second Derivative filters, Laplacian filters. (4 hrs)</li>
+            <li>Magnification by replication and interpolation. (1 hr)</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 3: Properties of Fourier Transform (8 Hrs.)</strong>
+        <ul>
+            <li>Introduction: Introduction to Fourier Transform and the frequency Domain, 1-D and 2-D Continuous Fourier transform, 1-D and 2-D Discrete Fourier transform. (1 hr)</li>
+            <li>Fast Fourier Transform: Computing and Visualizing the 2D DFT (Time Complexity of DFT), Derivation of 1-D Fast Fourier Transform, Time Complexity of FFT, Concept of Convolution, Correlation and Padding. (2 hrs)</li>
+            <li>Other Transforms: Hadamard transform, Haar transform and Discrete Cosine transform. (2 hrs)</li>
+            <li>Smoothing Frequency Domain Filters: Ideal Low Pass Filter, Butterworth Low Pass Filter, Gaussian Low Pass Filter. (1 hr)</li>
+            <li>Sharpening Frequency Domain Filters: Ideal High Pass Filter, Butterworth High Pass Filter, Gaussian High Pass Filter, Laplacian Filter. (2 hrs)</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 4: Image Restoration and Compression (8 Hrs.)</strong>
+        <ul>
+            <li>Image Restoration: Introduction, Models for Image degradation and restoration process, Noise Models (Gaussian, Rayleigh, Erlang, Exponential, Uniform and Impulse), Estimation of Noise Parameters. (2 hrs)</li>
+            <li>Restoration Filters: Mean Filters: Arithmetic, Geometric, Harmonic and Contraharmonic Mean Filters; Order Statistics Filters: Median, Min and Max, Midpoint and Alpha trimmed mean filters; Band pass and Band Reject filters: Ideal, Butterworth and Gaussian Band pass and Band Reject filters. (2 hrs)</li>
+            <li>Image Compression: Introduction, Definition of Compression Ratio, Relative Data Redundancy, Average Length of Code; Redundancies in Image: Coding Redundancy (Huffman Coding), Interpixel Redundancy (Run Length Coding) and Psychovisual Redundancy (4-bit Improved Gray Scale Coding: IGS Coding Scheme). (4 hrs)</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 5: Morphological Operations (2 Hrs.)</strong>
+        <ul>
+            <li>Introduction to Morphological Image Processing: Definition of Fit and Hit. (1 hr)</li>
+            <li>Dilation and Erosion, Opening and Closing. (1 hr)</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 6: Image Segmentation (8 Hrs.)</strong>
+        <ul>
+            <li>Discontinuity Based Techniques: Point Detection, Line Detection, Edge Detection using Gradient and Laplacian Filters, Mexican Hat Filters, Edge Linking and Boundary Detection, Hough Transform. (3 hrs)</li>
+            <li>Similarity Based Techniques: Thresholding: Global, Local and Adaptive; Region Based Segmentation: Region Growing Algorithm, Region Split and Merge Algorithm. (4 hrs)</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 7: Representation and Description (5 Hrs.)</strong>
+        <ul>
+            <li>Representations, Description and Recognition: Introduction to some descriptors: Chain codes, Signatures, Shape Numbers, Fourier Descriptors. (2 hrs)</li>
+            <li>Pattern Recognition: Overview of Pattern Recognition with block diagram; Patterns and pattern classes, Decision-Theoretic Methods, Introduction to Neural Networks and Neural Network based Image Recognition. (3 hrs)</li>
+        </ul>
+    </div>
+</div>
+<div class="mt-4">
+    <strong>Laboratory Works</strong>
+    <p>Students are required to develop programs in related topics using suitable programming languages such as MatLab or Python or other similar programming languages.</p>
+</div>
+<div class="mt-4">
+    <strong>Text Books</strong>
+    <ul>
+        <li>Rafael C. Gonzalez and Richard E. Woods, “Digital Image Processing”, Pearson Edition, Latest Edition.</li>
+    </ul>
+</div>
+<div class="mt-4">
+    <strong>Reference Books</strong>
+    <ul>
+        <li>I. Pitas, "Digital Image Processing Algorithms", Prentice Hall, Latest Edition.</li>
+        <li>A. K. Jain, “Fundamentals of Digital Image Processing”, Prentice Hall of India Pvt. Ltd., Latest Edition.</li>
+        <li>K. Castlemann, “Digital Image Processing”, Prentice Hall of India Pvt. Ltd., Latest Edition.</li>
+        <li>P. Monique and M. Dekker, “Fundamentals of Pattern Recognition”, Latest Edition.</li>
+    </ul>
+</div>
+<div class="mt-4">
+    <hr>
+    <h5>Model Question</h5>
+    <strong>Section A</strong>
+    <p>Attempt any two questions. (2 × 10 = 20)</p>
+    <ol>
+        <li>Differentiation between Discrete Fourier Transform (DFT) and Fast Fourier Transform (FFT). Explain the FFT algorithm for one-dimensional case. [3+7=10]</li><br>
+        <li>Given the following frequency table obtained from the histogram of a 16 X 16, 8 level image.
+            <pre>
+            M   0 1 2 3 4 5 6 7
+            NM  15 6 70 16 31 35 7 1
+            </pre>
+            Determine:
+            <ul>
+                <li>The mean and variance of the image intensity levels. [5]</li>
+                <li>Image Histogram Equalization. [5]</li>
+            </ul>
+        </li><br>
+        <li>Write a brief note on the application of image processing in medical imaging. [10]</li><br>
+        <li>Write the algorithm for the median filter. How is it different from the mean filter? [5+5=10]</li><br>
+    </ol>
+
+    <strong>Section B</strong>
+    <p>Attempt any six questions. (6 × 5 = 30)</p>
+    <ol>
+        <li>What is Histogram Equalization? [5]</li><br>
+        <li>Explain the concept of “Image Degradation Model”. [5]</li> <br>
+        <li>Write a brief note on "Region Growing" technique in image segmentation. [5]</li><br>
+        <li>Discuss any two noise models used in image restoration. [5]</li><br>
+        <li>Differentiate between "Smoothing" and "Sharpening" filters. [5]</li><br>
+        <li>Explain the concept of "Morphological Operations". [5]</li><br>
+        <li>Write the procedure for "Adaptive Thresholding". [5]</li><br>
+        <li>Explain "Dilation" and "Erosion" operations in morphological image processing. [5]</li><br>
+    </ol>
+</div> `,
+newSyllabus: `
+           <div class="text-center mb-4">
+            <p><strong>Image Processing</strong></p>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col">
+                <p><strong>Course Title:</strong> Image Processing</p>
+                <p><strong>Course No:</strong> CSC332</p>
+                <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                <p><strong>Semester:</strong> V</p>
+            </div>
+            <div class="col text-end">
+                <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                <p><strong>Credit Hrs:</strong> 3</p>
+            </div>
+        </div>
+
+        <div>
+            <p><strong>Course Description:</strong> This course covers the investigation, creation, and manipulation of digital images by computer. The course consists of theoretical material introducing the mathematics of images and imaging. Topics include representation of two-dimensional data, time and frequency domain representations, filtering and enhancement, the Fourier transform, convolution, interpolation. The student will become familiar with Image Enhancement, Image Restoration, Image Compression, Morphological Image Processing, Image Segmentation, Representation and Description, and Object Recognition.</p>
+        </div>
+
+        <div>
+            <p><strong>Course Objectives:</strong></p>
+            <ul>
+                <li>Develop a theoretical foundation of Digital Image Processing concepts.</li>
+                <li>Provide mathematical foundations for digital manipulation of images; image acquisition; preprocessing; segmentation; Fourier domain processing; and compression.</li>
+                <li>Gain experience and practical techniques to write programs for digital manipulation of images; image acquisition; preprocessing; segmentation; Fourier domain processing; and compression.</li>
+            </ul>
+        </div>
+
+        <div>
+            <p><strong>Course Contents:</strong></p>
+
+            <p><strong>Unit 1: Introduction (5 Hrs.)</strong></p>
+            <ul>
+                <li>Digital Image, A Simple Image Model, Fundamental steps in Image Processing, Elements of Digital Image Processing systems, Element of visual perception, Sampling and Quantization, Some basic relationships like Neighbors, Connectivity, Distance Measures between pixels</li>
+            </ul>
+
+            <p><strong>Unit 2: Image Enhancement and Filter in Spatial Domain (8 Hrs.)</strong></p>
+            <ul>
+                <li>Point operations, contrast stretching, clipping and thresholding, digital negative, intensity level slicing, bit plane slicing, Histogram Equalization, Spatial operations: Averaging, median, filtering spatial low pass and high pass, high boost filter, high frequency emphasis filter, Laplacian filter, magnification by replication and interpolation.</li>
+            </ul>
+
+            <p><strong>Unit 3: Image Enhancement in the Frequency Domain (8 Hrs.)</strong></p>
+            <ul>
+                <li>Introduction to Fourier Transform and the frequency Domain, Computing and Visualizing the 2D DFT, Fast Fourier Transform, Smoothing Frequency Domain Filters, Sharpening Frequency Domain Filters, Other Image Transforms (Hadamard transform, Haar transform and Discrete Cosine transform)</li>
+            </ul>
+
+            <p><strong>Unit 4: Image Restoration and Compression (8 Hrs.)</strong></p>
+            <ul>
+                <li>Image Restoration: Models for Image degradation and restoration process, Noise Models, Estimation of Noise Parameters, Restoration Filters, Bandrejected Filters, Bandpass Filters.</li>
+                <li>Image Compression: Image compression models, Pixel coding: run length, bit plane, Predictive and inter-frame coding</li>
+            </ul>
+
+            <p><strong>Unit 5: Introduction to Morphological Image Processing (2 Hrs.)</strong></p>
+            <ul>
+                <li>Logic Operations involving binary images, Dilation and Erosion, Opening and Closing.</li>
+            </ul>
+
+            <p><strong>Unit 6: Image Segmentation (8 Hrs.)</strong></p>
+            <ul>
+                <li>Image Segmentation: Point Detection, Line Detection, Edge Detection, Gradient Operator, Edge Linking and Boundary Detection, Hough Transform, Thresholding, Region-oriented Segmentation.</li>
+            </ul>
+
+            <p><strong>Unit 7: Representations, Description and Recognition (6 Hrs.)</strong></p>
+            <ul>
+                <li>Introduction to some descriptors (Chain codes, Signatures, Shape Numbers, Fourier Descriptors), Patterns and pattern classes, Decision-Theoretic Methods, Overview of Neural Networks in Image Processing, Overview of pattern recognition.</li>
+            </ul>
+        </div>
+
+        <div>
+            <p><strong>Laboratory Work:</strong> Students are required to develop programs in related topics using MatLab or suitable programming language.</p>
+        </div>
+
+        <div>
+            <p><strong>Text Books:</strong></p>
+            <ul>
+                <li>Rafael C. Gonzalez and Richard E. Woods, “Digital Image Processing”, Pearson Edition, Latest Edition.</li>
+            </ul>
+        </div>
+
+        <div>
+            <p><strong>Reference Books:</strong></p>
+            <ul>
+                <li>I. Pitas, "Digital Image Processing Algorithms", Prentice Hall, Latest Edition.</li>
+                <li>A. K. Jain, “Fundamental of Digital Image processing”, Prentice Hall of India Pvt. Ltd., Latest Edition.</li>
+                <li>K. Castlemann, “Digital image processing”, Prentice Hall of India Pvt. Ltd., Latest Edition.</li>
+                <li>P. Monique and M. Dekker, “Fundamentals of Pattern recognition”, Latest Edition.</li>
+            </ul>
+        </div> `
+        };
+
+
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2074;
+        });
+
+        document.getElementById('pastYearQuestion2071').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2071;
+        });
+        document.getElementById('pastYearQuestion2073').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2073;
+        });
+
+        document.getElementById('pastYearQuestion2068').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2068;
+        });
+
+
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2075;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+        document.getElementById('oldAppVersion').addEventListener('click', () => {
+            content.innerHTML = contents.oldAppVersion;
+        });
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+        // Set current year in the footer
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
