@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC-315 Web Technology ~ CSIT Solution </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc317Simulation.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <h5> Simulation and Modeling </h5>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">Simulation 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">Simulation 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">Simulation 2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">Simulation 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">Simulation 2080</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076"> Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078"> Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079"> Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080"> Solution2080</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 317 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 328 New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div  class="col-md-9 col-sm-12 border rounded">
+                <div id="content" class="p-3"> 
+                    <div class="text-center">
+                        <h4>Tribhuvan University</h4>
+                        <h5>Institute of Science and Technology</h5>
+                       
+                    
+                        <p>Bachelor of Science in Computer Science and Information Technology</p>
+                         </div>
+                             <div>
+                        <p>Semester: V</p>
+                        <h6>Course Title: Simulation and Modeling</h6>
+                        <p><strong>Course No:</strong> CSC317</p>
+                        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                        <p><strong>Credit Hours:</strong> 3</p>
+                        <p><strong>Nature of Course:</strong> Theory + Lab</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <strong>Course Description</strong>
+                        <p>The syllabus consists of introduction to system, modeling, and simulation of different types of systems. It includes the modeling of systems, its validation, verification, and analysis of simulation output. It comprises the concept of queuing theory, random number generation, as well as the study of some simulation languages.</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <strong>Course Objective</strong>
+                        <p>To make students understand the concept of simulation and modeling of real-time systems.</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <strong>Course Contents</strong>
+                        <div>
+                            <strong>Unit 1: Introduction to Simulation (6 Hours)</strong>
+                            <ul>
+                                <li>System and System Environment</li>
+                                <li>Components of System</li>
+                                <li>Discrete and Continuous System</li>
+                                <li>System Simulation</li>
+                                <li>Model of a System</li>
+                                <li>Types of Model</li>
+                                <li>Use of Differential and Partial Differential Equations in Modeling</li>
+                                <li>Advantages, Disadvantages, and Limitations of Simulation</li>
+                                <li>Application Areas</li>
+                                <li>Phases in Simulation Study</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 2: Simulation of Continuous and Discrete Systems (7 Hours)</strong>
+                            <ul>
+                                <li>Continuous System Models</li>
+                                <li>Analog Computers</li>
+                                <li>Analog Methods</li>
+                                <li>Hybrid Simulation</li>
+                                <li>Digital-Analog Simulators</li>
+                                <li>Feedback Systems</li>
+                                <li>Discrete Event Simulation</li>
+                                <li>Representation of Time</li>
+                                <li>Simulation Clock and Time Management</li>
+                                <li>Models of Arrival Processes - Poisson Processes, Non-stationary Poisson Processes, Batch Arrivals</li>
+                                <li>Gathering Statistics</li>
+                                <li>Probability and Monte Carlo Simulation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 3: Queuing Systems (6 Hours)</strong>
+                            <ul>
+                                <li>Characteristics and Structure of Basic Queuing System</li>
+                                <li>Models of Queuing System</li>
+                                <li>Queuing Notation</li>
+                                <li>Single Server and Multiple Server Queueing Systems</li>
+                                <li>Measurement of Queuing System Performance</li>
+                                <li>Elementary Idea About Networks of Queuing with Particular Emphasis on Computer Systems</li>
+                                <li>Applications of Queuing Systems</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 4: Markov Chains (2 Hours)</strong>
+                            <ul>
+                                <li>Features</li>
+                                <li>Process Examples</li>
+                                <li>Applications</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 5: Random Numbers (7 Hours)</strong>
+                            <ul>
+                                <li>Random Numbers and their Properties</li>
+                                <li>Pseudo-Random Numbers</li>
+                                <li>Methods of Generation of Random Numbers</li>
+                                <li>Tests for Randomness - Uniformity and Independence</li>
+                                <li>Random Variate Generation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 6: Verification and Validation (4 Hours)</strong>
+                            <ul>
+                                <li>Design of Simulation Models</li>
+                                <li>Verification of Simulation Models</li>
+                                <li>Calibration and Validation of the Models</li>
+                                <li>Three-Step Approach for Validation of Simulation Models</li>
+                                <li>Accreditation of Models</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 7: Analysis of Simulation Output (4 Hours)</strong>
+                            <ul>
+                                <li>Confidence Intervals and Hypothesis Testing</li>
+                                <li>Estimation Methods</li>
+                                <li>Simulation Run Statistics</li>
+                                <li>Replication of Runs</li>
+                                <li>Elimination of Initial Bias</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 8: Simulation of Computer Systems (9 Hours)</strong>
+                            <ul>
+                                <li>Simulation Tools</li>
+                                <li>Simulation Languages: GPSS</li>
+                                <li>Case Studies of Different Types of Simulation Models and Construction of Sample Mathematical Models</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <strong>Laboratory Work</strong>
+                        <p>Practical should include the simulation of some real-time systems (continuous and discrete event systems), Queuing Systems, Random Number Generations, as well as the study of Simulation Tools and Languages. Verification and validation of models can be done, and the analysis of outputs produced in the laboratory exercises can also be performed. The laboratory work should include:</p>
+                        <ul>
+                            <li>Implement different methods of random number generation</li>
+                            <li>Simulating games of dice that generate discrete random variate, using random number generation</li>
+                            <li>Testing of random numbers (K-S and Chi Square Test)</li>
+                            <li>Implementing applications of Monte Carlo methods</li>
+                            <li>Implement applications of Markov’s chain</li>
+                            <li>Simulation of single queue server system</li>
+                            <li>GPSS models - queue, storage, facility, multi-server queue, decision-making problems</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <strong>Text Book</strong>
+                        <ul>
+                            <li>Jerry Banks, John S. Carson, Barry L. Nelson, David M. Nicole, “Discrete Event System Simulation”, 5th Edition, Pearson Education</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <strong>Reference Books</strong>
+                        <ul>
+                            <li>Geoffrey Gordon: System Simulation</li>
+                            <li>Law, "Simulation Modeling and Analysis", 5th Edition, McGraw-Hill</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+            </div>
+    </section>
+    <br>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy;
+            2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
+            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `<h2 class="text-left">  Past Year Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h5> Please Use Menu </h5> <p> Need help ? watch tutorial !</p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+            pastYearSolution2075: `IP Solution 2075 `,
+            pastYearSolution2076: `IP Solution 2076`,
+
+
+            pastYearQuestion2075: `
+
+                    <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2075</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC317)</h6>
+            <h6>Simulation and Modelling</h6>
+            <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+
+        <div class="mt-4">
+            <strong>Group A</strong><br>
+            <p><strong>Long Answer Questions:</strong></p>
+            <p><strong>Attempt any two questions. (2x10=20)</strong></p>
+            <ol>
+                <li>
+                    <p>Differentiate between analog and digital methods of simulation. Explain the analog method of simulation with the help of a suitable example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Use the multiplicative congruential method to generate a sequence of three-digit random numbers between (0, 1) with X<sub>0</sub>=27, a=3, and m=1000. Use any one of the uniformity tests to find out whether the generated numbers are uniformly distributed or not? (Critical value for α=0.05 and N=5 is 0.565). <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Why is GPSS called a transaction flow-oriented language? A machine tool in a manufacturing shop is turning out parts at the rate of one every 5 minutes. When they are finished, the parts are sent to an inspector, who takes 4 ± 3 minutes to examine each one and rejects 15% of the parts. Draw and explain a block diagram and write a GPSS program to simulate using the concept of facility. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Group B</strong><br>
+            <p><strong>Short Answer Questions:</strong></p>
+            <p><strong>Attempt any eight questions. (5x8=40)</strong></p>
+            <ol>
+                <li>
+                    <p>Differentiate between static physical and dynamic physical models. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Describe different phases of simulation study with the help of a flow chart. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Why are the random numbers generated by computers called pseudo-random numbers? List out different types of errors that may occur while generating pseudo-random numbers. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Define confidence interval. How do you use the estimation method in simulation output analysis? Explain. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Describe the process of model building, verification, and validation in detail with an example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Define traffic intensity and server utilization. Write down Kendall’s notation for queuing systems. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What do you understand by feedback systems? Explain. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How do you update the clock time in simulation? Explain. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>“There is no unified theory in simulation.” Verify it. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>List out the entities, attributes, activities, and events for Banking, Communication, Production, Inventory, and Supermarket systems. <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
+            
+`,
+
+pastYearQuestion2076: `  
+        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2076</p>
+            <h6>Bachelor Level / Fifth-Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC317)</h6>
+            <h6>Simulation and Modeling</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt Any TWO Questions:</strong></p>
+            <ol>
+                <li>
+                    <p>Define queuing system. Explain different queuing disciplines. Also, explain different performance measures for evaluation of a queuing system. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Differentiate between chi-square test and KS test for uniformity. Use KS test to check for the uniformity for the input set of random numbers given below. 0.54, 0.73, 0.98, 0.11, 0.68, 0.45. Assume level of significance to be Dα=0.05 => 0.565. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>What do you understand by static mathematical model? Explain with an example. Differentiate between stochastic and deterministic activities. <span class="font-weight-bold">(20)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt Any EIGHT Questions:</strong></p>
+            <ol>
+                <li>
+                    <p>Discuss the merits and demerits of system simulation. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain Markov’s chain with a suitable example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Define arrival pattern. Explain non-stationary Poisson process. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Differentiate between validation and calibration. How can we perform validation of a model? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Use the Mixed Congruential method to generate a sequence of random numbers with X<sub>0</sub> = 27, n = 17, m = 100, and c = 43. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What do you mean by replication of runs? Why is it necessary? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the generation of non-uniform random numbers using the inverse method. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Parts are being made at the rate of one every 10 minutes. They are of two types, A and B, and are mixed randomly with about 10% being type B. A separate inspector is assigned to examine each part. Inspection of part A takes 6 ± 2 minutes. Both inspectors reject 10% of parts they inspect. Draw GPSS block diagram to simulate the above problem for 100 parts. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:<br>
+                        <strong>a. System and its environment</strong><br>
+                        <strong>b. Simulation run statistics</strong> <span class="font-weight-bold">(10 each)</span>
+                    </p>
+                </li>
+            </ol>
+        </div>        
+          `,
+
+            pastYearQuestion2078: `
+                    <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2078</p>
+            <h6>Bachelor Level / Fifth-Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC317)</h6>
+            <h6>Simulation and Modeling</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt Two Questions:</strong></p>
+            <ol>
+                <li>
+                    <p>Define queuing system. Explain the Kendall’s notation for queuing system? What are the various performance measures in a single-server queuing system? Explain which of them determine system stability and how? <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Define true random numbers and pseudo-random numbers with their properties. The sequence of numbers 0.64, 0.50, 0.25, 0.58, 0.72, 0.90 has been generated. Use KS Test with D<sub>a</sub>=0.050 => 0.512 to determine if the hypothesis that they are uniformly distributed on the interval [0, 1] can be rejected. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>What do you understand by dynamic mathematical model? Explain with an example. Differentiate it with a static mathematical model. <span class="font-weight-bold">(20)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt Eight Questions:</strong></p>
+            <ol>
+                <li>
+                    <p>Describe the phases in simulation. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the concept of discrete event simulation. Explain Poisson’s arrival pattern. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain Monte Carlo simulation method with an example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Define the terms verification, calibration, validation, and accreditation of models. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Use the Multiplicative Congruential method to generate a sequence of random numbers with X<sub>0</sub>=7, a=11, m=16. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Why are estimation methods used in simulation? Explain. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the importance of the elimination of initial bias during simulation. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Workers come to a supply store at the rate of one every 6 ± 2 minutes. Their requisitions are processed by one of the two clerks who take 8 ± 2 minutes for each requisition. The requisitions are then passed to a single storekeeper who fills them one at a time, taking 6 ± 3 minutes for each. Draw GPSS Block diagram to simulate the above problem for 100 requisitions. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:<br>
+                        <strong>a. Digital analog simulator</strong><br>
+                        <strong>b. Simulation tools</strong> <span class="font-weight-bold">(10 each)</span>
+                    </p>
+                </li>
+            </ol>
+        </div>
+        `,
+
+        pastYearQuestion2079: `
+
+        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2079</p>
+            <h6>Bachelor Level / Fifth-Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC317)</h6>
+            <h6>Simulation and Modeling</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Group A</strong><br>
+            <p><strong>Answer any Two Questions:</strong></p>
+            <ol>
+                <li>
+                    <p>What is a transaction in GPSS? Explain about facility in GPSS. Customers arrive at Joey Barbershop one every 15 ± 3 minutes and it takes Joey 18 ± 2 minutes to cut the hair of a customer. Create a GPSS model with a block diagram for the Barbershop using the concept of facility and run the simulation for 9 hours. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Why is the accuracy of an analog computer low? Explain the analog computer with a suitable example. Differentiate between analog and digital computers. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Define and develop a Poker test for four-digit random numbers. A sequence of 1,000 random numbers, each of four digits, has been generated. The analysis of the numbers reveals that in 525 numbers all four digits are different, 419 contain exactly one pair of like digits, 47 contain two pairs, 9 have three digits of a kind, and 7 contain all like digits. Use the Poker test to determine whether these numbers are independent. (Critical value of chi-square for α = 0.05 and N = 4 is 9.49). <span class="font-weight-bold">(20)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Group B</strong><br>
+            <p><strong>Answer any Eight Questions:</strong></p>
+            <ol>
+                <li>
+                    <p>Why is the confidence interval needed in the analysis of simulation output? How can we establish a confidence interval? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the Monte Carlo simulation method with an example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Generate ten 3-digit random integers and corresponding random variables using the Multiplicative Congruential method where a = 7 and X<sub>0</sub> = 22. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>“Building a model right” and “Building a right model”. Are both statements the same? Discuss the importance of Verification and Validation (V&V). <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Differentiate between discrete and continuous systems. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is a Markov chain? Explain with an example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the basic characteristics of a Queuing System. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Describe the dynamic physical model in detail with the help of a suitable example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:<br>
+                        <strong>a. Hypothesis testing</strong><br>
+                        <strong>b. Stationary Poisson process</strong> <span class="font-weight-bold">(10 each)</span>
+                    </p>
+                </li>
+            </ol>
+        </div>
+        `,
+
+        pastYearQuestion2080: `
+        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2080</p>
+            <h6>Bachelor Level / Fifth-Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC317)</h6>
+            <h6>Simulation and Modeling</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt any two questions:</strong></p>
+            <ol>
+                <li>
+                    <p>Why is a model of a system built? What is a static model? Differentiate between static and dynamic mathematical models in simulation. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>What is storage in GPSS? Describe the blocks associated with storage in GPSS. A machine tool in a manufacturing shop is turning out parts at the rate of one every 5 minutes. As they are finished, the parts go to an inspector who takes 10 ± 3 minutes to examine each one and rejects 10% of the parts. Represent the system in GPSS using the concept of facility and run the simulation for 500 parts. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>What are the two main properties of random numbers? Test whether the 3rd, 7th, 11th, and so on numbers in the sequence in the following random number sample are auto-correlated. (Z<sub>α</sub>=0.05 and Z<sub>0.025</sub>=1.96)<br>
+                    <strong>0.12 0.01 0.23 0.28 0.89 0.31 0.64 0.28 0.83 0.93 0.99 0.15 0.33 0.35 0.91 0.41 0.60 0.27 0.75 0.88 0.68 0.49 0.05 0.43 0.95 0.58 0.19 0.36 0.69 0.87</strong> <span class="font-weight-bold">(20)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt any eight questions:</strong></p>
+            <ol>
+                <li>
+                    <p>Explain Markov chain with a suitable example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What are the steps involved in a simulation study? Explain. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Generate 10 random integers using the Linear Congruential method where m = 1000, a = 19, c = 6, and X<sub>0</sub> = 13. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain different estimation methods which are used in simulation output analysis. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Define verification and validation. Explain the process of model verification in brief. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is a feedback system? Explain with an example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is calling population? Explain the arrival and service process in a queue. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the Monte Carlo simulation method with an example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:<br>
+                        <strong>a. Non-stationary Poisson process</strong><br>
+                        <strong>b. Poker test</strong> <span class="font-weight-bold">(10 each)</span>
+                    </p>
+                </li>
+            </ol>
+        </div>
+        `,
+
+            pastYearSolution: `<h2 class="text-left">  Past Year Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help ? Watch Tutorial ! </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            pastYearSolution2076: `<embed src="./PastSolutions/2076 CSC 314 ~ DDA.pdf" width="100%" style="min-height: 100vh">`,
+            pastYearSolution2079: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
+            pastYearSolution2080: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
+            pastYearSolution2078: `
+             <style>
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: contain;
+      width: 100%;
+    }
+    .carousel-thumbnails img {
+      cursor: pointer;
+      width: 50%;
+      max-height: 100px;
+      opacity: 0.6;
+    }
+    .carousel-thumbnails img.active, .carousel-thumbnails img:hover {
+      opacity: 1;
+      border: 1px solid green!important;
+    }
+      
+    .carousel-control-prev,
+    .carousel-control-next {
+      bottom: 0;
+      top: auto;
+    }
+  </style>
+
+<body>
+  <h5 style="text-align:center">2078 DS Solution</h5>
+<div class="">
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
+      
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-1.jpg" class="d-block w-100" alt="The Woods" onclick="showModal(this.src, 'The Woods')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-2.jpg" class="d-block w-100" alt="Cinque Terre" onclick="showModal(this.src, 'Cinque Terre')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-3.jpg" class="d-block w-100" alt="Mountains and fjords" onclick="showModal(this.src, 'Mountains and fjords')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-4.jpg" class="d-block w-100" alt="Northern Lights" onclick="showModal(this.src, 'Northern Lights')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-5.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-6.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-7.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-8.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-9.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-10.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-11.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-12.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-13.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-14.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-15.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-16.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-17.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+      
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-18.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-19.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+
+
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="sr-only btn btn-success" type="button">Prev</button>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="sr-only btn btn-success" type="button">Next</button>
+    </a>
+  </div>
+
+  </hr>
+  </br>
+
+  <div class="row mt-3 carousel-thumbnails border">
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-1.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="0" alt="The Woods">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-2.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="1" alt="Cinque Terre">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-3.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-4.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-5.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-6.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-7.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-8.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-9.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-10.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+
+</div>
+
+  <div class="row mt-3 carousel-thumbnails border">
+            <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-11.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-12.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+
+
+  </div>
+
+          <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-13.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-14.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-15.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-16.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-17.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-18.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-19.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+
+    </div>
+
+
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--- <h5 class="modal-title" id="imageModalLabel">Image Zoom</h5>--->
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+`,
+
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help? watch tutorial! </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+    <div class="text-center">
+    <h4>Tribhuvan University</h4>
+    <h5>Institute of Science and Technology</h5>
+   
+
+    <p>Bachelor of Science in Computer Science and Information Technology</p>
+     </div>
+         <div>
+    <p>Semester: V</p>
+    <h6>Course Title: Simulation and Modeling</h6>
+    <p><strong>Course No:</strong> CSC317</p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Credit Hours:</strong> 3</p>
+    <p><strong>Nature of Course:</strong> Theory + Lab</p>
+</div>
+
+<div class="mt-4">
+    <strong>Course Description</strong>
+    <p>The syllabus consists of introduction to system, modeling, and simulation of different types of systems. It includes the modeling of systems, its validation, verification, and analysis of simulation output. It comprises the concept of queuing theory, random number generation, as well as the study of some simulation languages.</p>
+</div>
+
+<div class="mt-4">
+    <strong>Course Objective</strong>
+    <p>To make students understand the concept of simulation and modeling of real-time systems.</p>
+</div>
+
+<div class="mt-4">
+    <strong>Course Contents</strong>
+    <div>
+        <strong>Unit 1: Introduction to Simulation (6 Hours)</strong>
+        <ul>
+            <li>System and System Environment</li>
+            <li>Components of System</li>
+            <li>Discrete and Continuous System</li>
+            <li>System Simulation</li>
+            <li>Model of a System</li>
+            <li>Types of Model</li>
+            <li>Use of Differential and Partial Differential Equations in Modeling</li>
+            <li>Advantages, Disadvantages, and Limitations of Simulation</li>
+            <li>Application Areas</li>
+            <li>Phases in Simulation Study</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 2: Simulation of Continuous and Discrete Systems (7 Hours)</strong>
+        <ul>
+            <li>Continuous System Models</li>
+            <li>Analog Computers</li>
+            <li>Analog Methods</li>
+            <li>Hybrid Simulation</li>
+            <li>Digital-Analog Simulators</li>
+            <li>Feedback Systems</li>
+            <li>Discrete Event Simulation</li>
+            <li>Representation of Time</li>
+            <li>Simulation Clock and Time Management</li>
+            <li>Models of Arrival Processes - Poisson Processes, Non-stationary Poisson Processes, Batch Arrivals</li>
+            <li>Gathering Statistics</li>
+            <li>Probability and Monte Carlo Simulation</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 3: Queuing Systems (6 Hours)</strong>
+        <ul>
+            <li>Characteristics and Structure of Basic Queuing System</li>
+            <li>Models of Queuing System</li>
+            <li>Queuing Notation</li>
+            <li>Single Server and Multiple Server Queueing Systems</li>
+            <li>Measurement of Queuing System Performance</li>
+            <li>Elementary Idea About Networks of Queuing with Particular Emphasis on Computer Systems</li>
+            <li>Applications of Queuing Systems</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 4: Markov Chains (2 Hours)</strong>
+        <ul>
+            <li>Features</li>
+            <li>Process Examples</li>
+            <li>Applications</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 5: Random Numbers (7 Hours)</strong>
+        <ul>
+            <li>Random Numbers and their Properties</li>
+            <li>Pseudo-Random Numbers</li>
+            <li>Methods of Generation of Random Numbers</li>
+            <li>Tests for Randomness - Uniformity and Independence</li>
+            <li>Random Variate Generation</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 6: Verification and Validation (4 Hours)</strong>
+        <ul>
+            <li>Design of Simulation Models</li>
+            <li>Verification of Simulation Models</li>
+            <li>Calibration and Validation of the Models</li>
+            <li>Three-Step Approach for Validation of Simulation Models</li>
+            <li>Accreditation of Models</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 7: Analysis of Simulation Output (4 Hours)</strong>
+        <ul>
+            <li>Confidence Intervals and Hypothesis Testing</li>
+            <li>Estimation Methods</li>
+            <li>Simulation Run Statistics</li>
+            <li>Replication of Runs</li>
+            <li>Elimination of Initial Bias</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 8: Simulation of Computer Systems (9 Hours)</strong>
+        <ul>
+            <li>Simulation Tools</li>
+            <li>Simulation Languages: GPSS</li>
+            <li>Case Studies of Different Types of Simulation Models and Construction of Sample Mathematical Models</li>
+        </ul>
+    </div>
+</div>
+
+<div class="mt-4">
+    <strong>Laboratory Work</strong>
+    <p>Practical should include the simulation of some real-time systems (continuous and discrete event systems), Queuing Systems, Random Number Generations, as well as the study of Simulation Tools and Languages. Verification and validation of models can be done, and the analysis of outputs produced in the laboratory exercises can also be performed. The laboratory work should include:</p>
+    <ul>
+        <li>Implement different methods of random number generation</li>
+        <li>Simulating games of dice that generate discrete random variate, using random number generation</li>
+        <li>Testing of random numbers (K-S and Chi Square Test)</li>
+        <li>Implementing applications of Monte Carlo methods</li>
+        <li>Implement applications of Markov’s chain</li>
+        <li>Simulation of single queue server system</li>
+        <li>GPSS models - queue, storage, facility, multi-server queue, decision-making problems</li>
+    </ul>
+</div>
+
+<div class="mt-4">
+    <strong>Text Book</strong>
+    <ul>
+        <li>Jerry Banks, John S. Carson, Barry L. Nelson, David M. Nicole, “Discrete Event System Simulation”, 5th Edition, Pearson Education</li>
+    </ul>
+</div>
+
+<div class="mt-4">
+    <strong>Reference Books</strong>
+    <ul>
+        <li>Geoffrey Gordon: System Simulation</li>
+        <li>Law, "Simulation Modeling and Analysis", 5th Edition, McGraw-Hill</li>
+    </ul>
+</div>
+
+
+            `,
+
+            newSyllabus: `   
+
+                            <div class="text-center">
+            <h4 class="">Tribhuvan University</h4>
+            <h5 class="">Institute of Science and Technology</h5>
+                <p>Bachelor of Science in Computer Science and Information Technology</p>
+            </div>
+            <div>
+            <p>Semester: V</p>
+            <h6>Course Title: Simulation and Modeling</h6>
+            <p><strong>Course No:</strong> CSC328</p>
+            <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+            <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+            <p><strong>Credit Hours:</strong> 3</p>
+            <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        </div>
+
+        <div class="mt-4">
+            <strong>Course Description</strong>
+            <p>The syllabus consists of introduction to system, modeling and simulation of different types of systems. It includes the modeling of systems, its validation, verification, and analysis of simulation output. It comprises the concept of queuing theory, random number generation, as well as the study of some simulation languages.</p>
+        </div>
+
+        <div class="mt-4">
+            <strong>Course Objective</strong>
+            <p>To make students understand the concept of simulation and modeling of real-time systems.</p>
+        </div>
+
+        <div class="mt-4">
+            <strong>Course Contents</strong>
+            <div>
+                <strong>Unit 1: Introduction to Simulation (6 Hours)</strong>
+                <ul>
+                    <li>System and System Environment</li>
+                    <li>Components of System</li>
+                    <li>Discrete and Continuous System</li>
+                    <li>System Simulation</li>
+                    <li>Model of a System</li>
+                    <li>Types of Model</li>
+                    <li>Use of Differential and Partial Differential Equations in Modeling</li>
+                    <li>Advantages, Disadvantages, and Limitations of Simulation</li>
+                    <li>Application Areas</li>
+                    <li>Phases in Simulation Study</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 2: Simulation of Continuous and Discrete Systems (7 Hours)</strong>
+                <ul>
+                    <li>Continuous System Models</li>
+                    <li>Analog Computer</li>
+                    <li>Analog Methods</li>
+                    <li>Hybrid Simulation</li>
+                    <li>Digital-Analog Simulators</li>
+                    <li>Feedback Systems</li>
+                    <li>Discrete Event Simulation</li>
+                    <li>Representation of Time</li>
+                    <li>Simulation Clock and Time Management</li>
+                    <li>Models of Arrival Processes - Poisson Processes, Non-stationary Poisson Processes, Batch Arrivals</li>
+                    <li>Gathering Statistics</li>
+                    <li>Probability and Monte Carlo Simulation</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 3: Queuing Systems (6 Hours)</strong>
+                <ul>
+                    <li>Characteristics and Structure of Basic Queuing System</li>
+                    <li>Models of Queuing System</li>
+                    <li>Queuing Notation</li>
+                    <li>Single Server and Multiple Server Queueing Systems</li>
+                    <li>Measurement of Queuing System Performance</li>
+                    <li>Elementary Idea About Networks of Queuing with Particular Emphasis to Computer Systems</li>
+                    <li>Applications of Queuing Systems</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 4: Markov Chains (2 Hours)</strong>
+                <ul>
+                    <li>Features</li>
+                    <li>Process Examples</li>
+                    <li>Applications</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 5: Random Numbers (7 Hours)</strong>
+                <ul>
+                    <li>Random Numbers and its Properties</li>
+                    <li>Pseudo Random Numbers</li>
+                    <li>Methods of Generation of Random Numbers</li>
+                    <li>Tests for Randomness - Uniformity and Independence</li>
+                    <li>Random Variate Generation</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 6: Verification and Validation (4 Hours)</strong>
+                <ul>
+                    <li>Design of Simulation Models</li>
+                    <li>Verification of Simulation Models</li>
+                    <li>Calibration and Validation of the Models</li>
+                    <li>Three-Step Approach for Validation of Simulation Models</li>
+                    <li>Accreditation of Models</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 7: Analysis of Simulation Output (4 Hours)</strong>
+                <ul>
+                    <li>Confidence Intervals and Hypothesis Testing</li>
+                    <li>Estimation Methods</li>
+                    <li>Simulation Run Statistics</li>
+                    <li>Replication of Runs</li>
+                    <li>Elimination of Initial Bias</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 8: Simulation of Computer Systems (9 Hours)</strong>
+                <ul>
+                    <li>Simulation Tools</li>
+                    <li>Simulation Languages: GPSS</li>
+                    <li>Case Studies of Different Types of Simulation Models and Construction of Sample Mathematical Models</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <strong>Laboratory Work</strong>
+            <p>Practical should include the simulation of some real-time systems (continuous and discrete event systems), Queuing Systems, Random Number Generations, as well as the study of Simulation Tools and Languages.</p>
+        </div>
+
+        <div class="mt-4">
+            <strong>Text Book</strong>
+            <ul>
+                <li>Jerry Banks, John S. Carson, Barry L. Nelson, David M. Nicole, “Discrete Event System Simulation”, 5th Edition, Pearson Education</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <strong>Reference Books</strong>
+            <ul>
+                <li>Geoffrey Gordon: System Simulation</li>
+                <li>Law, "Simulation Modeling and Analysis", 5th Edition, McGraw-Hill</li>
+            </ul>
+        </div>
+    `
+        };
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+
+        document.getElementById('pastYearQuestion2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2078;
+        });
+
+
+
+        document.getElementById('pastYearQuestion2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2079;
+        });
+
+
+        document.getElementById('pastYearQuestion2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2080;
+        });
+
+
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+        // Set current year in the footer
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
