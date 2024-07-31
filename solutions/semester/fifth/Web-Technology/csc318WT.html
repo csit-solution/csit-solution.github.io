@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC-318 Web Technology ~ CSIT Solution </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc314DDA.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <h5> Web Technology </h5>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">Web Technology 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">Web Technology 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">Web Technology 2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">Web Technology 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">Web Technology 2080</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Web Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Web Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Web Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080">Web Solution2080</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 318 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 329 New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div  class="col-md-9 col-sm-12 border rounded">
+                <div id="content" class="p-3"> 
+            
+                <!-- Dynamic content will be displayed here -->
+                <div class="text-center">
+                    <strong style="font-size: 24px;">Web Technology</strong>
+                </div>
+                <div class="mt-4">
+                    <p><strong>Course Title:</strong> Web Technology</p>
+                    <p><strong>Course No:</strong> CSC318</p>
+                    <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                    <p><strong>Semester:</strong> V</p>
+                    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                    <p><strong>Credit Hours:</strong> 3</p>
+                </div>
+                <div class="mt-4">
+                    <strong>Course Description</strong>
+                    <p>This course covers the fundamental concepts of HTML, CSS, JavaScript, XML, and PHP.</p>
+                </div>
+                <div class="mt-4">
+                    <strong>Course Objectives</strong>
+                    <ul>
+                        <li>Provide basic knowledge of web design using HTML and CSS.</li>
+                        <li>Teach client-side scripting using JavaScript.</li>
+                        <li>Handle web data using XML.</li>
+                        <li>Understand server-side scripting using PHP.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <strong>Detail Syllabus</strong>
+                    <div>
+                        <strong>Unit 1: Introduction (3 Hrs.)</strong>
+                        <ul>
+                            <li>Web Basics: Internet, Intranet, WWW, Static and Dynamic Web Page</li>
+                            <li>Web Clients; Web Servers</li>
+                            <li>Client Server Architecture: Single Tier, Two-Tier, Multi-Tier</li>
+                            <li>HTTP: HTTP Request and Response</li>
+                            <li>URL, Client Side Scripting, Server Side Scripting</li>
+                            <li>Web 1.0, Web 2.0</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 2: Hyper Text Markup Language (10 Hrs.)</strong>
+                        <ul>
+                            <li>Introduction to HTML; Elements of HTML Document</li>
+                            <li>HTML Elements and Attributes: Headings, Paragraph, Division</li>
+                            <li>Formatting: b, i, small, sup, sub; Spacing: Pre, Br</li>
+                            <li>Formatting Text Phrases: span, strong, tt</li>
+                            <li>Image element; Anchors</li>
+                            <li>Lists: Ordered, Unordered, and Definition</li>
+                            <li>Tables; Frames; Forms: Form Elements, ID attributes, Class Attributes</li>
+                            <li>Meta Tag, Audio, Video, Canvas, Main, Section, Article, Header, Footer, Aside, Nav, Figure Tags</li>
+                            <li>HTML Events: Window Events, Form Element Events, Keyboard Events, Mouse Events</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 3: Cascading Style Sheets (8 Hrs.)</strong>
+                        <ul>
+                            <li>Introduction to CSS; CSS Syntax</li>
+                            <li>Inserting CSS: Inline, Internal, External</li>
+                            <li>ID and Class Selectors; Colors; Backgrounds; Borders; Text; Font; List; Table</li>
+                            <li>CSS Box Model; Normal Flow Box Layout: Basic Box Layout, Display Property, Padding, Margin</li>
+                            <li>Positioning: Relative, Float, Absolute</li>
+                            <li>CSS3 Borders, Box Shadows, Text Effects and Shadow</li>
+                            <li>Basics of Responsive Web Designs; Media Queries</li>
+                            <li>Introduction to Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 4: Client Side Scripting with JavaScript (9 Hrs.)</strong>
+                        <ul>
+                            <li>Structure of JavaScript Program; Variables and Data Types</li>
+                            <li>Statements: Expression, Keyword, Block</li>
+                            <li>Operators; Flow Controls, Looping, Functions</li>
+                            <li>Popup Boxes: Alert, Confirm, Prompt</li>
+                            <li>Objects and Properties; Constructors</li>
+                            <li>Arrays; Built-in Objects: Window, String, Number, Boolean, Date, Math, RegExp, Form, DOM</li>
+                            <li>User Defined Objects</li>
+                            <li>Event Handling and Form Validation</li>
+                            <li>Error Handling, Handling Cookies</li>
+                            <li>jQuery Syntax; jQuery Selectors, Events and Effects</li>
+                            <li>Introduction to JSON</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 5: AJAX and XML (7 Hrs.)</strong>
+                        <ul>
+                            <li>Basics of AJAX</li>
+                            <li>Introduction to XML and its Application</li>
+                            <li>Syntax Rules for Creating XML Document</li>
+                            <li>XML Elements; XML Attributes; XML Tree</li>
+                            <li>XML Namespace; XML Schema Languages: DTD, XSD</li>
+                            <li>XSD Simple Types, XSD Attributes, XSD Complex Types</li>
+                            <li>XML Style Sheets (XSLT); XQuery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 6: Server Side Scripting using PHP (8 Hrs.)</strong>
+                        <ul>
+                            <li>PHP Syntax, Variables, Data Types, Strings, Constants, Operators</li>
+                            <li>Control Structure, Functions, Array</li>
+                            <li>Creating Class and Objects</li>
+                            <li>PHP Forms: Accessing Form Elements, Form Validation</li>
+                            <li>Events, Cookies, Sessions</li>
+                            <li>Working with PHP and MySQL: Connecting to Database, Creating, Selecting, Deleting, Updating Records</li>
+                            <li>Introduction to CodeIgniter, Laravel, WordPress</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>Recommended Books</strong>
+                    <ul>
+                        <li>Web Design with HTML, CSS, JavaScript and jQuery Set, Jon Duckett, John Wiley & Sons</li>
+                        <li>Web Technologies: A Computer Science Perspective, Jeffrey C. Jackson, Pearson Prentice Hall</li>
+                        <li>Learning PHP, MySQL & JavaScript: with jQuery, CSS & HTML5, Robin Nixon, O’Reilly</li>
+                        <li>PHP & MySQL: Server-side Web Development, Jon Duckett, Wiley</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <strong>Reference Books</strong>
+                    <ul>
+                        <li>HTML5 and CSS3 for the Real World, Estelle Weyl, Louis Lazaris, Alexis Goldstein, Sitepoint</li>
+                        <li>HTML & CSS: Design and Build Websites, Jon Duckett, John Wiley & Sons</li>
+                        <li>Dynamic Web Programming and HTML5, Paul S. Wang, CRC Press</li>
+                        <li>HTML5 Programming with JavaScript for Dummies, John Paul Mueller</li>
+                        <li>JavaScript and JQuery: Interactive Front-end Web Development, Jon Duckett, Wiley</li>
+                        <li>The Complete Reference: HTML and CSS, Thomas A. Powell, McGraw Hill</li>
+                        <li>JavaScript: The Web Technologies Series, Don Gosseli, Course Technology Cengage Learning</li>
+                        <li>Web Technologies: HTML, JavaScript, PHP, JAVA, JSP, ASP.NET, XML and AJAX, Black Book, Dreamtech Press</li>
+                        <li>An Introduction to XML and Web Technologies, Anders Møller and Michael I. Schwartzbach, Addison-Wesley</li>
+                        <li>PHP and MySQL Web Development, Luke Welling, Addison Wesley</li>
+                        <li><a href="https://www.w3schools.com">www.w3schools.com</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            </div>
+    </section>
+    <br>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy;
+            2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
+            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `<h2 class="text-left">  Past Year Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h5> Please Use Menu </h5> <p> Need help ? watch tutorial !</p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+            pastYearSolution2075: `IP Solution 2075 `,
+            pastYearSolution2076: `IP Solution 2076`,
+
+
+            pastYearQuestion2075: `     <div class="">
+        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2075</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC318)</h6>
+            <h6>Web Technology</h6>
+            <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Group A</strong><br>
+            <p><strong>Attempt any TWO questions: (2x10=20)</strong></p>
+            <ol>
+                <li>
+                    <p>Explain the architectural issues of web layer with example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the use of XML in web development. Write internal and external DTD to describe "mail" as a root element and "to", "from", "subject", and "message" as child elements. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Develop a simple website that takes first name, last name, and address from the user and stores this information in the database. Use JavaScript to validate form data. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Group B</strong><br>
+            <p><strong>Attempt any EIGHT questions: (8x5=40)</strong></p>
+            <ol>
+                <li>
+                    <p>What is the structure of an HTML file? Explain with example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Define CSS? How can you use an external CSS? Explain. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can you define event handler? Write a JavaScript to demonstrate event handling. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Compare XML schema with DTD. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Discuss the use of Cookies with a suitable example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Why do we need XSLT? Explain XSL <code>&lt;xsl:for-each&gt;</code> Element. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is Web server software? Discuss its role on the Internet. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write server-side code to select data stored in the database. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Discuss integrated Windows authentication. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:<br>
+                        a) SMTP<br>
+                        b) XQuery <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
+    </div>
+`,
+
+pastYearQuestion2076: `        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2076</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC318)</h6>
+            <h6>Web Technology</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt Any Two Questions</strong></p>
+            <ol>
+                <li>
+                    <p>Create a web form for a book search catalog. The form should contain a dropdown defining search type, a text box for search keyword, and a radio button for download type (true or false). Write a PHP script to store data from the form into a database table and also retrieve the results from the stored table on a new page. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>How can you create objects in JavaScript? Create an HTML page containing a division with an image and its description in a paragraph. Write a JavaScript function to change the value of the description in the paragraph during onmouseover and mouseout events on the image. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>How can positioning of HTML elements be done using CSS? Create an HTML page with a div with some content and two paragraphs with some contents having IDs p1 and p2. Write external CSS for the div tag having fixed position with border style solid and width 2px. The p1 should have relative position, font type Arial, and color red. The p2 should have absolute position with top 0px and left 200px. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt Any Eight Questions</strong></p>
+            <ol>
+                <li>
+                    <p>What is the HTTP protocol? Define HTTP Request and Response. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Create an HTML page with tags header, article, and footer. Insert a link containing mailto:info@iost.edu.np in the footer tag. Set the keywords "iost" and "csit" using the Meta tag in the page. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can jQuery animate be used to create custom animations? Write syntax with a sample script. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is the use of JSON? How can you parse JSON? Illustrate with an example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is XML? Create an XML file containing records of employees having elements of simple and complex types. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How is the XSD of an XML file created? Illustrate with an example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can you define variables in PHP? Define any two variables of string types and display their results after concatenation. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can web pages be made responsive using media queries? Illustrate with an example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Why are inline frames used? Create an HTML page containing an iframe within a paragraph. The iframe should have a source to http://www.tuiost.edu.np and its height and width should be 200px and 400px respectively. <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
+    </div>`,
+
+
+
+
+            pastYearQuestion2078: `
+          <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2078</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC318)</h6>
+            <h6>Web Technology</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt Any Two Questions</strong></p>
+            <ol>
+                <li>
+                    <p>How do you define an Array in PHP? Write a PHP script to create a multidimensional array named Product that will contain pcode, pname, and price. Initialize the array with at least three instances. Also, write an HTML script to display the initialized values of the array in an HTML table. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Create an HTML signup form with fields Name, Email, Password, and Age. Validate the form using JavaScript. Write functions for validating each of the elements. All fields should not be empty. The email address should be a valid email, the password should be of length at least 6 and should start with the alphabet and end with a digit. The age should be between 8 and 60. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>How is external CSS inserted in an HTML page? Create an HTML page with two paragraph tags with IDs p1 and p2, and one div tag with ID dv1. Write an external CSS file as per the description: the margin of the paragraphs should be 100px from the top and 80px from the left. Both paragraphs should have the display set to block. The dv1 should have padding left and right set to 30px and 25px respectively, its background color should be blue and the font color should be red with the font type Verdana. Set the display of dv1 to none. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt Any Eight Questions</strong></p>
+            <ol>
+                <li>
+                    <p>What are the services provided under Web 2.0? <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Create an HTML page with its body containing a div. The div should contain an image within it. Create a link on the image to redirect to the URL http://www.tuiost.edu.np. Set the title of the page to "iost". Add a Meta tag on the page. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can jQuery ID selector be used to select a specific element? Write an example with jQuery that will hide a paragraph on clicking a button. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Create an HTML page containing ordered and unordered lists. Set the value of ordered list type to "A". The list should start at "D". <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Discuss different JSON data types. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is DTD? Create an XML file and write its equivalent DTD. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can you define a function in PHP? Create a function that will take two integers as arguments and will return the product of them. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Describe the CSS Box Model with an example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
+`,
+
+
+            pastYearQuestion2079: `
+ <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2079</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC318)</h6>
+            <h6>Web Technology</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Group A</strong><br>
+            <p><strong>Answer any two questions</strong></p>
+            <ol>
+                <li>
+                    <p>What is the use of XML? Create an XML file with simple type and complex type elements. Write its equivalent DTD. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Create an HTML file containing form elements textbox for username, password field, and a checkbox for hobbies. Now write a JavaScript function for the form validation. You should validate for username to be empty, password should be of length at least 5, and the checkbox should be checked. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>How is a database connection created in PHP? Write a PHP program to create a form and insert values into the database table. The form should contain at least two input fields. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Group B</strong><br>
+            <p><strong>Answer any eight questions</strong></p>
+            <ol>
+                <li>
+                    <p>Differentiate Web 1.0 from Web 2.0. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write an HTML script to generate the following list of items:</p>
+                    <ul>
+                        <li>1. Coffee: 
+                            <ul>
+                                <li>I. Black coffee</li>
+                                <li>II. Green coffee</li>
+                            </ul>
+                        </li>
+                        <li>2. Tea
+                            <ul>
+                                <li>A: Black tea</li>
+                                <li>B. Green tea</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Create an HTML page containing a div having id “dv1”. The div should contain a canvas element. The id of the canvas should be “mycanvas”. The height and width of the canvas should be 200 and 300. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What are the usages of class and id selectors in CSS? Illustrate with an example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is the word-wrap property in CSS? Write an HTML script to illustrate the word-wrap property. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Describe the jQuery Animate() method. Write an HTML script to create a div with id “mydiv”. The position of the div should be set to absolute. Now show the use of the animate method to move the div element to the right by 300px. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is XML Namespace? How is it used to avoid element name conflict in XML? Justify with an example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can you define class and objects in PHP? Write a PHP script to create a class and its object. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can you define an array in PHP? Write a PHP function to create an array of type integer and print its elements. <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+            </div>
+`,
+            pastYearQuestion2080: `
+
+              <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2080</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC318)</h6>
+            <h6>Web Technology</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt any two questions</strong></p>
+            <ol>
+                <li>
+                    <p>Write HTML script to create an HTML form as below and perform form validation using JavaScript.</p>
+
+                    <p>The validation should be as; the username should be of length at least 4 and is required. The password should start with a character and end with # and is required. The country and gender should be checked. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>How is XML different from HTML? Write an XML script to create an XML document containing the element Person having sub-elements Age, Name, and Pincode. Write the equivalent XSD for validating restrictions on the elements as the Age should be between 10 and 20, the Name should only accept either Ram or Shyam, and the Pincode should be 3 digits. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write a server-side script in PHP to illustrate inserting and selecting values to and from a database table. Create the required connection using your own assumptions. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt any eight questions</strong></p>
+            <ol>
+                <li>
+                    <p>Describe the WWW, web client, and web server. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What are HTML keyboard events? Write a script to display a message “Hello world” on the keypress event. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How are HTML elements accessed using getElementById and getElementByTagName? Illustrate using an HTML script. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can you define the position property for specifying the specific positioning of an HTML element? Write internal CSS to illustrate the position of an HTML div. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is chaining in jQuery? Write a script to illustrate the concept of chaining using the slideUp and slideDown methods. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is XML? Why is it called extensible? Mention the use of XML. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is the XMLHttpRequest object? Write an HTML script with AJAX showing the use of the XMLHttpRequest object. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write a PHP program that includes a function that will take two strings as input arguments and print the concatenation of the two strings. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How can you handle a session in PHP? <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
+        `,
+
+            pastYearSolution: `<h2 class="text-left">  Past Year Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help ? Watch Tutorial ! </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            pastYearSolution2076: `<embed src="./PastSolutions/2076 CSC 314 ~ DDA.pdf" width="100%" style="min-height: 100vh">`,
+            pastYearSolution2079: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
+            pastYearSolution2080: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
+            pastYearSolution2078: `
+             <style>
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: contain;
+      width: 100%;
+    }
+    .carousel-thumbnails img {
+      cursor: pointer;
+      width: 50%;
+      max-height: 100px;
+      opacity: 0.6;
+    }
+    .carousel-thumbnails img.active, .carousel-thumbnails img:hover {
+      opacity: 1;
+      border: 1px solid green!important;
+    }
+      
+    .carousel-control-prev,
+    .carousel-control-next {
+      bottom: 0;
+      top: auto;
+    }
+  </style>
+
+<body>
+  <h5 style="text-align:center">2078 DS Solution</h5>
+<div class="">
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
+      
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-1.jpg" class="d-block w-100" alt="The Woods" onclick="showModal(this.src, 'The Woods')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-2.jpg" class="d-block w-100" alt="Cinque Terre" onclick="showModal(this.src, 'Cinque Terre')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-3.jpg" class="d-block w-100" alt="Mountains and fjords" onclick="showModal(this.src, 'Mountains and fjords')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-4.jpg" class="d-block w-100" alt="Northern Lights" onclick="showModal(this.src, 'Northern Lights')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-5.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-6.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-7.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-8.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-9.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-10.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-11.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-12.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-13.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-14.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-15.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-16.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+      <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-17.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+
+      
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-18.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
+      </div>
+            <div class="carousel-item">
+        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-19.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
+      </div>
+
+
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="sr-only btn btn-success" type="button">Prev</button>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="sr-only btn btn-success" type="button">Next</button>
+    </a>
+  </div>
+
+  </hr>
+  </br>
+
+  <div class="row mt-3 carousel-thumbnails border">
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-1.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="0" alt="The Woods">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-2.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="1" alt="Cinque Terre">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-3.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-4.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-5.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-6.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-7.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-8.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-9.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-10.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+
+</div>
+
+  <div class="row mt-3 carousel-thumbnails border">
+            <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-11.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-12.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+
+
+  </div>
+
+          <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-13.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-14.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-15.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-16.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-17.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+    </div>
+
+        <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-18.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
+    </div>
+    <div class="col">
+      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-19.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
+
+    </div>
+
+
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--- <h5 class="modal-title" id="imageModalLabel">Image Zoom</h5>--->
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+`,
+
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help? watch tutorial! </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+        <div class="text-center">
+    <strong style="font-size: 24px;">Web Technology</strong>
+</div>
+<div class="mt-4">
+    <p><strong>Course Title:</strong> Web Technology</p>
+    <p><strong>Course No:</strong> CSC318</p>
+    <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+    <p><strong>Semester:</strong> V</p>
+    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+    <p><strong>Credit Hours:</strong> 3</p>
+</div>
+<div class="mt-4">
+    <strong>Course Description</strong>
+    <p>This course covers the fundamental concepts of HTML, CSS, JavaScript, XML, and PHP.</p>
+</div>
+<div class="mt-4">
+    <strong>Course Objectives</strong>
+    <ul>
+        <li>Provide basic knowledge of web design using HTML and CSS.</li>
+        <li>Teach client-side scripting using JavaScript.</li>
+        <li>Handle web data using XML.</li>
+        <li>Understand server-side scripting using PHP.</li>
+    </ul>
+</div>
+<div class="mt-4">
+    <strong>Detail Syllabus</strong>
+    <div>
+        <strong>Unit 1: Introduction (3 Hrs.)</strong>
+        <ul>
+            <li>Web Basics: Internet, Intranet, WWW, Static and Dynamic Web Page</li>
+            <li>Web Clients; Web Servers</li>
+            <li>Client Server Architecture: Single Tier, Two-Tier, Multi-Tier</li>
+            <li>HTTP: HTTP Request and Response</li>
+            <li>URL, Client Side Scripting, Server Side Scripting</li>
+            <li>Web 1.0, Web 2.0</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 2: Hyper Text Markup Language (10 Hrs.)</strong>
+        <ul>
+            <li>Introduction to HTML; Elements of HTML Document</li>
+            <li>HTML Elements and Attributes: Headings, Paragraph, Division</li>
+            <li>Formatting: b, i, small, sup, sub; Spacing: Pre, Br</li>
+            <li>Formatting Text Phrases: span, strong, tt</li>
+            <li>Image element; Anchors</li>
+            <li>Lists: Ordered, Unordered, and Definition</li>
+            <li>Tables; Frames; Forms: Form Elements, ID attributes, Class Attributes</li>
+            <li>Meta Tag, Audio, Video, Canvas, Main, Section, Article, Header, Footer, Aside, Nav, Figure Tags</li>
+            <li>HTML Events: Window Events, Form Element Events, Keyboard Events, Mouse Events</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 3: Cascading Style Sheets (8 Hrs.)</strong>
+        <ul>
+            <li>Introduction to CSS; CSS Syntax</li>
+            <li>Inserting CSS: Inline, Internal, External</li>
+            <li>ID and Class Selectors; Colors; Backgrounds; Borders; Text; Font; List; Table</li>
+            <li>CSS Box Model; Normal Flow Box Layout: Basic Box Layout, Display Property, Padding, Margin</li>
+            <li>Positioning: Relative, Float, Absolute</li>
+            <li>CSS3 Borders, Box Shadows, Text Effects and Shadow</li>
+            <li>Basics of Responsive Web Designs; Media Queries</li>
+            <li>Introduction to Bootstrap</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 4: Client Side Scripting with JavaScript (9 Hrs.)</strong>
+        <ul>
+            <li>Structure of JavaScript Program; Variables and Data Types</li>
+            <li>Statements: Expression, Keyword, Block</li>
+            <li>Operators; Flow Controls, Looping, Functions</li>
+            <li>Popup Boxes: Alert, Confirm, Prompt</li>
+            <li>Objects and Properties; Constructors</li>
+            <li>Arrays; Built-in Objects: Window, String, Number, Boolean, Date, Math, RegExp, Form, DOM</li>
+            <li>User Defined Objects</li>
+            <li>Event Handling and Form Validation</li>
+            <li>Error Handling, Handling Cookies</li>
+            <li>jQuery Syntax; jQuery Selectors, Events and Effects</li>
+            <li>Introduction to JSON</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 5: AJAX and XML (7 Hrs.)</strong>
+        <ul>
+            <li>Basics of AJAX</li>
+            <li>Introduction to XML and its Application</li>
+            <li>Syntax Rules for Creating XML Document</li>
+            <li>XML Elements; XML Attributes; XML Tree</li>
+            <li>XML Namespace; XML Schema Languages: DTD, XSD</li>
+            <li>XSD Simple Types, XSD Attributes, XSD Complex Types</li>
+            <li>XML Style Sheets (XSLT); XQuery</li>
+        </ul>
+    </div>
+    <div>
+        <strong>Unit 6: Server Side Scripting using PHP (8 Hrs.)</strong>
+        <ul>
+            <li>PHP Syntax, Variables, Data Types, Strings, Constants, Operators</li>
+            <li>Control Structure, Functions, Array</li>
+            <li>Creating Class and Objects</li>
+            <li>PHP Forms: Accessing Form Elements, Form Validation</li>
+            <li>Events, Cookies, Sessions</li>
+            <li>Working with PHP and MySQL: Connecting to Database, Creating, Selecting, Deleting, Updating Records</li>
+            <li>Introduction to CodeIgniter, Laravel, WordPress</li>
+        </ul>
+    </div>
+</div>
+<div class="mt-4">
+    <strong>Recommended Books</strong>
+    <ul>
+        <li>Web Design with HTML, CSS, JavaScript and jQuery Set, Jon Duckett, John Wiley & Sons</li>
+        <li>Web Technologies: A Computer Science Perspective, Jeffrey C. Jackson, Pearson Prentice Hall</li>
+        <li>Learning PHP, MySQL & JavaScript: with jQuery, CSS & HTML5, Robin Nixon, O’Reilly</li>
+        <li>PHP & MySQL: Server-side Web Development, Jon Duckett, Wiley</li>
+    </ul>
+</div>
+<div class="mt-4">
+    <strong>Reference Books</strong>
+    <ul>
+        <li>HTML5 and CSS3 for the Real World, Estelle Weyl, Louis Lazaris, Alexis Goldstein, Sitepoint</li>
+        <li>HTML & CSS: Design and Build Websites, Jon Duckett, John Wiley & Sons</li>
+        <li>Dynamic Web Programming and HTML5, Paul S. Wang, CRC Press</li>
+        <li>HTML5 Programming with JavaScript for Dummies, John Paul Mueller</li>
+        <li>JavaScript and JQuery: Interactive Front-end Web Development, Jon Duckett, Wiley</li>
+        <li>The Complete Reference: HTML and CSS, Thomas A. Powell, McGraw Hill</li>
+        <li>JavaScript: The Web Technologies Series, Don Gosseli, Course Technology Cengage Learning</li>
+        <li>Web Technologies: HTML, JavaScript, PHP, JAVA, JSP, ASP.NET, XML and AJAX, Black Book, Dreamtech Press</li>
+        <li>An Introduction to XML and Web Technologies, Anders Møller and Michael I. Schwartzbach, Addison-Wesley</li>
+        <li>PHP and MySQL Web Development, Luke Welling, Addison Wesley</li>
+        <li><a href="https://www.w3schools.com">www.w3schools.com</a></li>
+    </ul>
+</div>
+
+            `,
+
+            newSyllabus: `    <div class="text-center mt-4">
+        <strong style="font-size: 24px;">Web Technology</strong>
+    </div>
+    
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Web Technology</p>
+        <p><strong>Course No:</strong> CSC329</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> V</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+    
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course covers the fundamental concepts of HTML, CSS, JavaScript, XML, and PHP.</p>
+    </div>
+    
+    <div class="mt-4">
+        <strong>Course Objectives</strong>
+        <ul>
+            <li>Provide basic knowledge of web design using HTML and CSS.</li>
+            <li>Teach client-side scripting using JavaScript.</li>
+            <li>Handle web data using XML.</li>
+            <li>Introduce server-side scripting using PHP.</li>
+        </ul>
+    </div>
+    
+    <div class="mt-4">
+        <strong>Course Contents</strong>
+        
+        <div class="mt-4">
+            <strong>Unit 1: Introduction (3 Hrs.)</strong>
+            <ul>
+                <li>Web Basics: Internet, Intranet, WWW, Static and Dynamic Web Page</li>
+                <li>Web Clients and Web Servers</li>
+                <li>Client Server Architecture: Single Tier, Two-Tier, Multi-Tier</li>
+                <li>HTTP: HTTP Request and Response</li>
+                <li>URL, Client Side Scripting, Server Side Scripting</li>
+                <li>Web 1.0, Web 2.0</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <strong>Unit 2: Hyper Text Markup Language (10 Hrs.)</strong>
+            <ul>
+                <li>Introduction to HTML</li>
+                <li>Elements of HTML Document</li>
+                <li>HTML Elements and HTML Attributes</li>
+                <li>Headings, Paragraph, Division</li>
+                <li>Formating: b, i, small, sup, sub</li>
+                <li>Spacing: Pre, Br</li>
+                <li>Formatting Text Phrases: span, strong, tt</li>
+                <li>Image element, Anchors</li>
+                <li>Lists: Ordered and Unordered and Definition</li>
+                <li>Tables, Frames, Forms</li>
+                <li>Form Elements, ID attributes, Class Attributes of HTML Elements</li>
+                <li>Meta Tag, Audio, Video, Canvas, Main, Section, Article, Header, Footer, Aside, Nav, Figure Tags</li>
+                <li>HTML Events: Window Events, Form Element Events, Keyboard Events, Mouse Events</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <strong>Unit 3: Cascading Style Sheets (8 Hrs.)</strong>
+            <ul>
+                <li>Introduction; Cascading Style Sheets (CSS)</li>
+                <li>CSS Syntax</li>
+                <li>Inserting CSS: Inline, Internal, External</li>
+                <li>ID and Class Selectors</li>
+                <li>Colors, Backgrounds, Borders, Text, Font, List, Table</li>
+                <li>CSS Box Model</li>
+                <li>Normal Flow Box Layout: Basic Box Layout, Display Property, Padding, Margin</li>
+                <li>Positioning: Relative, Float, Absolute</li>
+                <li>CSS3 Borders, Box Shadows, Text Effects and shadow</li>
+                <li>Basics of Responsive Web Designs; Media Queries, Introduction to Bootstrap</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <strong>Unit 4: Client Side Scripting with JavaScript (9 Hrs.)</strong>
+            <ul>
+                <li>Structure of JavaScript Program</li>
+                <li>Variables and Data Types</li>
+                <li>Statements: Expression, Keyword, Block</li>
+                <li>Operators</li>
+                <li>Flow Controls, Looping, Functions</li>
+                <li>Popup Boxes: Alert, Confirm, Prompt</li>
+                <li>Objects and properties; Constructors</li>
+                <li>Arrays</li>
+                <li>Built-in Objects: Window, String, Number, Boolean, Date, Math, RegExp, Form, DOM</li>
+                <li>User Defined Objects</li>
+                <li>Event Handling and Form Validation, Error Handling, Handling Cookies</li>
+                <li>jQuery Syntax; jQuery Selectors, Events and Effects</li>
+                <li>Introduction to JSON</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <strong>Unit 5: AJAX and XML (7 Hrs.)</strong>
+            <ul>
+                <li>Basics of AJAX</li>
+                <li>Introduction to XML and its Application</li>
+                <li>Syntax Rules for creating XML document</li>
+                <li>XML Elements, XML Attributes, XML Tree, XML Namespace</li>
+                <li>XML schema languages: Document Type Definition(DTD), XML Schema Definition (XSD)</li>
+                <li>XSD Simple Types, XSD Attributes, XSD Complex Types</li>
+                <li>XML Style Sheets (XSLT), XQuery</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <strong>Unit 6: Server Side Scripting using PHP (8 Hrs.)</strong>
+            <ul>
+                <li>PHP Syntax, Variables, Data Types, Strings, Constants, Operators, Control structure</li>
+                <li>Functions, Array, Creating Class and Objects</li>
+                <li>PHP Forms, Accessing Form Elements, Form Validation, Events, Cookies and Sessions</li>
+                <li>Working with PHP and MySQL: Connecting to Database, Creating, Selecting, Deleting, Updating Records in a table, Inserting Multiple Data</li>
+                <li>Introduction to CodeIgniter, Laravel, Wordpress etc.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="mt-4">
+        <strong>Laboratory Works</strong>
+        <p>The laboratory work includes creating web pages and applications using HTML, CSS, JavaScript, XML, and PHP. Students have to prepare a web-based application, using the above-mentioned technologies, as a project work.</p>
+    </div>
+    
+    <div class="mt-4">
+        <strong>Text Books</strong>
+        <ul>
+            <li>Web Design with HTML, CSS, JavaScript and jQuery Set, Jon Duckett, John Wiley & Sons</li>
+            <li>Web Technologies: A Computer Science Perspective, Jeffrey C. Jackson, Pearson Prentice Hall</li>
+            <li>Learning PHP, MySQL & JavaScript: with jQuery, CSS & HTML5, Robin Nixon, O’Reilly</li>
+            <li>PHP & MySQL: Server-side Web Development, Jon Ducket, Wiley</li>
+        </ul>
+    </div>
+    
+    <div class="mt-4">
+        <strong>Reference Books</strong>
+        <ul>
+            <li>HTML5 and CSS3 for the Real World”, Estelle Weyl, Louis Lazaris, Alexis Goldstein, Sitepoint</li>
+            <li>HTML & CSS: Design and Build Websites, Jon Duckett, John Wiley & Sons</li>
+            <li>Dynamic Web Programming and HTML5, Paul S. Wang, CRC Press</li>
+            <li>HTML5 Programming with JavaScript for Dummies, John Paul Mueller</li>
+            <li>JavaScript and JQuery: Interactive Front-end Web Development, Jon Duckett, Wiley</li>
+            <li>The Complete Reference: HTML and CSS, Thomas A. Powell, McGraw Hill</li>
+            <li>JavaScript: The Web Technologies Series, Don Gosseli, Course Technology Cengage Learning</li>
+            <li>Web Technologies: HTML, JAVASCRIPT, PHP, JAVA, JSP, ASP.NET, XML and AJAX, Black Book, Dreamtech Press</li>
+            <li>An Introduction to XML and Web Technologies, Anders Møller and Michael I. Schwartzbach, Addison-Wesley</li>
+            <li>PHP and MySQL Web Development, Luke Welling, Addison Wesley</li>
+            <li>www.w3schools.com</li>
+        </ul>
+    </div>
+    `
+        };
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+
+        document.getElementById('pastYearQuestion2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2078;
+        });
+
+
+
+        document.getElementById('pastYearQuestion2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2079;
+        });
+
+
+        document.getElementById('pastYearQuestion2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2080;
+        });
+
+
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+        // Set current year in the footer
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
