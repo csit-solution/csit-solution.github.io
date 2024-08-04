@@ -31,15 +31,13 @@
                 </a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Select Semester
                             </a>
                             <ul class="dropdown-menu">
@@ -73,8 +71,7 @@
                 <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
                     <h5>Cryptography</h5>
                     <li class="nav-item dropdown">
-                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Past Year Questions
                         </a>
                         <ul class="dropdown-menu">
@@ -93,8 +90,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Past Year Solution
                         </a>
                         <ul class="dropdown-menu">
@@ -109,8 +105,7 @@
 
 
                     <li class="nav-item dropdown">
-                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Notes
                         </a>
                         <ul class="dropdown-menu">
@@ -119,11 +114,30 @@
                         </ul>
                     </li>
 
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">Computer Security
+                                    Art and Science
+                                    Matt Bishop
+
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+                                    Cryptography and Network Security_ Principles and Practice
+                                    WILLIAM STALLINGS
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" id="refBook3">
+                                    Information-security-principles-and-practice-2nd-edition-stamp.pdf
+                                </a></li>
+                        </ul>
+                    </li>
 
 
                     <li class="nav-item dropdown">
-                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Syllabus
                         </a>
                         <ul class="dropdown-menu">
@@ -134,9 +148,10 @@
                 </ul>
             </div>
 
-            &nbsp; &nbsp; &nbsp;
 
-            <div id="content" class="col-md-8 col-sm-12">
+
+            <div class="col-md-9  col-sm-12">
+                <div class="border rounded p-3" id="content"  >
                 <!-- Dynamic content will be displayed here -->
                 <div class="text-center">
                     <strong style="font-size: 24px;">Cryptography</strong>
@@ -152,27 +167,22 @@
                 </div>
                 <div class="mt-4">
                     <strong>Course Description</strong>
-                    <p>The course introduces the underlying principles and design of cryptosystems. It covers the basics
-                        of cryptography, including traditional ciphers, block ciphers, stream ciphers, public and
-                        private key cryptosystems. The course also includes the theory of hash functions, authentication
-                        systems, network security protocols, and malicious logic.</p>
+                    <p>The course introduces the underlying principles and design of cryptosystems. It covers the basics of cryptography, including traditional ciphers, block ciphers, stream ciphers, public and private key cryptosystems. The course also
+                        includes the theory of hash functions, authentication systems, network security protocols, and malicious logic.</p>
                 </div>
                 <div class="mt-4">
                     <strong>Course Objectives</strong>
-                    <p>The objectives of this course are to familiarize the students with cryptography and its
-                        applications. The students will develop a basic understanding of cryptographic mechanisms.</p>
+                    <p>The objectives of this course are to familiarize the students with cryptography and its applications. The students will develop a basic understanding of cryptographic mechanisms.</p>
                 </div>
                 <div class="mt-4">
                     <strong>Course Contents</strong>
                     <div>
                         <strong>Unit I: Introduction and Classical Ciphers (7 Hrs.)</strong>
                         <ul>
-                            <li>Security: Computer Security, Information Security, Network Security, CIA Triad:
-                                Confidentiality, Integrity, Availability, Cryptography, Cryptosystem, Cryptanalysis,
-                                Security Threats, Attacks: Passive, Active, Security Services, Mechanisms, Policy and
-                                Mechanism.</li>
-                            <li>Classical Cryptosystems: Hierarchy of cipher, Substitution Techniques (Monoalphabetic,
-                                Polyalphabetic), Transposition Techniques.</li>
+                            <li>Security: Computer Security, Information Security, Network Security, CIA Triad: Confidentiality, Integrity, Availability, Cryptography, Cryptosystem, Cryptanalysis, Security Threats, Attacks: Passive, Active, Security Services,
+                                Mechanisms, Policy and Mechanism.
+                            </li>
+                            <li>Classical Cryptosystems: Hierarchy of cipher, Substitution Techniques (Monoalphabetic, Polyalphabetic), Transposition Techniques.</li>
                             <li>Modern Ciphers: Block Ciphers, Stream Ciphers, Symmetric Ciphers, Asymmetric Ciphers.
                             </li>
                         </ul>
@@ -181,13 +191,10 @@
                         <strong>Unit II: Symmetric Ciphers (10 Hrs.)</strong>
                         <ul>
                             <li>Fiestel Cipher Structure, Substitution Permutation Network (SPN).</li>
-                            <li>Data Encryption Standards (DES): Key Generation, Encryption, Decryption Process, Weak
-                                Keys, Double DES, Meet in Middle Attack, Triple DES.</li>
-                            <li>Finite Fields: Groups, Rings, Fields, GCD, Euclidean Algorithm, Modular Arithmetic, Set
-                                of Residue (Zn), Congruence, Residue classes, Quadratic residue, Polynomial Arithmetic
-                                over Galois Field.</li>
-                            <li>International Data Encryption Standard (IDEA): Key Generation, Encryption, Decryption
-                                Process.</li>
+                            <li>Data Encryption Standards (DES): Key Generation, Encryption, Decryption Process, Weak Keys, Double DES, Meet in Middle Attack, Triple DES.</li>
+                            <li>Finite Fields: Groups, Rings, Fields, GCD, Euclidean Algorithm, Modular Arithmetic, Set of Residue (Zn), Congruence, Residue classes, Quadratic residue, Polynomial Arithmetic over Galois Field.</li>
+                            <li>International Data Encryption Standard (IDEA): Key Generation, Encryption, Decryption Process.
+                            </li>
                             <li>Advanced Encryption Standards (AES): Key Generation, Encryption, Decryption Process.
                             </li>
                             <li>Modes of Block Cipher Encryptions: ECB, CBC, CFB, OFB, CTR.</li>
@@ -196,11 +203,9 @@
                     <div>
                         <strong>Unit III: Asymmetric Ciphers (8 Hrs.)</strong>
                         <ul>
-                            <li>Number Theory: Prime Numbers, Primality Testing, Miller-Rabin Algorithm, Fermat’s
-                                Theorem, Euler’s Totient Function, Euler’s Theorem, Primitive Root, Discrete Logarithms.
+                            <li>Number Theory: Prime Numbers, Primality Testing, Miller-Rabin Algorithm, Fermat’s Theorem, Euler’s Totient Function, Euler’s Theorem, Primitive Root, Discrete Logarithms.
                             </li>
-                            <li>Public Key Cryptosystems, Applications, Distribution of Public Key, Diffie-Hellman Key
-                                Exchange, Man-in-the-Middle Attack.</li>
+                            <li>Public Key Cryptosystems, Applications, Distribution of Public Key, Diffie-Hellman Key Exchange, Man-in-the-Middle Attack.</li>
                             <li>RSA Algorithm: Key Generation, Encryption, Decryption Process.</li>
                             <li>Elgamal Cryptographic System: Key Generation, Encryption, Decryption Process.</li>
                         </ul>
@@ -212,39 +217,33 @@
                             <li>Hash Functions: Properties, Applications.</li>
                             <li>Message Digests: MD4, MD5 algorithms.</li>
                             <li>Secure Hash Algorithms: SHA-1, SHA-2, SHA-512.</li>
-                            <li>Digital Signatures: Direct, Arbitrated Digital Signature, DSS Approach, DSA, RSA
-                                Approach.</li>
+                            <li>Digital Signatures: Direct, Arbitrated Digital Signature, DSS Approach, DSA, RSA Approach.
+                            </li>
                         </ul>
                     </div>
                     <div>
                         <strong>Unit V: Authentication (3 Hrs.)</strong>
                         <ul>
-                            <li>Authentication System, Password Based Authentication, Dictionary Attacks, Challenge
-                                Response System, One Way Authentication, Mutual Authentication, Biometric System,
-                                Needham-Schroeder Scheme, Kerberos Protocol, Kerberos 5.</li>
+                            <li>Authentication System, Password Based Authentication, Dictionary Attacks, Challenge Response System, One Way Authentication, Mutual Authentication, Biometric System, Needham-Schroeder Scheme, Kerberos Protocol, Kerberos 5.</li>
                         </ul>
                     </div>
                     <div>
                         <strong>Unit VI: Network Security and Public Key Infrastructure (6 Hrs.)</strong>
                         <ul>
-                            <li>Overview of Network Security, Digital Certificates, X.509 Certificates, Certificate Life
-                                Cycle Management.</li>
-                            <li>PKI Trust Models, PKIX, Email Security: PGP, SSL Protocol, TLS Protocol, IPSec Protocol,
-                                Firewalls, Types of Firewalls.</li>
+                            <li>Overview of Network Security, Digital Certificates, X.509 Certificates, Certificate Life Cycle Management.</li>
+                            <li>PKI Trust Models, PKIX, Email Security: PGP, SSL Protocol, TLS Protocol, IPSec Protocol, Firewalls, Types of Firewalls.</li>
                         </ul>
                     </div>
                     <div>
                         <strong>Unit VII: Malicious Logic (3 Hrs.)</strong>
                         <ul>
-                            <li>Types of Malicious Logic: Virus, Worm, Trojan Horse, Zombies, Denial of Service Attacks,
-                                Intrusion, Intruders, Intrusion Detection System.</li>
+                            <li>Types of Malicious Logic: Virus, Worm, Trojan Horse, Zombies, Denial of Service Attacks, Intrusion, Intruders, Intrusion Detection System.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="mt-4">
                     <strong>Laboratory Works</strong>
-                    <p>Students are required to develop programs in related topics using suitable programming languages
-                        such as Python or other similar languages.</p>
+                    <p>Students are required to develop programs in related topics using suitable programming languages such as Python or other similar languages.</p>
                 </div>
                 <div class="mt-4">
                     <strong>Text Books</strong>
@@ -263,19 +262,18 @@
                         <li>B. A. Forouzan, Cryptography & Network Security, Tata McGraw Hill.</li>
                     </ul>
                 </div>
-
+            </div>
             </div>
     </section>
     <br>
+
+    </div>
 
     <footer class="container">
         <hr>
         <br>
         <p class="text-center lead">
-            All CopyRight Reserved &copy;
-            2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
-            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
-                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
         </p>
     </footer>
 
@@ -289,9 +287,7 @@
 
             questions: `<h2 class="text-left">  Discrete Structure Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
-            pastYearSolution2075: `IP Solution 2075 `,
-            pastYearSolution2076: `IP Solution 2076`,
-
+        
 
             pastYearQuestion2074: `<div class="">
     <div class="text-center">
@@ -876,237 +872,66 @@
             <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             `,
-            pastYearSolution2075: ``,
-            pastYearSolution2076: ``,
-            pastYearSolution2079: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
-            pastYearSolution2080: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
+            
+            pastYearSolution2075: 
+            `
+             <h5> Cryptography Solution 207 </h5>   
+            <hr>
+            <object data="" width="100%" height="600px">
+                 <p>Sorry! PDF cannot be displayed.</p>
+            </object>  
+             
+            `,
+            pastYearSolution2076: `
+            
+               <h5> Cryptography Solution 2076 </h5>   
+            <hr>
+            <object data="./pastSolutions/2076_Solutions_CSC_316_Cryptography_Google Docs.pdf" width="100%" height="600px">
+                 <p>Sorry! PDF cannot be displayed.</p>
+            </object>  
+            `,
             pastYearSolution2078: `
-             <style>
-    .carousel-item img {
-      max-height: 500px;
-      object-fit: contain;
-      width: 100%;
-    }
-    .carousel-thumbnails img {
-      cursor: pointer;
-      width: 50%;
-      max-height: 100px;
-      opacity: 0.6;
-    }
-    .carousel-thumbnails img.active, .carousel-thumbnails img:hover {
-      opacity: 1;
-      border: 1px solid green!important;
-    }
-      
-    .carousel-control-prev,
-    .carousel-control-next {
-      bottom: 0;
-      top: auto;
-    }
-  </style>
+                         <h5> Cryptography Solution 207 </h5>   
+            <hr>
+            <object data="" width="100%" height="600px">
+                 <p>Sorry! PDF cannot be displayed.</p>
+            </object>  `,
 
-<body>
-  <h5 style="text-align:center">2078 DS Solution</h5>
-<div class="">
+            pastYearSolution2079: `
+            <h5> Cryptography Solution 207 </h5>   
+            <hr>
+            <object data="" width="100%" height="600px">
+                 <p>Sorry! PDF cannot be displayed.</p>
+            </object>  `,
+            pastYearSolution2080: `
+                         <h5> Cryptography Solution 207 </h5>   
+            <hr>
+            <object data="" width="100%" height="600px">
+                 <p>Sorry! PDF cannot be displayed.</p>
+            </object>  `,
 
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
-      
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-1.jpg" class="d-block w-100" alt="The Woods" onclick="showModal(this.src, 'The Woods')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-2.jpg" class="d-block w-100" alt="Cinque Terre" onclick="showModal(this.src, 'Cinque Terre')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-3.jpg" class="d-block w-100" alt="Mountains and fjords" onclick="showModal(this.src, 'Mountains and fjords')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-4.jpg" class="d-block w-100" alt="Northern Lights" onclick="showModal(this.src, 'Northern Lights')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-5.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-6.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
-      </div>
-            <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-7.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-8.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
-      </div>
+            refBook1: `
+            <h5> Computer Security_ Art and Science.pdf </h5>
+            <hr>
+            <object data="./RefBook/Computer Security_ Art and Science.pdf" type="application/pdf" width="100%" height="600px">
+                 <p>Sorry! PDF cannot be displayed.</p>
+            </object>
+            `,
+            refBook2: `      
+            <h5> Cryptography and Network Security_ Principles and Practice.pdf   </h5>   
+            <hr>
+            <object data="./RefBook/Cryptography and Network Security_ Principles and Practice.pdf" type="application/pdf" width="100%" height="600px">
+                 <p>Sorry! PDF cannot be displayed.</p>
+            </object>  `,
 
-
-            <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-9.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-10.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
-      </div>
-            <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-11.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-12.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
-      </div>
-
-            <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-13.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
-      </div>
-
-
-            <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-14.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-15.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
-      </div>
-            <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-16.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
-      </div>
-      <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-17.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
-      </div>
-
-      
-            <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-18.jpg" class="d-block w-100" alt="Snowy Mountains" onclick="showModal(this.src, 'Snowy Mountains')">
-      </div>
-            <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-19.jpg" class="d-block w-100" alt="Nature and sunrise" onclick="showModal(this.src, 'Nature and sunrise')">
-      </div>
-
-
-
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <button class="sr-only btn btn-success" type="button">Prev</button>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <button class="sr-only btn btn-success" type="button">Next</button>
-    </a>
-  </div>
-
-  </hr>
-  </br>
-
-  <div class="row mt-3 carousel-thumbnails border">
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-1.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="0" alt="The Woods">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-2.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="1" alt="Cinque Terre">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-3.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-4.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-5.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-6.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
-    </div>
-
-        <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-7.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-8.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-9.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-10.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
-    </div>
-
-
-</div>
-
-  <div class="row mt-3 carousel-thumbnails border">
-            <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-11.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-12.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
-
-
-  </div>
-
-          <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-13.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
-    </div>
-
-        <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-14.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="2" alt="Mountains and fjords">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-15.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="3" alt="Northern Lights">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-16.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-17.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
-    </div>
-
-        <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-18.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="4" alt="Nature and sunrise">
-    </div>
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/yana-music/CSITSolution/main/pastyearsolutions/secondSemester/DiscreteMath/2078/ds-2078-19.jpg" class="img-fluid" data-target="#carouselExampleIndicators" data-slide-to="5" alt="Snowy Mountains">
-
-    </div>
-
-
-
-    </div>
-
-<!-- Modal -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <!--- <h5 class="modal-title" id="imageModalLabel">Image Zoom</h5>--->
-      </div>
-      <div class="modal-body text-center">
-        <img id="modalImage" src="" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-
-`,
+            refBook3: `      
+            <h5> information-security-principles-and-practice-2nd-edition-stamp  </h5>   
+            <hr>
+            <object data="./RefBook/information-security-principles-and-practice-2nd-edition-stamp.pdf" width="100%" height="600px">
+                 <p>Sorry! PDF cannot be displayed.</p>
+            </object>  `,
 
             oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
             // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
@@ -1331,10 +1156,29 @@
                 <li>B. A. Forouzan, Cryptography & Network Security, Tata McGraw Hill.</li>
             </ul>
         </div>
-    </div>
- `
+    </div>`,
+
+
         };
 
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+
+
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
 
 
         document.getElementById('questions').addEventListener('click', () => {
@@ -1425,6 +1269,7 @@
         document.getElementById('notesNewSyllabus').addEventListener('click', () => {
             content.innerHTML = contents.notesNewSyllabus;
         });
+
 
         // Set current year in the footer
         document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
