@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC-315 SAD ~ CSIT Solution </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *,
+        .lead {
+            letter-spacing: 1px;
+        }
+
+        li a,
+        a,
+        .carousel-control-prev-icon,
+        .carousel-control-next {
+            color: rgb(0, 109, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
+        <div class="container-sm d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="./csc315SAD.html">
+                    <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
+                        class="img-fluid rounded-circle" style="width: 50px;">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select Semester
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../../index.html">First</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Second</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Third</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fourth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Fifth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Sixth</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Seventh</a></li>
+                                <li><a class="dropdown-item" href="../../../../index.html">Eighth</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="container" style="min-height: 70vh;">
+        <div class="row">
+            <div class="col-md-3  col-sm-12 border-right ">
+
+                <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
+                    <h5> System Analysis and Design </h5>
+                    <li class="nav-item dropdown">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Questions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">SAD 2075</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">SAD 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">SAD 2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">SAD 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">SAD 2080</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Past Year Solution
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076"> Solution2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2078"> Solution2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2079"> Solution2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearSolution2080"> Solution2080</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">Computer Security
+                                    Art and Science
+                                    Matt Bishop
+
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+                                    Cryptography and Network Security_ Principles and Practice
+                                    WILLIAM STALLINGS
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" id="refBook3">
+                                    Information-security-principles-and-practice-2nd-edition-stamp.pdf
+                                </a></li>
+                        </ul>
+                    </li> -->
+
+
+                    <li class="nav-item dropdown">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="notesOldSyllabus">Notes By Dilli Hang Rai</a></li>
+                            <li><a class="dropdown-item" href="#" id="notesNewSyllabus">Notes By XYZ</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Syllabus
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 315 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 326 New Syllabus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div  class="col-md-9 col-sm-12 border rounded">
+                <div id="content" class="p-3"> 
+            
+                <!-- Dynamic content will be displayed here -->
+                <div class="text-center">
+                    <h4>Tribhuvan University</h4>
+                    <h5>Institute of Science and Technology</h5>
+                   
+                
+                    <p>Bachelor of Science in Computer Science and Information Technology</p>
+                    <strong class="font-size-lg">System Analysis and Design</strong>
+                </div>
+                <div class="mt-4">
+                    <p><strong>Course Title:</strong> System Analysis and Design</p>
+                    <p><strong>Course No:</strong> CSC315</p>
+                    <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                    <p><strong>Semester:</strong> V</p>
+                    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                    <p><strong>Credit Hours:</strong> 3</p>
+                </div>
+                <div class="mt-4">
+                    <strong>Course Description</strong>
+                    <p>This course covers the basic concepts of computers and information technology including introduction, hardware, software, memory, input/output, data representation, database, networks and data communication, Internet, multimedia, and computer security.</p>
+                </div>
+                <div class="mt-4">
+                    <strong>Course Objectives</strong>
+                    <p>This course introduces basic elements of the design and analysis of computer algorithms. Topics include asymptotic notations and analysis, divide and conquer strategy, greedy methods, dynamic programming, basic graph algorithms, NP-completeness, and approximation algorithms. For each topic, beside in-depth coverage, one or more representative problems and their algorithms shall be discussed.</p>
+                </div>
+                <div class="mt-4">
+                    <strong>Course Contents</strong>
+                    <div>
+                        <strong>Unit 1. Foundations for Systems Development (10 Hrs.)</strong>
+                        <ul>
+                            <li>The Systems Development Environment: Introduction; A Modern Approach to Systems Analysis and Design; Developing Information Systems and the Systems Development Life Cycle; The Heart of the Systems Development Process and Traditional Waterfall SDLC; CASE Tools</li>
+                            <li>Other Approaches: Prototyping; Spiral; Rapid Application Development; Introduction to Agile Development</li>
+                            <li>Managing the Information Systems Project: Introduction; Managing the Information Systems Project; Representing and Scheduling Project Plans; Using Project Management Software</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 2. Planning (5 Hrs.)</strong>
+                        <ul>
+                            <li>Identifying and Selecting Systems Development Projects: Introduction; Identifying and Selecting Systems Development Projects; Corporate and Information Systems Planning</li>
+                            <li>Initiating and Planning Systems Development Projects: Introduction; Initiating and Planning Systems Development Projects; Process of Initiating and Planning IS Development Projects, Assessing Project Feasibility; Building and Reviewing the Baseline Project Plan</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 3. Analysis (13 Hrs.)</strong>
+                        <ul>
+                            <li>Determining System Requirements: Introduction; Performing Requirements Determination; Traditional Methods for Determining Requirements; Contemporary Methods for Determining System Requirements; Radical Methods for Determining System Requirements</li>
+                            <li>Structuring System Process Requirements: Introduction; Process Modeling; Data Flow Diagrams; Modeling Logic with Decision Tables, Decision Trees, and Pseudocodes</li>
+                            <li>Structuring System Data Requirements: Introduction; Conceptual Data Modeling; Gathering Information for Conceptual Data Modeling; Introduction to E-R Modeling</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 4. Design (7 Hrs.)</strong>
+                        <ul>
+                            <li>Designing Databases: Introduction; Database Design; Relational Database Model; Normalization; Transforming E-R Diagrams Into Relations; Merging Relations; Physical File and Database Design; Designing Fields; Designing Physical Tables</li>
+                            <li>Designing Forms and Reports: Introduction; Designing Forms and Reports; Formatting Forms and Reports; Assessing Usability</li>
+                            <li>Designing Interfaces and Dialogues: Introduction; Designing Interfaces and Dialogues; Interaction Methods and Devices; Designing Interfaces; Designing Dialogues; Designing Interfaces and Dialogues in Graphical Environments</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 5. Implementation and Maintenance (4 Hrs.)</strong>
+                        <ul>
+                            <li>System Implementation: Introduction; System Implementation; Software Application Testing; Installation; Documenting the System; Training and Supporting Users; Organizational Issues in Systems Implementation</li>
+                            <li>Maintaining Information Systems: Introduction; Maintaining Information Systems; Conducting Systems Maintenance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Unit 6. Introduction to Object-Oriented Development (6 Hrs.)</strong>
+                        <ul>
+                            <li>Basic Characteristics of Object-Oriented Systems; Object-Oriented System Analysis and Design (OOSAD); Introduction to Unified Modeling Language, Structural and Behavioral Diagrams</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <strong>Laboratory Works</strong>
+              <p>
+                In the practical session, students will learn to use project 
+management, CASE, and modeling tools. They also prepare a project report that includes at least 
+analysis, design, and implementation phases of system analysis and design. The project can be done 
+in groups with at most four members in each group using any suitable database, programming, and 
+interfacing technologies.
+              </p>
+                </div>
+                <div class="mt-4">
+ 
+        <strong> Text Books: </strong>
+        <ul>
+            <li>1. Joseph S. Valacich and Joey F. George, Modern Systems Analysis and Design, 8th Edition,
+                Pearson
+            <li>2. Alan Dennis, Barbara Haley Wixom, and David Tegarden, Systems Analysis and Design – An
+                Object-Oriented Approach with UML, 5th Edition, Wiley </li>
+        </ul>
+      
+            <strong> References Books: </strong> 
+            <ul>
+            <li>1. Kenneth E. Kendall and Julie E. Kendall, System Analysis and Design, 9th Edition, Pearson</li>
+            <li>2. Jeffrey Whitten and Lonnie Bently, System Analysis and Design Methods, 7th Edition</li>
+            <li>3. Scott Tilley and Harry J. Rosenblatt, System Analysis and Design, 11th Edition</li>
+        
+        </ul>
+                </div>
+        
+   </div>
+            </div>
+    </section>
+    <br>
+
+    <footer class="container">
+        <hr>
+        <br>
+        <p class="text-center lead">
+            All CopyRight Reserved &copy;
+            2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
+            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to dynamically update content
+        const content = document.getElementById('content');
+
+        const contents = {
+
+            questions: `<h2 class="text-left">  Past Year Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h5> Please Use Menu </h5> <p> Need help ? watch tutorial !</p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+            pastYearSolution2075: `IP Solution 2075 `,
+            pastYearSolution2076: `IP Solution 2076`,
+
+
+            pastYearQuestion2075: `            <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2075</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC315)</h6>
+            <h6>System Analysis and Design</h6>
+            <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Group A</strong><br>
+            <p><strong>Long Answer Questions:</strong></p>
+            <p><strong>Attempt Any Two: (2x10=20)</strong></p>
+            <ol>
+                <li>
+                    <p>What is an information system? Why do we need it? Discuss the prototyping approach to information systems development along with its merits and demerits. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Draw a context diagram and data flow diagram for an organization that you are familiar with. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Compare object-oriented analysis and design with structured analysis and design. Discuss different activities involved in each of the phases of the object-oriented development life cycle. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Group B</strong><br>
+            <p><strong>Short Answer Questions:</strong></p>
+            <p><strong>Attempt Any Eight: (8x5=40)</strong></p>
+            <ol>
+                <li>
+                    <p>Explain management skills needed by system analysts. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>A system costs Rs. 1,00,000 to install and Rs. 8,000 per month as recurring expenses. The benefit per year is Rs. 1,50,000. Assuming an interest rate of 12%, what is the payback period of the investment? <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Create a decision tree to represent the logic of a payroll system described in the following narrative. There are two types of employees: salaried and hourly. All salaried employees get a basic salary. Hourly wage is calculated for hourly workers. For hourly workers, if hours worked are less than 40, an absence report is also produced, and if it is greater than 40, overtime is also calculated. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is information gathering? Discuss the questionnaire along with its merits and demerits. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is file organization? Discuss hashed file organization with an example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Discuss general guidelines in designing forms and reports. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Discuss different approaches to installation. Which is the most expensive? Which is the most risky? How does an organization decide which approach to use? <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>How is CASE used in the maintenance of information systems? <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What is project scheduling? How do you calculate project schedule? <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Why do we need high-quality software? Discuss different software quality assurance activities. <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
+`,
+
+pastYearQuestion2076: `          <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2076</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC315)</h6>
+            <h6>System Analysis and Design</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt any TWO Questions</strong></p>
+            <ol>
+                <li>
+                    <p>What is the waterfall model? Explain the prototyping model for developing information systems along with merits and demerits. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Define feasibility. Explain different categories of feasibility. How do you measure economic feasibility? <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Assuming a retail clothing store in a mall, draw a context diagram and a level-0 diagram that represent the selling system at the store. <span class="font-weight-bold">(20)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt any EIGHT questions</strong></p>
+            <ol>
+                <li>
+                    <p>Explain the modern approach to system analysis and design. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is rapid application development? Explain. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is project initiation? Explain different activities you will perform during the project initiation phase. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is the process of identifying and selecting information system development projects in brief. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is a group interview? What are the benefits and drawbacks of group interviews? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>How do you format forms and reports? Explain general guidelines for formatting forms and reports. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>List major activities of maintenance. Explain different types of maintenance activities. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is object-oriented development? How is it different from structured development? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:</p>
+                    <ul>
+                        <li>Spiral model</li>
+                        <li>Decision table</li>
+                    </ul>
+                    <p><span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+          `,
+
+            pastYearQuestion2078: `
+                 <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2078</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC315)</h6>
+            <h6>System Analysis and Design</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt Any Two Questions</strong></p>
+            <ol>
+                <li>
+                    <p>What is system development life cycle (SDLC)? Explain each phase of SDLC in detail. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Assume monetary benefits of an information system of $70,000 the first year and increasing benefits of $10,000 a year for the next four years, one-time development costs of $90,000, and recurring costs of $40,000 per year over the duration of the system’s life. The discount rate for the company was 10 percent. Using a five-year time horizon, calculate the net present value of these costs and benefits. Also, calculate the overall return on investment and then present a breakeven analysis. At what point does breakeven occur? <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>What is a conceptual data model? How do you gather information for conceptual data modeling? Draw an ER diagram for a retail store in a mall which sells different items to its customers. <span class="font-weight-bold">(20)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt Any Eight Questions</strong></p>
+            <ol>
+                <li>
+                    <p>What is system analysis and design? Why is it important for developing information systems? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Why do we need CASE tools during system development? What are different components of CASE tools? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is project management? Explain some activities and skills of a project manager. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the process of initiating and planning an information system development project in brief. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>How can you use prototyping for determining system requirements? Compare throwaway with evolutionary prototyping. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is the purpose of database design? Compare logical design with physical design. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is testing? Explain any four different testing techniques. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is a class diagram? Explain a class diagram with a suitable example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:</p>
+                    <ul>
+                        <li>Agile development</li>
+                        <li>Decision tree</li>
+                    </ul>
+                    <p><span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+`,
+
+
+            pastYearQuestion2079: ` 
+                    <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2079</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC315)</h6>
+            <h6>System Analysis and Design</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt any TWO questions.</strong></p>
+            <ol>
+                <li>
+                    <p>Differentiate between black box and white box testing. Explain different stages of testing. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Why do we use DFD? Draw context diagram and data flow diagrams of a retail clothing store in a mall that sells different clothes to its customers. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Compare structured development with object-oriented development. Explain use case diagram and class diagram with suitable example. <span class="font-weight-bold">(20)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt any EIGHT questions.</strong></p>
+            <ol>
+                <li>
+                    <p>Explain common skills of a project manager. Which skill do you think is most important? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Describe the project identification and selection process. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>List and describe the steps in the project initiation and planning process. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain Joint Application Design in brief. How is it better than traditional information gathering techniques? <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What is conceptual data modeling? Explain the conceptual data modeling process. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Compare form with report. Explain the process of designing forms and reports. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Define system maintenance. Explain the process of maintaining information systems in brief. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:</p>
+                    <ul>
+                        <li>CASE tools</li>
+                        <li>Baseline project plan</li>
+                    </ul>
+                    <p><span class="font-weight-bold"></span></p>
+                </li>
+            </ol>
+        </div>
+            `,
+            pastYearQuestion2080: `
+
+                   <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2080</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC315)</h6>
+            <h6>System Analysis and Design</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt any two questions.</strong></p>
+            <ol>
+                <li>
+                    <p>What activities are at the heart of the systems development process? List and explain some of the problems with the traditional waterfall SDLC. Explain Agile development in brief. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>What do you mean by balancing DFDs? Draw context diagram and data flow diagrams for an online movie rental system that allows its users to watch movies online. <span class="font-weight-bold">(20)</span></p>
+                </li>
+                <li>
+                    <p>Explain physical database design. Why is physical database design important? Differentiate logical database design with physical database design. <span class="font-weight-bold">(20)</span></p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt any eight questions.</strong></p>
+            <ol>
+                <li>
+                    <p>Describe different activities performed by the project manager during project planning. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Describe the steps involved in corporate strategic planning. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Define feasibility study. Explain economic and schedule feasibility in brief. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>List traditional methods for determining system requirements. Explain advantages and pitfalls of observing workers to determine system requirements. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Draw an ER diagram to store data about students, programs, and courses at your college. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Describe several methods for interacting with the system. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>What are the major activities of system maintenance? Explain. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain class diagram with a suitable example. <span class="font-weight-bold"></span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:</p>
+                    <ul>
+                        <li>Network Diagram</li>
+                        <li>Structural and Behavioral Diagrams</li>
+                    </ul>
+                    <p><span class="font-weight-bold"></span></p>
+                </li>
+            </ol>
+        </div>
+        `,
+
+        pastYearSolution: `<h2 class="text-left">  Past Year Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            <h4> Please use Menu </h4> <p> Need Help ? Watch Tutorial ! </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `,
+
+            pastYearSolution2075: `
+<h5>Solution 2075</h5>
+<hr />
+<iframe src="./pastSolutions/_2075  Solutions (CSC315) System Analysis and Design .pdf" width="100%" style="height: 600px; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`, pastYearSolution2076: `
+<h5>Solution 2076</h5>
+<hr />
+<iframe src="./pastSolutions/2076 Solution CSC 315 SAD .pdf" width="100%" style="height: 600px;  overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`, pastYearSolution2078: `
+<h5>Solution 2078</h5>
+<hr />
+<iframe src="./pastSolutions/2078 Solution CSC 315 SAD.pdf" width="100%" style="height: 600px;  overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`, pastYearSolution2079: `
+<h5>Solution 2079</h5>
+<hr />
+<iframe src="./pastSolutions/2079 SOLUTION CSC 315 SAD.pdf" width="100%" style="height: 600px; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`, pastYearSolution2080: `
+<h5>Solution 2080</h5>
+<hr />
+<iframe src="./pastSolutions/2080 Solutions CSC 315 SAD.pdf" width="100%" style="height: 600px;  overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`,
+
+
+            oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
+            // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
+            // notesNewSyllabus: `<h2>Notes - New 2079 Syllabus</h2><p>Here is the content for the notes of new 2079 syllabus.</p>`,
+            notesOldSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            notesNewSyllabus: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+
+            notes: `<h2 class="text-center text-danger"> Notes Not Found! </br> <span class="text-center text-success"> Adding Soon!! </span> </h2>`,
+            syllabus: `
+            <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help? watch tutorial! </p>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            oldSyllabus: `
+                <div class="text-center">
+                                            <h4>Tribhuvan University</h4>
+                        <h5>Institute of Science and Technology</h5>
+                       
+                    
+                        <p>Bachelor of Science in Computer Science and Information Technology</p>
+            <strong class="font-size-lg">System Analysis and Design</strong>
+        </div>
+        <div class="mt-4">
+            <p><strong>Course Title:</strong> System Analysis and Design</p>
+            <p><strong>Course No:</strong> CSC315</p>
+            <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+            <p><strong>Semester:</strong> V</p>
+            <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+            <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+            <p><strong>Credit Hours:</strong> 3</p>
+        </div>
+        <div class="mt-4">
+            <strong>Course Description</strong>
+            <p>This course covers the basic concepts of computers and information technology including introduction, hardware, software, memory, input/output, data representation, database, networks and data communication, Internet, multimedia, and computer security.</p>
+        </div>
+        <div class="mt-4">
+            <strong>Course Objectives</strong>
+            <p>This course introduces basic elements of the design and analysis of computer algorithms. Topics include asymptotic notations and analysis, divide and conquer strategy, greedy methods, dynamic programming, basic graph algorithms, NP-completeness, and approximation algorithms. For each topic, beside in-depth coverage, one or more representative problems and their algorithms shall be discussed.</p>
+        </div>
+        <div class="mt-4">
+            <strong>Course Contents</strong>
+            <div>
+                <strong>Unit 1. Foundations for Systems Development (10 Hrs.)</strong>
+                <ul>
+                    <li>The Systems Development Environment: Introduction; A Modern Approach to Systems Analysis and Design; Developing Information Systems and the Systems Development Life Cycle; The Heart of the Systems Development Process and Traditional Waterfall SDLC; CASE Tools</li>
+                    <li>Other Approaches: Prototyping; Spiral; Rapid Application Development; Introduction to Agile Development</li>
+                    <li>Managing the Information Systems Project: Introduction; Managing the Information Systems Project; Representing and Scheduling Project Plans; Using Project Management Software</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 2. Planning (5 Hrs.)</strong>
+                <ul>
+                    <li>Identifying and Selecting Systems Development Projects: Introduction; Identifying and Selecting Systems Development Projects; Corporate and Information Systems Planning</li>
+                    <li>Initiating and Planning Systems Development Projects: Introduction; Initiating and Planning Systems Development Projects; Process of Initiating and Planning IS Development Projects, Assessing Project Feasibility; Building and Reviewing the Baseline Project Plan</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 3. Analysis (13 Hrs.)</strong>
+                <ul>
+                    <li>Determining System Requirements: Introduction; Performing Requirements Determination; Traditional Methods for Determining Requirements; Contemporary Methods for Determining System Requirements; Radical Methods for Determining System Requirements</li>
+                    <li>Structuring System Process Requirements: Introduction; Process Modeling; Data Flow Diagrams; Modeling Logic with Decision Tables, Decision Trees, and Pseudocodes</li>
+                    <li>Structuring System Data Requirements: Introduction; Conceptual Data Modeling; Gathering Information for Conceptual Data Modeling; Introduction to E-R Modeling</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 4. Design (7 Hrs.)</strong>
+                <ul>
+                    <li>Designing Databases: Introduction; Database Design; Relational Database Model; Normalization; Transforming E-R Diagrams Into Relations; Merging Relations; Physical File and Database Design; Designing Fields; Designing Physical Tables</li>
+                    <li>Designing Forms and Reports: Introduction; Designing Forms and Reports; Formatting Forms and Reports; Assessing Usability</li>
+                    <li>Designing Interfaces and Dialogues: Introduction; Designing Interfaces and Dialogues; Interaction Methods and Devices; Designing Interfaces; Designing Dialogues; Designing Interfaces and Dialogues in Graphical Environments</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 5. Implementation and Maintenance (4 Hrs.)</strong>
+                <ul>
+                    <li>System Implementation: Introduction; System Implementation; Software Application Testing; Installation; Documenting the System; Training and Supporting Users; Organizational Issues in Systems Implementation</li>
+                    <li>Maintaining Information Systems: Introduction; Maintaining Information Systems; Conducting Systems Maintenance</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 6. Introduction to Object-Oriented Development (6 Hrs.)</strong>
+                <ul>
+                    <li>Basic Characteristics of Object-Oriented Systems; Object-Oriented System Analysis and Design (OOSAD); Introduction to Unified Modeling Language, Structural and Behavioral Diagrams</li>
+                </ul>
+            </div>
+        </div>
+                      <div class="mt-4">
+                    <strong>Laboratory Works</strong>
+              <p>
+                In the practical session, students will learn to use project 
+management, CASE, and modeling tools. They also prepare a project report that includes at least 
+analysis, design, and implementation phases of system analysis and design. The project can be done 
+in groups with at most four members in each group using any suitable database, programming, and 
+interfacing technologies.
+              </p>
+                </div>
+                <div class="mt-4">
+ 
+        <strong> Text Books: </strong>
+        <ul>
+            <li>1. Joseph S. Valacich and Joey F. George, Modern Systems Analysis and Design, 8th Edition,
+                Pearson
+            <li>2. Alan Dennis, Barbara Haley Wixom, and David Tegarden, Systems Analysis and Design – An
+                Object-Oriented Approach with UML, 5th Edition, Wiley </li>
+        </ul>
+      
+            <strong> References Books: </strong> 
+            <ul>
+            <li>1. Kenneth E. Kendall and Julie E. Kendall, System Analysis and Design, 9th Edition, Pearson</li>
+            <li>2. Jeffrey Whitten and Lonnie Bently, System Analysis and Design Methods, 7th Edition</li>
+            <li>3. Scott Tilley and Harry J. Rosenblatt, System Analysis and Design, 11th Edition</li>
+        
+        </ul>
+       
+        </div>
+
+
+            `,
+
+            newSyllabus: `   
+
+                    <div class="text-center">
+                                                <h4>Tribhuvan University</h4>
+                        <h5>Institute of Science and Technology</h5>
+                       
+                    
+                        <p>Bachelor of Science in Computer Science and Information Technology</p>
+            <strong class="font-size-lg">System Analysis and Design</strong>
+        </div>
+        <div class="mt-4">
+            <p><strong>Course Title:</strong> System Analysis and Design</p>
+            <p><strong>Course No:</strong> CSC326</p>
+            <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+            <p><strong>Semester:</strong> V</p>
+            <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+            <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+            <p><strong>Credit Hours:</strong> 3</p>
+        </div>
+        <div class="mt-4">
+            <strong>Course Description</strong>
+            <p>This course familiarizes students with the concepts of information systems development including systems development life cycle, different approaches to systems development, project management, planning, analysis, design, implementation, and maintenance. This course also covers some fundamental concepts of object-oriented systems analysis and design.</p>
+        </div>
+        <div class="mt-4">
+            <strong>Course Objectives</strong>
+            <p>The main objective of this course is to provide knowledge of different concepts of system analysis and design so that students will be able to develop information systems using different methodologies, tools, techniques, and approaches.</p>
+        </div>
+        <div class="mt-4">
+            <strong>Course Contents</strong>
+            <div>
+                <strong>Unit 1: Foundations for Systems Development (10 Hrs.)</strong>
+                <ul>
+                    <li><strong>The Systems Development Environment:</strong> Introduction; A Modern Approach to Systems Analysis and Design; Developing Information Systems and the Systems Development Life Cycle; The Heart of the Systems Development Process and Traditional Waterfall SDLC; CASE Tools</li>
+                    <li><strong>Other Approaches:</strong> Prototyping; Spiral; Rapid Application Development; Introduction to Agile Development</li>
+                    <li><strong>Managing the Information Systems Project:</strong> Introduction; Managing the Information Systems Project; Representing and Scheduling Project Plans; Using Project Management Software</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 2: Planning (5 Hrs.)</strong>
+                <ul>
+                    <li><strong>Identifying and Selecting Systems Development Projects:</strong> Introduction; Identifying and Selecting Systems Development Projects; Corporate and Information Systems Planning</li>
+                    <li><strong>Initiating and Planning Systems Development Projects:</strong> Introduction; Initiating and Planning Systems Development Projects; Process of Initiating and Planning IS Development Projects; Assessing Project Feasibility; Building and Reviewing the Baseline Project Plan</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 3: Analysis (13 Hrs.)</strong>
+                <ul>
+                    <li><strong>Determining System Requirements:</strong> Introduction; Performing Requirements Determination; Traditional Methods for Determining Requirements; Contemporary Methods for Determining System Requirements; Radical Methods for Determining System Requirements</li>
+                    <li><strong>Structuring System Process Requirements:</strong> Introduction; Process Modeling; Data Flow Diagrams; Modeling Logic with Decision Tables, Decision Trees, and Pseudocodes</li>
+                    <li><strong>Structuring System Data Requirements:</strong> Introduction; Conceptual Data Modeling; Gathering Information for Conceptual Data Modeling; Introduction to E-R Modeling</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 4: Design (7 Hrs.)</strong>
+                <ul>
+                    <li><strong>Designing Databases:</strong> Introduction; Database Design; Relational Database Model; Normalization; Transforming E-R Diagrams Into Relations; Merging Relations; Physical File and Database Design; Designing Fields; Designing Physical Tables</li>
+                    <li><strong>Designing Forms and Reports:</strong> Introduction; Designing Forms and Reports; Formatting Forms and Reports; Assessing Usability</li>
+                    <li><strong>Designing Interfaces and Dialogues:</strong> Introduction; Designing Interfaces and Dialogues; Interaction Methods and Devices; Designing Interfaces; Designing Dialogues; Designing Interfaces and Dialogues in Graphical Environments</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 5: Implementation and Maintenance (4 Hrs.)</strong>
+                <ul>
+                    <li><strong>System Implementation:</strong> Introduction; System Implementation; Software Application Testing; Installation; Documenting the System; Training and Supporting Users; Organizational Issues in Systems Implementation</li>
+                    <li><strong>Maintaining Information Systems:</strong> Introduction; Maintaining Information Systems; Conducting Systems Maintenance</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Unit 6: Introduction to Object-Oriented Development (6 Hrs.)</strong>
+                <ul>
+                    <li>Basic Characteristics of Object-Oriented Systems; Object-Oriented System Analysis and Design (OOSAD); Introduction to Unified Modeling Language, Structural and Behavioral Diagrams</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-4">
+            <strong>Laboratory / Project Work</strong>
+            <p>In the practical session, students will learn to use project management, CASE, and modeling tools. They also prepare a project report that includes at least analysis, design, and implementation phases of system analysis and design. The project can be done in groups with at most four members in each group using any suitable database, programming, and interfacing technologies.</p>
+        </div>
+        <div class="mt-4">
+            <strong>Text Books</strong>
+            <ul>
+                <li>Joseph S. Valacich and Joey F. George, “Modern Systems Analysis and Design”, 8th Edition, Pearson</li>
+                <li>Alan Dennis, Barbara Haley Wixom, and David Tegarden, “Systems Analysis and Design – An Object-Oriented Approach with UML”, 5th Edition, Wiley</li>
+            </ul>
+        </div>
+        <div class="mt-4">
+            <strong>Reference Books</strong>
+            <ul>
+                <li>Kenneth E. Kendall and Julie E. Kendall, “System Analysis and Design”, 9th Edition, Pearson</li>
+                <li>Jeffrey Whitten and Lonnie Bently, “System Analysis and Design Methods”, 7th Edition</li>
+                <li>Scott Tilley and Harry J. Rosenblatt, “System Analysis and Design”, 11th Edition</li>
+            </ul>
+        </div>
+    `
+        };
+
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
+
+
+        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2075;
+        });
+
+
+        document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2076;
+        });
+
+
+        document.getElementById('pastYearQuestion2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2078;
+        });
+
+
+
+        document.getElementById('pastYearQuestion2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2079;
+        });
+
+
+        document.getElementById('pastYearQuestion2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearQuestion2080;
+        });
+
+
+
+        document.getElementById('pastYearSolution').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution;
+        });
+
+        document.getElementById('pastYearSolution2076').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2076;
+        });
+
+        document.getElementById('pastYearSolution2078').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2078;
+        });
+
+        document.getElementById('pastYearSolution2079').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2079;
+        });
+
+
+        document.getElementById('pastYearSolution2080').addEventListener('click', () => {
+            content.innerHTML = contents.pastYearSolution2080;
+        });
+
+        document.getElementById('notes').addEventListener('click', () => {
+            content.innerHTML = contents.notes;
+        });
+
+        document.getElementById('syllabus').addEventListener('click', () => {
+            content.innerHTML = contents.syllabus;
+        });
+
+        document.getElementById('oldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.oldSyllabus;
+        });
+
+        document.getElementById('newSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.newSyllabus;
+        });
+
+
+
+        document.getElementById('notesOldSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesOldSyllabus;
+        });
+
+        document.getElementById('notesNewSyllabus').addEventListener('click', () => {
+            content.innerHTML = contents.notesNewSyllabus;
+        });
+
+        // Set current year in the footer
+        document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showModal(src, alt) {
+            $('#modalImage').attr('src', src);
+            $('#imageModalLabel').text(alt);
+            $('#imageModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>
