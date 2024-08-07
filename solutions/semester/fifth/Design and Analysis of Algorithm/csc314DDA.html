@@ -93,11 +93,27 @@
                             Past Year Solution
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Solution2078</a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Solution2079</a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2080">Solution2080</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+                                Algorithm Design - John Kleinberg - Éva Tardos.pdf
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+                                fundamentalsof-computer-algorithms-by-ellis-horowitz.pdf
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+                                Introduction to Algorithms, Third Edition.pdf
+                                </a></li>
                         </ul>
                     </li>
 
@@ -128,9 +144,8 @@
                 </ul>
             </div>
 
-            &nbsp; &nbsp; &nbsp;
-
-            <div id="content" class="col-md-8 col-sm-12">
+            <div class="col-md-9 col-sm-12">
+               <div  id="content" class="border p-3 rounded"> 
                 <!-- Dynamic content will be displayed here -->
                 <div class="text-center">
                     <strong style="font-size: 24px;">Design and Analysis of Algorithms</strong>
@@ -265,7 +280,7 @@
                         </li>
                     </ul>
                 </div>
-
+            </div>
             </div>
     </section>
     <br>
@@ -466,6 +481,8 @@
             </li>
             <li>
                 <p>What do you mean by Backtracking? Explain the backtracking algorithm for solving 0-1 knapsack problem and find the solution for the problem given below: <br>  <span class="font-weight-bold">(10)</span></p>
+           
+           <img src="https://i0.wp.com/hamrocsit.com/wp-content/uploads/2023/11/Screenshot-2023-11-30-135908.png" width="100%" alt="knapsack problem 2079.png"/>
             </li>
         </ol>
         
@@ -592,8 +609,8 @@
             <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             `,
-            pastYearSolution2075: ``,
-            pastYearSolution2076: ``,
+
+            pastYearSolution2076: `<embed src="./PastSolutions/2076 CSC 314 ~ DDA.pdf" width="100%" style="min-height: 100vh">`,
             pastYearSolution2079: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
             pastYearSolution2080: `<h5 class="text-center text-danger"> NOT AVAILABLE </h5>`,
             pastYearSolution2078: `
@@ -823,6 +840,33 @@
 </div>
 
 `,
+
+refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+refBook1: `
+<h5>Algorithm Design - John Kleinberg - Éva Tardos.pdf</h5>
+<hr>
+<iframe src="./RefBooks/Algorithm Design - John Kleinberg - Éva Tardos.pdf" type="application/pdf" width="100%" height="600px">
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`,
+
+refBook2: `      
+<h5>fundamentalsof-computer-algorithms-by-ellis-horowitz.pdf</h5>   
+<hr>
+<iframe src="./RefBooks/fundamentalsof-computer-algorithms-by-ellis-horowitz.pdf" type="application/pdf" width="100%" height="600px">
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`,
+
+refBook3: `      
+<h5> Introduction to Algorithms, Third Edition.pdf </h5>   
+<hr>
+<iframe src="./RefBooks/Introduction to Algorithms, Third Edition.pdf" type="application/pdf" width="100%" height="600px">
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`
+,
 
             oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
             // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
@@ -1083,6 +1127,23 @@
             content.innerHTML = contents.questions;
         });
 
+
+        document.getElementById('refBooks').addEventListener('click', () => {
+            content.innerHTML = contents.refBooks;
+        });
+        document.getElementById('refBook1').addEventListener('click', () => {
+            content.innerHTML = contents.refBook1;
+        });
+        document.getElementById('refBook2').addEventListener('click', () => {
+            content.innerHTML = contents.refBook2;
+        });
+
+        document.getElementById('refBook3').addEventListener('click', () => {
+            content.innerHTML = contents.refBook3;
+        });
+
+
+
         document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
             content.innerHTML = contents.pastYearQuestion2076;
         });
@@ -1107,10 +1168,6 @@
 
         document.getElementById('pastYearSolution').addEventListener('click', () => {
             content.innerHTML = contents.pastYearSolution;
-        });
-
-        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
-            content.innerHTML = contents.pastYearSolution2075;
         });
 
         document.getElementById('pastYearSolution2076').addEventListener('click', () => {
