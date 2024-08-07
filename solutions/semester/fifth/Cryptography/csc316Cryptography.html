@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC316 Cryptography ~ CSIT Solution </title>
+    <title>CSC-314 DDA ~ CSIT Solution </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         *,
@@ -25,19 +25,21 @@
     <header class="bg-light py-2" style="position: sticky; top: 0%; z-index: 1050;">
         <div class="container-sm d-flex justify-content-between align-items-center">
             <div class="logo">
-                <a href="./csc316Cryptography.html">
+                <a href="./csc314DDA.html">
                     <img src="https://csit-solution.github.io/resources/img/logos/main/logocsit.jpg" alt="CSIT Logo"
                         class="img-fluid rounded-circle" style="width: 50px;">
                 </a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Select Semester
                             </a>
                             <ul class="dropdown-menu">
@@ -69,33 +71,28 @@
             <div class="col-md-3  col-sm-12 border-right ">
 
                 <ul class="navbar-nav border p-3 rounded" style="position: sticky; top: 10%;">
-                    <h5>Cryptography</h5>
+                    <h5> Design and Analysis of Algorithms </h5>
                     <li class="nav-item dropdown">
-                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="questions" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Past Year Questions
                         </a>
                         <ul class="dropdown-menu">
-
-                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2074">Cryptography 2074</a></li>
-                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2075">Cryptography 2075</a></li>
-                            <li><a class="dropdown-item" href="#" id="pastYearSolution2076Old">Cryptography 2076 OLD</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">Cryptography 2076</a></li>
-                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">Cryptography 2078</a></li>
-                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">Cryptography 2079</a></li>
-                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">Cryptography 2080</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2076">DDA 2076</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2078">DDA 2078</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2079">DDA 2079</a></li>
+                            <li><a class="dropdown-item" href="#" id="pastYearQuestion2080">DDA 2080</a></li>
 
 
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="pastYearSolution" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Past Year Solution
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" id="pastYearSolution2075">Solution2075</a></li>
-
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2076">Solution2076</a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2078">Solution2078</a></li>
                             <li><a class="dropdown-item" href="#" id="pastYearSolution2079">Solution2079</a></li>
@@ -103,9 +100,28 @@
                         </ul>
                     </li>
 
+                    <li class="nav-item dropdown">
+                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reference Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="refBook1">
+                                    Algorithm Design - John Kleinberg - Éva Tardos.pdf
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook2">
+                                    fundamentalsof-computer-algorithms-by-ellis-horowitz.pdf
+                                </a></li>
+                            <li><a class="dropdown-item" href="#" id="refBook3">
+                                    Introduction to Algorithms, Third Edition.pdf
+                                </a></li>
+                        </ul>
+                    </li>
+
 
                     <li class="nav-item dropdown">
-                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="notes" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Notes
                         </a>
                         <ul class="dropdown-menu">
@@ -114,166 +130,177 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a id="refBooks" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Reference Books
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" id="refBook1">Computer Security
-                                    Art and Science
-                                    Matt Bishop
-
-
-                                </a></li>
-                            <li><a class="dropdown-item" href="#" id="refBook2">
-                                    Cryptography and Network Security_ Principles and Practice
-                                    WILLIAM STALLINGS
-                                </a></li>
-                                <li><a class="dropdown-item" href="#" id="refBook3">
-                                    Information-security-principles-and-practice-2nd-edition-stamp.pdf
-                                </a></li>
-                        </ul>
-                    </li>
 
 
                     <li class="nav-item dropdown">
-                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="syllabus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Syllabus
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 316 Old Syllabus</a></li>
-                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 327 New Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="oldSyllabus">CSC 314 Old Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#" id="newSyllabus">CSC 325 New Syllabus</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
-
-
-            <div class="col-md-9  col-sm-12">
-                <div class="border rounded p-3" id="content"  >
-                <!-- Dynamic content will be displayed here -->
-                <div class="text-center">
-                    <strong style="font-size: 24px;">Cryptography</strong>
-                </div>
-                <div class="mt-4">
-                    <p><strong>Course Title:</strong> Cryptography</p>
-                    <p><strong>Course No:</strong> CSC316</p>
-                    <p><strong>Nature of the Course:</strong> Theory + Lab</p>
-                    <p><strong>Semester:</strong> V</p>
-                    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
-                    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
-                    <p><strong>Credit Hrs:</strong> 3</p>
-                </div>
-                <div class="mt-4">
-                    <strong>Course Description</strong>
-                    <p>The course introduces the underlying principles and design of cryptosystems. It covers the basics of cryptography, including traditional ciphers, block ciphers, stream ciphers, public and private key cryptosystems. The course also
-                        includes the theory of hash functions, authentication systems, network security protocols, and malicious logic.</p>
-                </div>
-                <div class="mt-4">
-                    <strong>Course Objectives</strong>
-                    <p>The objectives of this course are to familiarize the students with cryptography and its applications. The students will develop a basic understanding of cryptographic mechanisms.</p>
-                </div>
-                <div class="mt-4">
-                    <strong>Course Contents</strong>
-                    <div>
-                        <strong>Unit I: Introduction and Classical Ciphers (7 Hrs.)</strong>
+            <div class="col-md-9 col-sm-12">
+                <div id="content" class="border p-3 rounded">
+                    <!-- Dynamic content will be displayed here -->
+                    <div class="text-center">
+                        <strong style="font-size: 24px;">Design and Analysis of Algorithms</strong>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Course Title:</strong> Design and Analysis of Algorithms</p>
+                        <p><strong>Course No:</strong> CSC314</p>
+                        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+                        <p><strong>Semester:</strong> V</p>
+                        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+                        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+                        <p><strong>Credit Hrs:</strong> 3</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Description</strong>
+                        <p>This course introduces basic elements of the design and analysis of computer algorithms.
+                            Topics
+                            include asymptotic notations and analysis, divide and conquer strategy, greedy methods,
+                            dynamic
+                            programming, basic graph algorithms, NP-completeness, and approximation algorithms. For each
+                            topic, one or more representative problems and their algorithms shall be discussed.</p>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Course Objectives</strong>
                         <ul>
-                            <li>Security: Computer Security, Information Security, Network Security, CIA Triad: Confidentiality, Integrity, Availability, Cryptography, Cryptosystem, Cryptanalysis, Security Threats, Attacks: Passive, Active, Security Services,
-                                Mechanisms, Policy and Mechanism.
+                            <li>Analyze the asymptotic performance of algorithms.</li>
+                            <li>Demonstrate a familiarity with major algorithm design techniques.</li>
+                            <li>Apply important algorithmic design paradigms and methods of analysis.</li>
+                            <li>Solve simple to moderately difficult algorithmic problems arising in applications.</li>
+                            <li>Demonstrate the hardness of simple NP-complete problems.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Detail Syllabus</strong>
+                        <div>
+                            <strong>Unit 1: Foundations of Algorithm Analysis (4 Hrs.)</strong>
+                            <ul>
+                                <li>Algorithms and its properties</li>
+                                <li>RAM model</li>
+                                <li>Time and Space Complexity</li>
+                                <li>Detailed Analysis of algorithms</li>
+                                <li>Concept of Aggregate Analysis</li>
+                                <li>Asymptotic Notations: Big-O, Big-Ω, and Big-Ө Notations</li>
+                                <li>Recursive Algorithms</li>
+                                <li>Recurrence Relations</li>
+                                <li>Solving Recurrences: Recursion Tree Method, Substitution Method, Masters Theorem
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 2: Iterative Algorithms (4 Hrs.)</strong>
+                            <ul>
+                                <li>Basic Algorithms: GCD, Fibonacci Numbers</li>
+                                <li>Searching Algorithms: Sequential Search</li>
+                                <li>Sorting Algorithms: Bubble Sort, Selection Sort, Insertion Sort</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 3: Divide and Conquer Algorithms (8 Hrs.)</strong>
+                            <ul>
+                                <li>Concepts of Divide and Conquer</li>
+                                <li>Binary Search, Min-Max algorithm</li>
+                                <li>Sorting Algorithms: Merge Sort, Quick Sort, Randomized Quick Sort, Heap Sort</li>
+                                <li>Order Statistics: Median order, Selection in Expected Linear Time, Selection in
+                                    Worst
+                                    Case Linear Time</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 4: Greedy Algorithms (6 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction to Greedy Approach</li>
+                                <li>Greedy Algorithms: Fractional Knapsack, Job Sequencing, Minimum Spanning Tree
+                                    (Kruskal’s
+                                    and Prim’s), Dijkstra’s Shortest Path</li>
+                                <li>Huffman Coding</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 5: Dynamic Programming (8 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction to Dynamic Programming</li>
+                                <li>DP Algorithms: Matrix Chain Multiplication, String Editing, 0-1 Knapsack,
+                                    Floyd-Warshall, Travelling Salesman</li>
+                                <li>Memoization Strategy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 6: Backtracking (5 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction to Backtracking</li>
+                                <li>Backtracking Algorithms: Subset Sum, Zero-One Knapsack, N-Queen Problem</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 7: Number Theoretic Algorithms (5 Hrs.)</strong>
+                            <ul>
+                                <li>Introduction to Number Theoretic Notation</li>
+                                <li>Solving Modular Linear Equations: Euclid’s and Extended Euclid’s Algorithms</li>
+                                <li>Primality Testing: Miller-Rabin Randomized Test</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Unit 8: NP Completeness (5 Hrs.)</strong>
+                            <ul>
+                                <li>Tractable and Intractable Problems, Complexity Classes</li>
+                                <li>NP Complete Problems: Concept of Cooks Theorem, Proof of NP Completeness</li>
+                                <li>Approximation Algorithms</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Laboratory Works</strong>
+                        <p>Students should implement algorithms and analyze their behavior in C/C++. The following
+                            algorithms should be implemented:</p>
+                        <ul>
+                            <li>Basic iterative algorithms: GCD, Fibonacci Sequences, Sequential and Binary Search</li>
+                            <li>Basic sorting algorithms: Bubble Sort, Selection Sort, Insertion Sort</li>
+                            <li>Divide and Conquer: Binary Search, Merge Sort, Heap Sort, Quick Sort, Randomized Quick
+                                Sort
                             </li>
-                            <li>Classical Cryptosystems: Hierarchy of cipher, Substitution Techniques (Monoalphabetic, Polyalphabetic), Transposition Techniques.</li>
-                            <li>Modern Ciphers: Block Ciphers, Stream Ciphers, Symmetric Ciphers, Asymmetric Ciphers.
+                            <li>Selection Problem</li>
+                            <li>Greedy Algorithms: Fractional Knapsack, Job Sequencing, Kruskal’s, Prim’s, Dijkstra’s
+                                Algorithm</li>
+                            <li>Dynamic Programming Algorithms</li>
+                            <li>Backtracking Algorithms</li>
+                            <li>Approximation Algorithm</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <strong>Recommended Books</strong>
+                        <ul>
+                            <li>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein, “Introduction
+                                to
+                                Algorithms”, Third Edition, MIT Press, 2009.</li>
+                            <li>Ellis Horowitz, Sartaj Sahni, Sanguthevar Rajasekaran, “Computer Algorithms”, Second
+                                Edition, Silicon Press, 2007.</li>
+                            <li>Kleinberg, Jon, and Eva Tardos, “Algorithm Design”, Addison-Wesley, First Edition, 2005.
                             </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Unit II: Symmetric Ciphers (10 Hrs.)</strong>
-                        <ul>
-                            <li>Fiestel Cipher Structure, Substitution Permutation Network (SPN).</li>
-                            <li>Data Encryption Standards (DES): Key Generation, Encryption, Decryption Process, Weak Keys, Double DES, Meet in Middle Attack, Triple DES.</li>
-                            <li>Finite Fields: Groups, Rings, Fields, GCD, Euclidean Algorithm, Modular Arithmetic, Set of Residue (Zn), Congruence, Residue classes, Quadratic residue, Polynomial Arithmetic over Galois Field.</li>
-                            <li>International Data Encryption Standard (IDEA): Key Generation, Encryption, Decryption Process.
-                            </li>
-                            <li>Advanced Encryption Standards (AES): Key Generation, Encryption, Decryption Process.
-                            </li>
-                            <li>Modes of Block Cipher Encryptions: ECB, CBC, CFB, OFB, CTR.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Unit III: Asymmetric Ciphers (8 Hrs.)</strong>
-                        <ul>
-                            <li>Number Theory: Prime Numbers, Primality Testing, Miller-Rabin Algorithm, Fermat’s Theorem, Euler’s Totient Function, Euler’s Theorem, Primitive Root, Discrete Logarithms.
-                            </li>
-                            <li>Public Key Cryptosystems, Applications, Distribution of Public Key, Diffie-Hellman Key Exchange, Man-in-the-Middle Attack.</li>
-                            <li>RSA Algorithm: Key Generation, Encryption, Decryption Process.</li>
-                            <li>Elgamal Cryptographic System: Key Generation, Encryption, Decryption Process.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Unit IV: Cryptographic Hash Functions and Digital Signatures (8 Hrs.)</strong>
-                        <ul>
-                            <li>Message Authentication, Authentication Functions, Authentication Codes.</li>
-                            <li>Hash Functions: Properties, Applications.</li>
-                            <li>Message Digests: MD4, MD5 algorithms.</li>
-                            <li>Secure Hash Algorithms: SHA-1, SHA-2, SHA-512.</li>
-                            <li>Digital Signatures: Direct, Arbitrated Digital Signature, DSS Approach, DSA, RSA Approach.
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Unit V: Authentication (3 Hrs.)</strong>
-                        <ul>
-                            <li>Authentication System, Password Based Authentication, Dictionary Attacks, Challenge Response System, One Way Authentication, Mutual Authentication, Biometric System, Needham-Schroeder Scheme, Kerberos Protocol, Kerberos 5.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Unit VI: Network Security and Public Key Infrastructure (6 Hrs.)</strong>
-                        <ul>
-                            <li>Overview of Network Security, Digital Certificates, X.509 Certificates, Certificate Life Cycle Management.</li>
-                            <li>PKI Trust Models, PKIX, Email Security: PGP, SSL Protocol, TLS Protocol, IPSec Protocol, Firewalls, Types of Firewalls.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong>Unit VII: Malicious Logic (3 Hrs.)</strong>
-                        <ul>
-                            <li>Types of Malicious Logic: Virus, Worm, Trojan Horse, Zombies, Denial of Service Attacks, Intrusion, Intruders, Intrusion Detection System.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="mt-4">
-                    <strong>Laboratory Works</strong>
-                    <p>Students are required to develop programs in related topics using suitable programming languages such as Python or other similar languages.</p>
-                </div>
-                <div class="mt-4">
-                    <strong>Text Books</strong>
-                    <ul>
-                        <li>W. Stallings, Cryptography and Network Security: Principles and Practice.</li>
-                    </ul>
-                </div>
-                <div class="mt-4">
-                    <strong>Reference Books</strong>
-                    <ul>
-                        <li>William Stallings, Network Security Essentials: Applications and Standards.</li>
-                        <li>Matt Bishop, Computer Security, Art and Science.</li>
-                        <li>Mark Stamp, Information Security: Principles and Practices.</li>
-                        <li>Bruce Schneier, Applied Cryptography.</li>
-                        <li>Douglas. R. Stinson, Cryptography: Theory and Practice.</li>
-                        <li>B. A. Forouzan, Cryptography & Network Security, Tata McGraw Hill.</li>
-                    </ul>
-                </div>
-            </div>
             </div>
     </section>
     <br>
-
-    </div>
 
     <footer class="container">
         <hr>
         <br>
         <p class="text-center lead">
-            All CopyRight Reserved &copy; 2023 - <span id="todayDateFoot"></span> CSIT Solution <br> Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
+            All CopyRight Reserved &copy;
+            2023 - <span id="todayDateFoot"></span> CSIT Solution <br>
+            Powered By: <a href="https://www.linkedin.com/company/nor-ai" target="_blank">Nōrai</a> | <a
+                href="https://www.linkedin.com/in/dilli708/" target="_blank">Dilli Hang Rai</a>
         </p>
     </footer>
 
@@ -287,445 +314,151 @@
 
             questions: `<h2 class="text-left">  Discrete Structure Questions Collection </h2> <p> Select Past Year Questions Menu to view the Past Year Questions. </p>  <h4> Please Use Menu </h4> <p> Need help watch tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
-        
+            pastYearSolution2075: `IP Solution 2075 `,
+            pastYearSolution2076: `IP Solution 2076`,
 
-            pastYearQuestion2074: `<div class="">
-    <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
-        <p>2074</p>
-        <h6>Bachelor Level / Fifth Semester / Science</h6>
-        <h6>Computer Science and Information Technology (CSC316)</h6>
-        <h6>(Cryptography)</h6>
-        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
+
+            pastYearQuestion2076: ` <div class="">
+        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2076</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC314)</h6>
+            <h6>Design and Analysis of Algorithms</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt any TWO questions</strong></p>
+            <ol>
+                <li>
+                    <p>What do you mean by the complexity of an algorithm? Explain the asymptotic notations used to describe the time/space complexity of any algorithm with their geometrical interpretation and example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the divide and conquer paradigm from algorithm design with a suitable example. Write the Quick sort algorithm using a randomized approach and explain its time complexity. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain in brief the Backtracking approach for algorithm design. How it differs with recursion? Explain the N-Queen problem and algorithm using backtracking and analyze its time complexity. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt any EIGHT questions</strong></p>
+            <ol>
+                <li>
+                    <p>Write the algorithm for selection sort and explain its time and space complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Solve the following recurrence relation using the master method.<br>
+                    T(n) = 7 T(n/2) + n^2<br>
+                    T(n) = 4 T(n/4) + kn <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Explain the greedy algorithm for the fractional knapsack problem with its time complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Trace heap sort algorithm for the following data:<br>
+                    {2, 9, 3, 12, 15, 8, 11} <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What do you mean by Dynamic programming strategy? Explain the element of DP. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Explain the approximation for solving vertex cover with a suitable example. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Explain Prim’s algorithm for MST problem and analyze its time complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Explain in brief about the classes P, NP, and NP complete with examples. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:<br>
+                    Backtracking strategy<br>
+                    Tractable and Intractable Problems <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
     </div>
-    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
-    <p><strong>The figures in the margin indicate full marks.</strong></p>
-    <div class="mt-4">
-        <strong>Section A</strong><br>
-        <p><strong>Short Answer Questions</strong></p>
-        <p><strong>Attempt any five questions (5 x 2 = 10):</strong></p>
-        <ol>
-            <li>
-                <p>What are the typical phases of operation of a virus? <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>Find the multiplicative inverse of each nonzero element in Z5. <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>Why are hash functions often known as one-way functions? <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>How can the Vigenère Cipher be used to ensure poly-alphabetic substitution? <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>Using the extended Euclidean Algorithm, find the multiplicative inverse of 550 and 1769. <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>Define PKI Trust Model. <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>What do you mean by an odd round in IDEA? <span class="font-weight-bold">(2)</span></p>
-            </li>
-        </ol>
-    </div>
-    <div class="mt-4">
-        <strong>Section B</strong><br>
-        <p><strong>Long Answer Questions</strong></p>
-        <p><strong>Attempt any three questions (3 x 6 = 18):</strong></p>
-        <ol>
-            <li>
-                <p>What do you mean by a transposition cipher? Decrypt the ciphertext UIESTNVRIY using the Rail Fence cipher with a rail size of 2. <span class="font-weight-bold">(4+6)</span></p>
-            </li>
-            <li>
-                <p>Consider the message blocks m1, m2, m3. If the Cipher Block Chaining mode DES encryption can be expressed as Now, write the expressions for the DES decryption to extract each of the message blocks m1, m2, m3. <span class="font-weight-bold">(6)</span></p>
-            </li>
-            <li>
-                <p>How is padding done in MD5? What enhancements in MD4 are done to get the better hash function MD5? <span class="font-weight-bold">(6)</span></p>
-            </li>
-            <li>
-                <p>Construct a Playfair matrix with the key CRYPTO. Using this matrix, encrypt the message "have a nice day". <span class="font-weight-bold">(4)</span></p>
-            </li>
-            <li>
-                <p>In an RSA system, a user named Messi has chosen the primes 5 and 11 to create a key pair. Now show the generation of the public key pair (eMessi, n) and private key pair (dMessi, n). Show how Messi can encrypt the message "Soccer" using his own public key. <span class="font-weight-bold">(6)</span></p>
-            </li>
-            <li>
-                <p>What is the role of the SSL Handshake Protocol in Secure Socket Layer Protocol? <span class="font-weight-bold">(4)</span></p>
-            </li>
-            <li>
-                <p>What is the use of a digital signature? Discuss the working mechanism of the Digital Signature Algorithm. <span class="font-weight-bold">(6)</span></p>
-            </li>
-            <li>
-                <p>Encrypt the message "Eight Ten" using the Hill cipher with the key. Show your calculations and the result. <span class="font-weight-bold">(4)</span></p>
-            </li>
-            <li>
-                <p>Suppose there are two users Xavi and Persie who agreed to use the Diffie-Hellman algorithm to exchange a key. Consider there is an eavesdropper Balotelli who attempts an attack on the procedure. Show how Balotelli can perform a Man-In-The-Middle attack in the Diffie-Hellman Key exchange protocol? <span class="font-weight-bold">(6)</span></p>
-            </li>
-            <li>
-                <p>What do you mean by password aging? How do online dictionary attacks differ from offline attacks? <span class="font-weight-bold">(4)</span></p>
-            </li>
-        </ol>
-    </div>
-</div>
 
 `,
 
-            pastYearQuestion2075: `    <div class="">
-    <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
-        <p>2075</p>
-        <h6>Bachelor Level / Fifth Semester / Science</h6>
-        <h6>Computer Science and Information Technology (CSC316)</h6>
-        <h6>(Cryptography)</h6>
-        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
-    </div>
-    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
-    <p><strong>The figures in the margin indicate full marks.</strong></p>
-    <div class="mt-4">
-        <strong>Section A</strong><br>
-        <p><strong>Short Answer Questions</strong></p>
-        <p><strong>Attempt any five questions (5 x 2 = 10):</strong></p>
-        <ol>
-            <li>
-                <p>The larger the size of key space, the more secure a cipher? Justify your answer. <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>Differentiate between a virus and a Trojan horse. <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>What is the weak collision resistance property of a hash function? <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>Differentiate between a transposition cipher and a substitution cipher. <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>What does Zn refer to in cryptography? Illustrate with an example. <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>What is the additive inverse of 2 in Z10? <span class="font-weight-bold">(2)</span></p>
-            </li>
-            <li>
-                <p>John copies Mary’s homework. Does it violate confidentiality or integrity or both? Justify. <span class="font-weight-bold">(2)</span></p>
-            </li>
-        </ol>
-    </div>
-    <div class="mt-4">
-        <strong>Section B</strong><br>
-        <p><strong>Long Answer Questions</strong></p>
-        <p><strong>Attempt any two questions (2 x 5 = 10):</strong></p>
-        <ol>
-            <li>
-                <p>What do you mean by “Feistel Structure for Block Ciphers”? Explain. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>How can a number be tested for primality using the Miller-Rabin algorithm? Explain. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Divide 5x² + 4x + 6 by 2x + 1 over GF(7). <span class="font-weight-bold">(5)</span></p>
-            </li>
-        </ol>
-    </div>
-    <div class="mt-4">
-        <strong>Section C</strong><br>
-        <p><strong>Short Answer Questions</strong></p>
-        <p><strong>Attempt any two questions (2 x 5 = 10):</strong></p>
-        <ol>
-            <li>
-                <p>Find the result of the following operations: <br>
-                (i) 2 mod 5 <br>
-                (ii) 33 mod 3 <br>
-                (iii) -13 mod 10 <br>
-                (iv) -23 mod 10 <br>
-                (v) -8 mod 7 <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>How can Diffie-Hellman be used for key exchange? Explain. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Encrypt the message “machine passed turing test” using the Playfair cipher with the key “ALANTURING”. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>What is the digital signature for, authentication of confidentiality? Justify your answer. What does security handshake pitfall refer to? <span class="font-weight-bold">(5)</span></p>
-            </li>
-        </ol>
-    </div>
-    <div class="mt-4">
-        <strong>Section D</strong><br>
-        <p><strong>Long Answer Questions</strong></p>
-        <p><strong>Attempt any two questions (2 x 5 = 10):</strong></p>
-        <ol>
-            <li>
-                <p>Explain about PGP. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>What is the role of the SSL Record Protocol in SSL/TLS? Explain. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Describe the method for generating the Round Constant table in the AES algorithm in the Add Round Key phase. Assume the number of rounds is 10. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Is a hash and MAC the same thing? Explain how SHA generates a 160-bit digest value. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Define a field. Differentiate between public key cryptography and private key cryptography. <span class="font-weight-bold">(5)</span></p>
-            </li>
-        </ol>
-    </div>
-</div>
-`,
 
-            pastYearQuestion2076: ` 
-  <div class="">
-    <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
-        <p>2076</p>
-        <h6>Bachelor Level / Fifth Semester / Science</h6>
-        <h6>Computer Science and Information Technology (CSC316)</h6>
-        <h6>(Cryptography)</h6>
-        <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
-    </div>
-    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
-    <p><strong>The figures in the margin indicate full marks.</strong></p>
-    
-    <div class="mt-4">
-        <strong>Section A</strong><br>
-        <strong>Attempt any TWO questions.</strong><br><br>
-        
-        <ol>
-            <li>
-                <p>Among monoalphabetic and polyalphabetic cipher, which one is more vulnerable? Justify your statement. Which types of keys are considered weak keys in DES? Explain the round operation in IDEA.</p>
-            </li>
-            <li>
-                <p>State Fermat’s theorem with an example. Given the prime number p=29 and its primitive root g=8, private key sender with X=9 and random integer K=11, encrypt the message m=13 using ElGamal cryptosystem.</p>
-            </li>
-            <li>
-                <p>Compare the SHA parameters between SHA-1 and SHA-2 families. Decrypt the cipher text DRJI with the key 
-                <pre>
-                ( 7  8
-                  11  11 )
-                </pre> using the Hill cipher.</p>
-            </li>
-        </ol>
-        
-        <strong>Section B</strong><br>
-        <strong>Attempt any EIGHT questions.</strong><br><br>
-        
-        <ol>
-            <li>
-                <p>Define discrete logarithm. Explain the procedure of sharing the secret key in Diffie Hellman.</p>
-            </li>
-            <li>
-                <p>Distinguish between stream cipher and block cipher. Encrypt the message WE ARE IN SAME RACE UNTILL OVER LIVE END using Rail fence cipher using 4 as a number of rails.</p>
-            </li>
-            <li>
-                <p>Define digital signature. Describe the approaches of DSS.</p>
-            </li>
-            <li>
-                <p>What is the task of a firewall? List the elements of X.509.</p>
-            </li>
-            <li>
-                <p>How does the nature of worms differ from viruses? Define PKI with its architecture model.</p>
-            </li>
-            <li>
-                <p>Explain the procedure of mix column transformation in AES with an example.</p>
-            </li>
-            <li>
-                <p>What is the role of the prime number in the Euler totient Function? Find the GCD of 12 and 16 using the Euclidean algorithm.</p>
-            </li>
-            <li>
-                <p>Write down any two limitations of MAC. What do policy and mechanism mean in cryptography? Describe with a scenario.</p>
-            </li>
-            <li>
-                <p>Write short notes on:
-                    <ul>
-                        <li>Classes of Intruder</li>
-                        <li>SSL</li>
-                        <li>DoS Attack</li>
-                    </ul>
-                </p>
-            </li>
-        </ol>
-    </div>
-</div>
-
-        `,
-
-
-            pastYearSolution2076Old: `
-<div class="">
-    <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
-        <p>2076</p>
-        <h6>Bachelor Level / Fifth Semester / Science</h6>
-        <h6>Computer Science and Information Technology (CSC316)</h6>
-        <h6>(Cryptography)</h6>
-        <p>Full Marks: 60 &nbsp;&nbsp;&nbsp; Pass Marks: 24 &nbsp;&nbsp;&nbsp; Time: 3 hours</p>
-    </div>
-    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
-    <p><strong>The figures in the margin indicate full marks.</strong></p>
-    
-    <div class="mt-4">
-        <strong>Section A</strong><br>
-        <p><strong>Attempt all questions.</strong></p>
-        <ol>
-            <li>
-                <p>Answer the following questions in short (Any Five):</p>
-                <ol>
-                    <li>
-                        <p>How does MAC differ from Hash? Is authentication and authorization the same term or different? Justify. <span class="font-weight-bold">(2)</span></p>
-                    </li>
-                    <li>
-                        <p>Differentiate between virus and worms. <span class="font-weight-bold">(2)</span></p>
-                    </li>
-                    <li>
-                        <p>What is the importance of the Trap Door function in cryptography? <span class="font-weight-bold">(2)</span></p>
-                    </li>
-                    <li>
-                        <p>How many rounds are used in AES and what does the number of rounds depend on? <span class="font-weight-bold">(2)</span></p>
-                    </li>
-                    <li>
-                        <p>What does Zn refer to in cryptography? Illustrate with an example. <span class="font-weight-bold">(2)</span></p>
-                    </li>
-                    <li>
-                        <p>List the five services that PGP operation is based on. <span class="font-weight-bold">(2)</span></p>
-                    </li>
-                    <li>
-                        <p>John obtains Peter's credit card number and performs shopping. Does it violate confidentiality or integrity or both? Justify. <span class="font-weight-bold">(2)</span></p>
-                    </li>
-                </ol>
-            </li>
-        </ol>
-    </div>
-    
-    <div class="mt-4">
-        <strong>Section B</strong><br>
-        <p><strong>Attempt Any Four Questions</strong></p>
-        <ol>
-            <li>
-                <p>What is Fermat's Little theorem? What is the totient of a prime number? Give an example. <span class="font-weight-bold">(5)</span></p>
-                <p>OR</p>
-                <p>Define the primitive root of a prime number with a suitable example. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Find the multiplicative inverse of 11 in Z26 using the extended Euclidean algorithm. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Find the result of the following operations:</p>
-                <ol>
-                    <li>27 mod 5</li>
-                    <li>36 mod 12</li>
-                    <li>-18 mod 14</li>
-                    <li>-7 mod 10</li>
-                    <li>-13 mod 7</li>
-                </ol>
-                <span class="font-weight-bold">(5)</span>
-            </li>
-            <li>
-                <p>How can RSA be used for generating public and private keys? Explain. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Encrypt the message "computing for human life" using the Playfair cipher with the key "BSCCSIT". <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Explain the working mechanism of Kerberos. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Does it is possible to design a collision-free hash function? What does the birthday attack refer to? Explain. <span class="font-weight-bold">(5)</span></p>
-                <p>OR</p>
-                <p>What is the role of SSL Record Protocol in SSL/TLS? Explain. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Describe the "Mix Columns" transformation that constitutes the third step in each round of AES. <span class="font-weight-bold">(5)</span></p>
-            </li>
-        </ol>
-    </div>
-    
-    <div class="mt-4">
-        <strong>Section C</strong><br>
-        <p><strong>Attempt Any Two Questions</strong></p>
-        <ol>
-            <li>
-                <p>Define digital signature. How are certificates issued in PKI trust models? Explain. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>List the modes of operation in cryptography. Describe the Feistel cipher structure. <span class="font-weight-bold">(5)</span></p>
-            </li>
-        </ol>
-    </div>
-</div>
-
-
-`,
 
 
             pastYearQuestion2078: `
-<div class="">
-    <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
-        <p>2078</p>
-        <h6>Bachelor Level / Fifth Semester / Science</h6>
-        <h6>Computer Science and Information Technology (CSC316)</h6>
-        <h6>(Cryptography)</h6>
-        <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+          <div class="">
+        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2078</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC314)</h6>
+            <h6>Design and Analysis of Algorithms</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt Two Questions.</strong></p>
+            <ol>
+                <li>
+                    <p>What are the elementary properties of an algorithm? Explain. Why do you need an algorithm? Discuss the analysis of the RAM model for analysis of algorithms with a suitable example. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain the divide and conquer paradigm for algorithm design with a suitable example. Write the Quick sort algorithm using a randomized approach and explain its time complexity. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Explain in brief the Dynamic Programming Approach for algorithm design. How does it differ from recursion? Explain the algorithm for solving the 0/1 Knapsack problem using the dynamic programming approach and explain its complexity. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt Eight Questions.</strong></p>
+            <ol>
+                <li>
+                    <p>Explain the recursion tree method for solving the recurrence relation. Solve the following recurrence relation using this method:<br>
+                    T(n) = 2T(n/2) + 1 for n > 1, T(n) = 1 for n = 1 <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write an algorithm to find the maximum element of an array and analyze its time complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write the algorithm for bubble sort and explain its time complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What do you mean by an optimization problem? Explain the greedy strategy for algorithm design to solve optimization problems. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Explain the algorithm and its complexity for solving the job sequencing with deadline problem using the greedy strategy. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>What do you mean by the memorization strategy? Compare memorization with dynamic programming. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Explain the concept of backtracking. How does it differ from recursion? <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Explain in brief the complexity classes P, NP, and NP Complete. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:<br>
+                    a. NP Hard Problems and NP Completeness<br>
+                    b. Problem Reduction <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
     </div>
-    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
-    <p><strong>The figures in the margin indicate full marks.</strong></p>
-    
-    <div class="mt-4">
-        <strong>Section A</strong><br>
-        <p><strong>Attempt Any Two Questions</strong></p>
-        <ol>
-            <li>
-                <p>Define CIA triad. State the encryption process of double and triple DES. What is the task of S-Box in DES? Discuss with an example. <span class="font-weight-bold">(10)</span></p>
-            </li>
-            <li>
-                <p>Explain the generic model of digital signature process. Consider the two prime numbers 7 and 19. Select 29 as the public key and 41 as the private key. Encrypt the plaintext 4 and decrypt the ciphertext 3 using RSA. <span class="font-weight-bold">(10)</span></p>
-            </li>
-            <li>
-                <p>Define Galois field with an example. Explain any two modes of block cipher encryption. Determine the quadratic residues of 7. <span class="font-weight-bold">(10)</span></p>
-            </li>
-        </ol>
-    </div>
-    
-    <div class="mt-4">
-        <strong>Section B</strong><br>
-        <p><strong>Attempt Eight Questions</strong></p>
-        <ol>
-            <li>
-                <p>What does intrusion mean? How does the system detect intrusion? List any four types of firewalls. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Decrypt the message “GVPJ” using Hill cipher with the key {Row1 = 3 7, Row2 = 5 12}. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Describe the PKI trust model. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Define authentication system. Illustrate the need for mutual authentication over one-way authentication with an example. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Find the value of 7^2019 MOD 13 using Fermat’s Little theorem. Define Euler totient function with an example. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>List the properties of hash function. Discuss the first pass of MD4. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Differentiate between Symmetric and Asymmetric cipher. Encrypt the message “HELL” using the key “FAIL” with the Vigenère cipher. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Divide 3x^2 + 4x + 3 by 5x + 6 over GF(7). <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Define SSL protocol. Mention the services provided by PGP. <span class="font-weight-bold">(5)</span></p>
-            </li>
-        </ol>
-    </div>
-</div>
-
 `,
 
 
@@ -736,8 +469,8 @@
         <h5>Institute of Science and Technology</h5>
         <p>2079</p>
         <h6>Bachelor Level / Fifth Semester / Science</h6>
-        <h6>Computer Science and Information Technology (CSC316)</h6>
-        <h6>(Cryptography)</h6>
+        <h6>Computer Science and Information Technology (CSC314)</h6>
+        <h6>Design and Analysis of Algorithms</h6>
         <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
     </div>
     <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
@@ -749,13 +482,15 @@
         
         <ol>
             <li>
-                <p>Illustrate the concept of security policy and mechanism with an example. Differentiate between block cipher and stream cipher. Explain the process of key expansion in AES. <span class="font-weight-bold">(10)</span></p>
+                <p>Explain the divide and conquer strategy for problem solving. Describe the worst-case linear time selection algorithm and analyze its complexity. <span class="font-weight-bold">(10)</span></p>
             </li>
             <li>
-                <p>Describe the properties of hash functions. Discuss how hash value is generated using the SHA-1 algorithm. <span class="font-weight-bold">(10)</span></p>
+                <p>Write the dynamic programming algorithm for matrix chain multiplication. Find the optimal parenthesization for the matrix chain product ABCD with size of each is given as A5×10, B10×15, C15×20, D20×30. <span class="font-weight-bold">(10)</span></p>
             </li>
             <li>
-                <p>Show that Z<sub>5</sub> is a field. John publishes the ElGamal public key (q, α, YA) = (101, 2, 14). Jane desires to send the secret message CSIT to John. Using the equivalence A = 0, B = 1, …, Z = 25, encrypt the message using John’s public key. Use a random number k = 4. <span class="font-weight-bold">(10)</span></p>
+                <p>What do you mean by Backtracking? Explain the backtracking algorithm for solving 0-1 knapsack problem and find the solution for the problem given below: <br>  <span class="font-weight-bold">(10)</span></p>
+           
+           <img src="https://i0.wp.com/hamrocsit.com/wp-content/uploads/2023/11/Screenshot-2023-11-30-135908.png" width="100%" alt="knapsack problem 2079.png"/>
             </li>
         </ol>
         
@@ -764,181 +499,191 @@
         
         <ol>
             <li>
-                <p>Differentiation between Trojan horse and virus. Describe any two types of intruders. <span class="font-weight-bold">(5)</span></p>
+                <p>Explain the iterative algorithm to find the GCD of given two numbers and analyze its complexity. <span class="font-weight-bold">(5)</span></p>
             </li>
             <li>
-                <p>The message “IMOGUN” was encrypted with a Playfair cipher using the keyword “GALOIS”. Decrypt the message. <span class="font-weight-bold">(5)</span></p>
+                <p>Generate the prefix code for the string “CYBER CRIME” using Huffman algorithm and find the total number of bits required. <span class="font-weight-bold">(5)</span></p>
             </li>
             <li>
-                <p>How encryption is done using the IDEA algorithm. <span class="font-weight-bold">(5)</span></p>
+                <p>Define tractable and intractable problem. Illustrate vertex cover problem with an example. <span class="font-weight-bold">(5)</span></p>
             </li>
             <li>
-                <p>Describe the services provided by the Pretty Good Privacy protocol to secure email. <span class="font-weight-bold">(5)</span></p>
+                <p>Find the edit distance between the string “ARTIFICIAL” and “NATURAL” using dynamic programming. <span class="font-weight-bold">(5)</span></p>
             </li>
             <li>
-                <p>Define the challenge-response system. Why do we need Kerberos? <span class="font-weight-bold">(5)</span></p>
+                <p>Write short notes on:<br>
+                    a) Best, Worst and average case complexity<br>
+                    b) Greedy Strategy <span class="font-weight-bold">(5)</span></p>
             </li>
             <li>
-                <p>How does a direct digital signature differ from an arbitrated digital signature? How are digital signatures generated and verified using RSA? <span class="font-weight-bold">(5)</span></p>
+                <p>Solve the following recurrence relations using master's method:<br>
+                    a. T(n) = 2T(n/4) + kn<sup>2</sup>, n > 1<br>
+                    b. T(n) = 5T(n/4) + kn, n > 1 <span class="font-weight-bold">(5)</span></p>
             </li>
             <li>
-                <p>Why do we need discrete logarithms over normal logarithms? Find out whether 3 is a primitive root of 7 or not. <span class="font-weight-bold">(5)</span></p>
+                <p>Solve the following linear congruences using Chinese Remainder Theorem:<br>
+                    X ≡ 1 (MOD 2)<br>
+                    X ≡ 3 (MOD 5)<br>
+                    X ≡ 6 (MOD 7) <span class="font-weight-bold">(5)</span></p>
             </li>
             <li>
-                <p>Which is more secure, a monoalphabetic cipher or a polyalphabetic cipher? Justify. Using a rail fence cipher, encrypt the text “LEARNING AND TEACHING ARE DIFFERENT” using 3 rails. <span class="font-weight-bold">(5)</span></p>
+                <p>Find the MST from following graph using Kruskal’s algorithm. <span class="font-weight-bold">(5)</span></p>
             </li>
             <li>
-                <p>What is the condition for two integers, x and y, to be relatively prime? Find whether 61 is prime or not using the Miller-Rabin algorithm. <span class="font-weight-bold">(5)</span></p>
+                <p>Trace the quick sort algorithm for sorting the array A[ ]={15,7,6,23,18,34,25} and write its best and worst complexity. <span class="font-weight-bold">(5)</span></p>
             </li>
         </ol>
     </div>
 </div>
+
 
 `,
             pastYearQuestion2080: `
 
-            <div class="">
-    <div class="text-center">
-        <h4>Tribhuvan University</h4>
-        <h5>Institute of Science and Technology</h5>
-        <p>2080</p>
-        <h6>Bachelor Level / Fifth Semester / Science</h6>
-        <h6>Computer Science and Information Technology (CSC316)</h6>
-        <h6>(Cryptography)</h6>
-        <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+               <div class="">
+        <div class="text-center">
+            <h4>Tribhuvan University</h4>
+            <h5>Institute of Science and Technology</h5>
+            <p>2080</p>
+            <h6>Bachelor Level / Fifth Semester / Science</h6>
+            <h6>Computer Science and Information Technology (CSC314)</h6>
+            <h6>Design and Analysis of Algorithms</h6>
+            <p>Full Marks: 60 + 20 + 20 &nbsp;&nbsp;&nbsp; Pass Marks: 24 + 8 + 8 &nbsp;&nbsp;&nbsp; Time: 3 Hours</p>
+        </div>
+        <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
+        <p><strong>The figures in the margin indicate full marks.</strong></p>
+        
+        <div class="mt-4">
+            <strong>Section A</strong><br>
+            <p><strong>Attempt any two questions.</strong></p>
+            <ol>
+                <li>
+                    <p>What is a recurrence relation? How can it be solved? Show that the time complexity of the recurrence relation T(n) = 2T(n/2) + 1 is O(n) using the substitution method. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Write down the advantages of dynamic programming over the greedy strategy. Find the optimal bracketing to multiply 4 matrices of order 2, 3, 4, 2, 5. <span class="font-weight-bold">(10)</span></p>
+                </li>
+                <li>
+                    <p>Discuss the heapify operation with an example. Write down its algorithm and analyze its time and space complexity. <span class="font-weight-bold">(10)</span></p>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="mt-4">
+            <strong>Section B</strong><br>
+            <p><strong>Attempt any eight questions.</strong></p>
+            <ol>
+                <li>
+                    <p>Define the RAM model. Write down the iterative algorithm for finding factorial and provide its detailed analysis. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write down the algorithm for insertion sort and analyze its time and space complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write down the minmax algorithm and analyze its complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>When does the greedy strategy provide an optimal solution? Write down the job sequencing with deadlines algorithm and analyze its complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Suppose that a message contains alphabet frequencies as given below. Find the Huffman codes for each alphabet:<br>
+                    Symbol &nbsp; Frequency<br>
+                    a &nbsp; 30<br>
+                    b &nbsp; 20<br>
+                    c &nbsp; 25<br>
+                    d &nbsp; 15<br>
+                    e &nbsp; 35 <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Does backtracking give multiple solutions? Trace the subset sum algorithm for the set {3, 5, 2, 4, 1} and sum = 8. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Why is the extended Euclidean algorithm used? Write down its algorithm and analyze its complexity. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Define NP-complete problems with examples. Give a brief proof of the statement “SAT is NP-complete”. <span class="font-weight-bold">(5)</span></p>
+                </li>
+                <li>
+                    <p>Write short notes on:<br>
+                    a) Aggregate Analysis<br>
+                    b) Selection problems <span class="font-weight-bold">(5)</span></p>
+                </li>
+            </ol>
+        </div>
     </div>
-    <p><strong>Candidates are required to give their answers in their own words as far as practicable.</strong></p>
-    <p><strong>The figures in the margin indicate full marks.</strong></p>
-    
-    <div class="mt-4">
-        <strong>Section A</strong><br>
-        <strong>Attempt any two questions.</strong><br><br>
-        
-        <ol>
-            <li>
-                <p>Define discrete logarithms. How key generation, encryption, and decryption are done in RSA. In an RSA cryptosystem, given p = 13 and q = 7, determine the private key, public key, and perform encryption and decryption for the text M = "hi" using 0 to 25 for letters from a to z. <span class="font-weight-bold">(10)</span></p>
-            </li>
-            <li>
-                <p>Write down the encryption and decryption process for 2-DES and 3-DES. Explain the Feistel cipher structure. Divide 5x<sup>2</sup> + 4x + 6 by 2x + 1 over GF(7). <span class="font-weight-bold">(10)</span></p>
-            </li>
-            <li>
-                <p>What are the applications of hash functions? Discuss how the SHA-1 algorithm generates a hash value from a given message. <span class="font-weight-bold">(10)</span></p>
-            </li>
-        </ol>
-        
-        <strong>Section B</strong><br>
-        <strong>Attempt any eight questions.</strong><br><br>
-        
-        <ol>
-            <li>
-                <p>Show encryption and decryption of "csit" using Hill cipher having key, k = <br>
-                <pre>
-                3 2
-                5 7
-                </pre><span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Give the formal definition of an authentication system. Describe one-way and mutual authentication systems. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>List the stages of the certificate life cycle. What are the types of firewalls? <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>What is malicious logic? How are zombies different from Trojan horses? <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>How is the Miller-Rabin test used for primality testing? Show whether the number 561 passes the test. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Show that the set of integers is a ring under addition and multiplication. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>How are substitution ciphers different from transposition ciphers? Given a message M = "CSIT PROGRAM IS A HOT CAKE", encrypt M using Rail Fence cipher with rail size 3. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>Describe IPSec. List the five services of PGP. <span class="font-weight-bold">(5)</span></p>
-            </li>
-            <li>
-                <p>How does the meet-in-the-middle attack work in the Diffie-Hellman key exchange protocol? Explain. <span class="font-weight-bold">(5)</span></p>
-            </li>
-        </ol>
-    </div>
-</div>
-
-         
         `,
 
-            pastYearSolution: `<h2 class="text-left">  Discrete Structure Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
+            pastYearSolution: `<h2 class="text-left">  DDA Questions Solutions Collection </h2> <p> Select Past Year Questions Solutions Menu to view the Past Year Questions Solutions. </p>
             <h4> Please use Menu </h4> <p> Need Help Watch Tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             `,
-            
-pastYearSolution2075: `
+
+            pastYearSolution2075: `
 <h5> Cryptography Solution 2075 </h5>   
 <hr>
-<iframe src="" width="100%" height="600px">
+<iframe src="" width="100%"  style="min-height: 100vh;overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
 </iframe>  
 `,
 
-pastYearSolution2076: `
+            pastYearSolution2076: `
 <h5> Cryptography Solution 2076 </h5>   
 <hr>
-<iframe src="./pastSolutions/2076_Solutions_CSC_316_Cryptography_Google Docs.pdf" width="100%" height="600px">
-    <p>Sorry! PDF cannot be displayed.</p>
-</iframe>  
-`,
-
-pastYearSolution2078: `
-<h5> Cryptography Solution 2078 </h5>   
-<hr>
-<iframe src="./pastSolutions/2078 Solutions CSC 316 Cryptography_.pdf" width="100%" height="600px">
-    <p>Sorry! PDF cannot be displayed.</p>
-</iframe>  
-`,
-
-pastYearSolution2079: `
-<h5> Cryptography Solution 2079 </h5>   
-<hr>
-<iframe src="./pastSolutions/2079 Solution CSC 316 Cryptograhy.pdf" width="100%" height="600px">
-    <p>Sorry! PDF cannot be displayed.</p>
-</iframe>  
-`,
-
-pastYearSolution2080: `
-<h5> Cryptography Solution 2080 </h5>   
-<hr>
-<iframe src="./pastSolutions/2080 Solution CSC 316 Cryptograhy.pdf" width="100%" height="600px">
-    <p>Sorry! PDF cannot be displayed.</p>
-</iframe>  
-`,
-
-refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-
-refBook1: `
-<h5> Computer Security_ Art and Science.pdf </h5>
-<hr>
-<iframe src="./RefBook/Computer Security_ Art and Science.pdf" type="application/pdf" width="100%" height="600px">
+<iframe src="./PastSolutions/2076 CSC 314 ~ DDA.pdf" width="100%" style="min-height: 100vh;overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
 </iframe>
 `,
 
-refBook2: `      
-<h5> Cryptography and Network Security_ Principles and Practice.pdf </h5>   
+            pastYearSolution2078: `
+<h5> Cryptography Solution 2078 </h5>   
 <hr>
-<iframe src="./RefBook/Cryptography and Network Security_ Principles and Practice.pdf" type="application/pdf" width="100%" height="600px">
+<iframe src="./PastSolutions/2078 Solution CSC 314 ~ DDA.pdf" width="100%" style="min-height: 100vh;overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
-</iframe>  
+</iframe>
 `,
 
-refBook3: `      
-<h5> Information Security: Principles and Practice (2nd Edition) - Stamp </h5>   
+            pastYearSolution2079: `
+<h5> Cryptography Solution 2079 </h5>   
 <hr>
-<iframe src="./RefBook/information-security-principles-and-practice-2nd-edition-stamp.pdf" width="100%" height="600px">
+<iframe src="./PastSolutions/2079 Solution CSC 314 ~ DDA.pdf" width="100%" style="min-height: 100vh;overflow: auto;">
     <p>Sorry! PDF cannot be displayed.</p>
-</iframe>  
+</iframe>
+`,
+
+            pastYearSolution2080: `
+<h5> Cryptography Solution 2080 </h5>   
+<hr>
+<iframe src="./PastSolutions/2080 Solution CSC 314 DDA.pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+    <p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`,
+
+            refBooks: `<iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
+
+            refBook1: `
+<h5>Algorithm Design - John Kleinberg - Éva Tardos.pdf</h5>
+<hr>
+<iframe src="./RefBooks/Algorithm Design - John Kleinberg - Éva Tardos.pdf" type="application/pdf" width="100%"  style="min-height: 100vh; overflow: auto;>
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`,
+
+            refBook2: `      
+<h5>fundamentalsof-computer-algorithms-by-ellis-horowitz.pdf</h5>   
+<hr>
+<iframe src="./RefBooks/fundamentalsof-computer-algorithms-by-ellis-horowitz.pdf" type="application/pdf" width="100%"  style="min-height: 100vh; overflow: auto;>
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
+`,
+
+            refBook3: `      
+<h5> Introduction to Algorithms, Third Edition.pdf </h5>   
+<hr>
+<iframe src="./RefBooks/Introduction to Algorithms, Third Edition.pdf" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
+<p>Sorry! PDF cannot be displayed.</p>
+</iframe>
 `
-,
+            ,
 
             oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
             // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
@@ -951,257 +696,273 @@ refBook3: `
             <h4> Select Your Syllabus. Please Use Menu </h4> <p> Need help watch tutorial </p>
             <iframe width="100%" height="450px" src="https://www.youtube.com/embed/al30n08VEWA?si=GEc_aNB9i5cCJn4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> `,
 
-            oldSyllabus: `
-                <div class="text-center">
-    <strong style="font-size: 24px;">Cryptography</strong>
-</div>
-<div class="mt-4">
-    <p><strong>Course Title:</strong> Cryptography</p>
-    <p><strong>Course No:</strong> CSC316</p>
-    <p><strong>Nature of the Course:</strong> Theory + Lab</p>
-    <p><strong>Semester:</strong> V</p>
-    <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
-    <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
-    <p><strong>Credit Hrs:</strong> 3</p>
-</div>
-<div class="mt-4">
-    <strong>Course Description</strong>
-    <p>The course introduces the underlying principles and design of cryptosystems. It covers the basics of cryptography, including traditional ciphers, block ciphers, stream ciphers, public and private key cryptosystems. The course also includes the theory of hash functions, authentication systems, network security protocols, and malicious logic.</p>
-</div>
-<div class="mt-4">
-    <strong>Course Objectives</strong>
-    <p>The objectives of this course are to familiarize the students with cryptography and its applications. The students will develop a basic understanding of cryptographic mechanisms.</p>
-</div>
-<div class="mt-4">
-    <strong>Course Contents</strong>
-    <div>
-        <strong>Unit I: Introduction and Classical Ciphers (7 Hrs.)</strong>
+            oldSyllabus: `<div class="text-center"><strong style="font-size: 24px;">Design and Analysis of Algorithms</strong>
+    </div>
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Design and Analysis of Algorithms</p>
+        <p><strong>Course No:</strong> CSC314</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> V</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course introduces basic elements of the design and analysis of computer algorithms. Topics include asymptotic notations and analysis, divide and conquer strategy, greedy methods, dynamic programming, basic graph algorithms, NP-completeness, and approximation algorithms. For each topic, one or more representative problems and their algorithms shall be discussed.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Objectives</strong>
         <ul>
-            <li>Security: Computer Security, Information Security, Network Security, CIA Triad: Confidentiality, Integrity, Availability, Cryptography, Cryptosystem, Cryptanalysis, Security Threats, Attacks: Passive, Active, Security Services, Mechanisms, Policy and Mechanism.</li>
-            <li>Classical Cryptosystems: Hierarchy of cipher, Substitution Techniques (Monoalphabetic, Polyalphabetic), Transposition Techniques.</li>
-            <li>Modern Ciphers: Block Ciphers, Stream Ciphers, Symmetric Ciphers, Asymmetric Ciphers.</li>
+            <li>Analyze the asymptotic performance of algorithms.</li>
+            <li>Demonstrate a familiarity with major algorithm design techniques.</li>
+            <li>Apply important algorithmic design paradigms and methods of analysis.</li>
+            <li>Solve simple to moderately difficult algorithmic problems arising in applications.</li>
+            <li>Demonstrate the hardness of simple NP-complete problems.</li>
         </ul>
     </div>
-    <div>
-        <strong>Unit II: Symmetric Ciphers (10 Hrs.)</strong>
-        <ul>
-            <li>Fiestel Cipher Structure, Substitution Permutation Network (SPN).</li>
-            <li>Data Encryption Standards (DES): Key Generation, Encryption, Decryption Process, Weak Keys, Double DES, Meet in Middle Attack, Triple DES.</li>
-            <li>Finite Fields: Groups, Rings, Fields, GCD, Euclidean Algorithm, Modular Arithmetic, Set of Residue (Zn), Congruence, Residue classes, Quadratic residue, Polynomial Arithmetic over Galois Field.</li>
-            <li>International Data Encryption Standard (IDEA): Key Generation, Encryption, Decryption Process.</li>
-            <li>Advanced Encryption Standards (AES): Key Generation, Encryption, Decryption Process.</li>
-            <li>Modes of Block Cipher Encryptions: ECB, CBC, CFB, OFB, CTR.</li>
-        </ul>
-    </div>
-    <div>
-        <strong>Unit III: Asymmetric Ciphers (8 Hrs.)</strong>
-        <ul>
-            <li>Number Theory: Prime Numbers, Primality Testing, Miller-Rabin Algorithm, Fermat’s Theorem, Euler’s Totient Function, Euler’s Theorem, Primitive Root, Discrete Logarithms.</li>
-            <li>Public Key Cryptosystems, Applications, Distribution of Public Key, Diffie-Hellman Key Exchange, Man-in-the-Middle Attack.</li>
-            <li>RSA Algorithm: Key Generation, Encryption, Decryption Process.</li>
-            <li>Elgamal Cryptographic System: Key Generation, Encryption, Decryption Process.</li>
-        </ul>
-    </div>
-    <div>
-        <strong>Unit IV: Cryptographic Hash Functions and Digital Signatures (8 Hrs.)</strong>
-        <ul>
-            <li>Message Authentication, Authentication Functions, Authentication Codes.</li>
-            <li>Hash Functions: Properties, Applications.</li>
-            <li>Message Digests: MD4, MD5 algorithms.</li>
-            <li>Secure Hash Algorithms: SHA-1, SHA-2, SHA-512.</li>
-            <li>Digital Signatures: Direct, Arbitrated Digital Signature, DSS Approach, DSA, RSA Approach.</li>
-        </ul>
-    </div>
-    <div>
-        <strong>Unit V: Authentication (3 Hrs.)</strong>
-        <ul>
-            <li>Authentication System, Password Based Authentication, Dictionary Attacks, Challenge Response System, One Way Authentication, Mutual Authentication, Biometric System, Needham-Schroeder Scheme, Kerberos Protocol, Kerberos 5.</li>
-        </ul>
-    </div>
-    <div>
-        <strong>Unit VI: Network Security and Public Key Infrastructure (6 Hrs.)</strong>
-        <ul>
-            <li>Overview of Network Security, Digital Certificates, X.509 Certificates, Certificate Life Cycle Management.</li>
-            <li>PKI Trust Models, PKIX, Email Security: PGP, SSL Protocol, TLS Protocol, IPSec Protocol, Firewalls, Types of Firewalls.</li>
-        </ul>
-    </div>
-    <div>
-        <strong>Unit VII: Malicious Logic (3 Hrs.)</strong>
-        <ul>
-            <li>Types of Malicious Logic: Virus, Worm, Trojan Horse, Zombies, Denial of Service Attacks, Intrusion, Intruders, Intrusion Detection System.</li>
-        </ul>
-    </div>
-</div>
-<div class="mt-4">
-    <strong>Laboratory Works</strong>
-    <p>Students are required to develop programs in related topics using suitable programming languages such as Python or other similar languages.</p>
-</div>
-<div class="mt-4">
-    <strong>Text Books</strong>
-    <ul>
-        <li>W. Stallings, Cryptography and Network Security: Principles and Practice.</li>
-    </ul>
-</div>
-<div class="mt-4">
-    <strong>Reference Books</strong>
-    <ul>
-        <li>William Stallings, Network Security Essentials: Applications and Standards.</li>
-        <li>Matt Bishop, Computer Security, Art and Science.</li>
-        <li>Mark Stamp, Information Security: Principles and Practices.</li>
-        <li>Bruce Schneier, Applied Cryptography.</li>
-        <li>Douglas. R. Stinson, Cryptography: Theory and Practice.</li>
-        <li>B. A. Forouzan, Cryptography & Network Security, Tata McGraw Hill.</li>
-    </ul>
-</div> `,
-            newSyllabus: `
-          <div class="">
-        <div class="text-center mb-4">
-            <strong style="font-size: 24px;">Cryptography</strong>
-        </div>
-
-        <div class="mt-4">
-            <p><strong>Course Title:</strong> Cryptography</p>
-            <p><strong>Course No:</strong> CSC327</p>
-            <p><strong>Nature of the Course:</strong> Theory + Lab</p>
-            <p><strong>Semester:</strong> V</p>
-            <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
-            <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
-            <p><strong>Credit Hrs:</strong> 3</p>
-        </div>
-
-        <div class="mt-4">
-            <strong>Course Description</strong>
-            <p>The course introduces the underlying principles and design of cryptosystems. It covers the basics of cryptography, including traditional ciphers, block ciphers, stream ciphers, public and private key cryptosystems. The course also includes the theory of hash functions, authentication systems, network security protocols, and malicious logic.</p>
-        </div>
-
-        <div class="mt-4">
-            <strong>Course Objectives</strong>
-            <p>The objectives of this course are to familiarize the students with cryptography and its applications. The students will develop a basic understanding of cryptographic mechanisms.</p>
-        </div>
-
-        <div class="mt-4">
-            <strong>Course Contents</strong>
-            <div class="mt-3">
-                <strong>Unit I: Introduction and Classical Ciphers (7 Hrs.)</strong>
-                <ul>
-                    <li>Security: Computer Security, Information Security, Network Security, CIA Triad: Confidentiality, Integrity, Availability, Cryptography, Cryptosystem, Cryptanalysis, Security Threats, Attacks: Passive, Active, Security Services, Mechanisms, Policy and Mechanism.</li>
-                    <li>Classical Cryptosystems: Hierarchy of cipher, Substitution Techniques (Monoalphabetic, Polyalphabetic), Transposition Techniques.</li>
-                    <li>Modern Ciphers: Block Ciphers, Stream Ciphers, Symmetric Ciphers, Asymmetric Ciphers.</li>
-                </ul>
-            </div>
-            <div class="mt-3">
-                <strong>Unit II: Symmetric Ciphers (10 Hrs.)</strong>
-                <ul>
-                    <li>Fiestel Cipher Structure, Substitution Permutation Network (SPN).</li>
-                    <li>Data Encryption Standards (DES): Key Generation, Encryption, Decryption Process, Weak Keys, Double DES, Meet in Middle Attack, Triple DES.</li>
-                    <li>Finite Fields: Groups, Rings, Fields, GCD, Euclidean Algorithm, Modular Arithmetic, Set of Residue (Zn), Congruence, Residue classes, Quadratic residue, Polynomial Arithmetic over Galois Field.</li>
-                    <li>International Data Encryption Standard (IDEA): Key Generation, Encryption, Decryption Process.</li>
-                    <li>Advanced Encryption Standards (AES): Key Generation, Encryption, Decryption Process.</li>
-                    <li>Modes of Block Cipher Encryptions: ECB, CBC, CFB, OFB, CTR.</li>
-                </ul>
-            </div>
-            <div class="mt-3">
-                <strong>Unit III: Asymmetric Ciphers (8 Hrs.)</strong>
-                <ul>
-                    <li>Number Theory: Prime Numbers, Primality Testing, Miller-Rabin Algorithm, Fermat’s Theorem, Euler’s Totient Function, Euler’s Theorem, Primitive Root, Discrete Logarithms.</li>
-                    <li>Public Key Cryptosystems, Applications, Distribution of Public Key, Diffie-Hellman Key Exchange, Man-in-the-Middle Attack.</li>
-                    <li>RSA Algorithm: Key Generation, Encryption, Decryption Process.</li>
-                    <li>Elgamal Cryptographic System: Key Generation, Encryption, Decryption Process.</li>
-                </ul>
-            </div>
-            <div class="mt-3">
-                <strong>Unit IV: Cryptographic Hash Functions and Digital Signatures (8 Hrs.)</strong>
-                <ul>
-                    <li>Message Authentication, Authentication Functions, Authentication Codes.</li>
-                    <li>Hash Functions: Properties, Applications.</li>
-                    <li>Message Digests: MD4, MD5 algorithms.</li>
-                    <li>Secure Hash Algorithms: SHA-1, SHA-2, SHA-512.</li>
-                    <li>Digital Signatures: Direct, Arbitrated Digital Signature, DSS Approach, DSA, RSA Approach.</li>
-                </ul>
-            </div>
-            <div class="mt-3">
-                <strong>Unit V: Authentication (3 Hrs.)</strong>
-                <ul>
-                    <li>Authentication System, Password Based Authentication, Dictionary Attacks, Challenge Response System, One Way Authentication, Mutual Authentication, Biometric System, Needham-Schroeder Scheme, Kerberos Protocol, Kerberos 5.</li>
-                </ul>
-            </div>
-            <div class="mt-3">
-                <strong>Unit VI: Network Security and Public Key Infrastructure (6 Hrs.)</strong>
-                <ul>
-                    <li>Overview of Network Security, Digital Certificates, X.509 Certificates, Certificate Life Cycle Management.</li>
-                    <li>PKI Trust Models, PKIX, Email Security: PGP, SSL Protocol, TLS Protocol, IPSec Protocol, Firewalls, Types of Firewalls.</li>
-                </ul>
-            </div>
-            <div class="mt-3">
-                <strong>Unit VII: Malicious Logic (3 Hrs.)</strong>
-                <ul>
-                    <li>Types of Malicious Logic: Virus, Worm, Trojan Horse, Zombies, Denial of Service Attacks, Intrusion, Intruders, Intrusion Detection System.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="mt-4">
-            <strong>Laboratory Works</strong>
-            <p>Students are required to develop programs in related topics using suitable programming languages such as Python or other similar languages.</p>
-        </div>
-
-        <div class="mt-4">
-            <strong>Text Books</strong>
+    <div class="mt-4">
+        <strong>Detail Syllabus</strong>
+        <div>
+            <strong>Unit 1: Foundations of Algorithm Analysis (4 Hrs.)</strong>
             <ul>
-                <li>W. Stallings, Cryptography and Network Security: Principles and Practice.</li>
+                <li>Algorithms and its properties</li>
+                <li>RAM model</li>
+                <li>Time and Space Complexity</li>
+                <li>Detailed Analysis of algorithms</li>
+                <li>Concept of Aggregate Analysis</li>
+                <li>Asymptotic Notations: Big-O, Big-Ω, and Big-Ө Notations</li>
+                <li>Recursive Algorithms</li>
+                <li>Recurrence Relations</li>
+                <li>Solving Recurrences: Recursion Tree Method, Substitution Method, Masters Theorem</li>
             </ul>
         </div>
-
-        <div class="mt-4">
-            <strong>Reference Books</strong>
+        <div>
+            <strong>Unit 2: Iterative Algorithms (4 Hrs.)</strong>
             <ul>
-                <li>William Stallings, Network Security Essentials: Applications and Standards.</li>
-                <li>Matt Bishop, Computer Security, Art and Science.</li>
-                <li>Mark Stamp, Information Security: Principles and Practices.</li>
-                <li>Bruce Schneier, Applied Cryptography.</li>
-                <li>Douglas R. Stinson, Cryptography: Theory and Practice.</li>
-                <li>B. A. Forouzan, Cryptography & Network Security, Tata McGraw Hill.</li>
+                <li>Basic Algorithms: GCD, Fibonacci Numbers</li>
+                <li>Searching Algorithms: Sequential Search</li>
+                <li>Sorting Algorithms: Bubble Sort, Selection Sort, Insertion Sort</li>
             </ul>
         </div>
-    </div>`,
+        <div>
+            <strong>Unit 3: Divide and Conquer Algorithms (8 Hrs.)</strong>
+            <ul>
+                <li>Concepts of Divide and Conquer</li>
+                <li>Binary Search, Min-Max algorithm</li>
+                <li>Sorting Algorithms: Merge Sort, Quick Sort, Randomized Quick Sort, Heap Sort</li>
+                <li>Order Statistics: Median order, Selection in Expected Linear Time, Selection in Worst Case Linear Time</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 4: Greedy Algorithms (6 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Greedy Approach</li>
+                <li>Greedy Algorithms: Fractional Knapsack, Job Sequencing, Minimum Spanning Tree (Kruskal’s and Prim’s), Dijkstra’s Shortest Path</li>
+                <li>Huffman Coding</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 5: Dynamic Programming (8 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Dynamic Programming</li>
+                <li>DP Algorithms: Matrix Chain Multiplication, String Editing, 0-1 Knapsack, Floyd-Warshall, Travelling Salesman</li>
+                <li>Memoization Strategy</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 6: Backtracking (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Backtracking</li>
+                <li>Backtracking Algorithms: Subset Sum, Zero-One Knapsack, N-Queen Problem</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 7: Number Theoretic Algorithms (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Number Theoretic Notation</li>
+                <li>Solving Modular Linear Equations: Euclid’s and Extended Euclid’s Algorithms</li>
+                <li>Primality Testing: Miller-Rabin Randomized Test</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 8: NP Completeness (5 Hrs.)</strong>
+            <ul>
+                <li>Tractable and Intractable Problems, Complexity Classes</li>
+                <li>NP Complete Problems: Concept of Cooks Theorem, Proof of NP Completeness</li>
+                <li>Approximation Algorithms</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-4">
+        <strong>Laboratory Works</strong>
+        <p>Students should implement algorithms and analyze their behavior in C/C++. The following algorithms should be implemented:</p>
+        <ul>
+            <li>Basic iterative algorithms: GCD, Fibonacci Sequences, Sequential and Binary Search</li>
+            <li>Basic sorting algorithms: Bubble Sort, Selection Sort, Insertion Sort</li>
+            <li>Divide and Conquer: Binary Search, Merge Sort, Heap Sort, Quick Sort, Randomized Quick Sort</li>
+            <li>Selection Problem</li>
+            <li>Greedy Algorithms: Fractional Knapsack, Job Sequencing, Kruskal’s, Prim’s, Dijkstra’s Algorithm</li>
+            <li>Dynamic Programming Algorithms</li>
+            <li>Backtracking Algorithms</li>
+            <li>Approximation Algorithm</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>Recommended Books</strong>
+        <ul>
+            <li>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein, “Introduction to Algorithms”, Third Edition, MIT Press, 2009.</li>
+            <li>Ellis Horowitz, Sartaj Sahni, Sanguthevar Rajasekaran, “Computer Algorithms”, Second Edition, Silicon Press, 2007.</li>
+            <li>Kleinberg, Jon, and Eva Tardos, “Algorithm Design”, Addison-Wesley, First Edition, 2005.</li>
+        </ul>
+    </div> `,
 
-
+            newSyllabus: `<div class="text-center"> <strong>Design and Analysis of Algorithms</strong>
+    </div>
+    <div class="mt-4">
+        <p><strong>Course Title:</strong> Design and Analysis of Algorithms</p>
+        <p><strong>Course No:</strong> CSC325</p>
+        <p><strong>Nature of the Course:</strong> Theory + Lab</p>
+        <p><strong>Semester:</strong> V</p>
+        <p><strong>Full Marks:</strong> 60 + 20 + 20</p>
+        <p><strong>Pass Marks:</strong> 24 + 8 + 8</p>
+        <p><strong>Credit Hrs:</strong> 3</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Description</strong>
+        <p>This course introduces basic elements of the design and analysis of computer algorithms. Topics include asymptotic notations and analysis, divide and conquer strategy, greedy methods, dynamic programming, basic graph algorithms, NP-completeness, and approximation algorithms. For each topic, one or more representative problems and their algorithms shall be discussed.</p>
+    </div>
+    <div class="mt-4">
+        <strong>Course Objectives</strong>
+        <ul>
+            <li>Analyze the asymptotic performance of algorithms.</li>
+            <li>Demonstrate a familiarity with major algorithm design techniques.</li>
+            <li>Apply important algorithmic design paradigms and methods of analysis.</li>
+            <li>Solve simple to moderately difficult algorithmic problems arising in applications.</li>
+            <li>Demonstrate the hardness of simple NP-complete problems.</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>Detail Syllabus</strong>
+        <div>
+            <strong>Unit 1: Foundations of Algorithm Analysis (4 Hrs.)</strong>
+            <ul>
+                <li>Algorithms and its properties</li>
+                <li>RAM model</li>
+                <li>Time and Space Complexity</li>
+                <li>Detailed Analysis of algorithms</li>
+                <li>Concept of Aggregate Analysis</li>
+                <li>Asymptotic Notations: Big-O, Big-Ω, and Big-Ө Notations</li>
+                <li>Recursive Algorithms</li>
+                <li>Recurrence Relations</li>
+                <li>Solving Recurrences: Recursion Tree Method, Substitution Method, Masters Theorem</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 2: Iterative Algorithms (4 Hrs.)</strong>
+            <ul>
+                <li>Basic Algorithms: GCD, Fibonacci Numbers</li>
+                <li>Searching Algorithms: Sequential Search</li>
+                <li>Sorting Algorithms: Bubble Sort, Selection Sort, Insertion Sort</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 3: Divide and Conquer Algorithms (8 Hrs.)</strong>
+            <ul>
+                <li>Concepts of Divide and Conquer</li>
+                <li>Binary Search, Min-Max algorithm</li>
+                <li>Sorting Algorithms: Merge Sort, Quick Sort, Randomized Quick Sort, Heap Sort</li>
+                <li>Order Statistics: Median order, Selection in Expected Linear Time, Selection in Worst Case Linear Time</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 4: Greedy Algorithms (6 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Greedy Approach</li>
+                <li>Greedy Algorithms: Fractional Knapsack, Job Sequencing, Minimum Spanning Tree (Kruskal’s and Prim’s), Dijkstra’s Shortest Path</li>
+                <li>Huffman Coding</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 5: Dynamic Programming (8 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Dynamic Programming</li>
+                <li>DP Algorithms: Matrix Chain Multiplication, String Editing, 0-1 Knapsack, Floyd-Warshall, Travelling Salesman</li>
+                <li>Memoization Strategy</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 6: Backtracking (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Backtracking</li>
+                <li>Backtracking Algorithms: Subset Sum, Zero-One Knapsack, N-Queen Problem</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 7: Number Theoretic Algorithms (5 Hrs.)</strong>
+            <ul>
+                <li>Introduction to Number Theoretic Notation</li>
+                <li>Solving Modular Linear Equations: Euclid’s and Extended Euclid’s Algorithms</li>
+                <li>Primality Testing: Miller-Rabin Randomized Test</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Unit 8: NP Completeness (5 Hrs.)</strong>
+            <ul>
+                <li>Tractable and Intractable Problems, Complexity Classes</li>
+                <li>NP Complete Problems: Concept of Cooks Theorem, Proof of NP Completeness</li>
+                <li>Approximation Algorithms</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-4">
+        <strong>Laboratory Works</strong>
+        <p>Students should implement algorithms and analyze their behavior in C/C++. The following algorithms should be implemented:</p>
+        <ul>
+            <li>Basic iterative algorithms: GCD, Fibonacci Sequences, Sequential and Binary Search</li>
+            <li>Basic sorting algorithms: Bubble Sort, Selection Sort, Insertion Sort</li>
+            <li>Divide and Conquer: Binary Search, Merge Sort, Heap Sort, Quick Sort, Randomized Quick Sort</li>
+            <li>Selection Problem</li>
+            <li>Greedy Algorithms: Fractional Knapsack, Job Sequencing, Kruskal’s, Prim’s, Dijkstra’s Algorithm</li>
+            <li>Dynamic Programming Algorithms</li>
+            <li>Backtracking Algorithms</li>
+            <li>Approximation Algorithm</li>
+        </ul>
+    </div>
+    <div class="mt-4">
+        <strong>Recommended Books</strong>
+        <ul>
+            <li>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein, “Introduction to Algorithms”, Third Edition, MIT Press, 2009.</li>
+            <li>Ellis Horowitz, Sartaj Sahni, Sanguthevar Rajasekaran, “Computer Algorithms”, Second Edition, Silicon Press, 2007.</li>
+            <li>Kleinberg, Jon, and Eva Tardos, “Algorithm Design”, Addison-Wesley, First Edition, 2005.</li>
+        </ul>
+    </div>
+    `
         };
+
+        document.getElementById('questions').addEventListener('click', () => {
+            content.innerHTML = contents.questions;
+        });
 
 
         document.getElementById('refBooks').addEventListener('click', () => {
             content.innerHTML = contents.refBooks;
         });
-
-
         document.getElementById('refBook1').addEventListener('click', () => {
             content.innerHTML = contents.refBook1;
         });
-
         document.getElementById('refBook2').addEventListener('click', () => {
             content.innerHTML = contents.refBook2;
         });
-
 
         document.getElementById('refBook3').addEventListener('click', () => {
             content.innerHTML = contents.refBook3;
         });
 
 
-        document.getElementById('questions').addEventListener('click', () => {
-            content.innerHTML = contents.questions;
-        });
-
-        document.getElementById('pastYearQuestion2075').addEventListener('click', () => {
-            content.innerHTML = contents.pastYearQuestion2075;
-        });
 
         document.getElementById('pastYearQuestion2076').addEventListener('click', () => {
             content.innerHTML = contents.pastYearQuestion2076;
-        });
-
-        document.getElementById('pastYearSolution2076Old').addEventListener('click', () => {
-            content.innerHTML = contents.pastYearSolution2076Old;
         });
 
 
@@ -1220,16 +981,10 @@ refBook3: `
             content.innerHTML = contents.pastYearQuestion2080;
         });
 
-        document.getElementById('pastYearQuestion2074').addEventListener('click', () => {
-            content.innerHTML = contents.pastYearQuestion2074;
-        });
+
 
         document.getElementById('pastYearSolution').addEventListener('click', () => {
             content.innerHTML = contents.pastYearSolution;
-        });
-
-        document.getElementById('pastYearSolution2075').addEventListener('click', () => {
-            content.innerHTML = contents.pastYearSolution2075;
         });
 
         document.getElementById('pastYearSolution2076').addEventListener('click', () => {
@@ -1265,9 +1020,7 @@ refBook3: `
             content.innerHTML = contents.newSyllabus;
         });
 
-        document.getElementById('oldAppVersion').addEventListener('click', () => {
-            content.innerHTML = contents.oldAppVersion;
-        });
+
 
         document.getElementById('notesOldSyllabus').addEventListener('click', () => {
             content.innerHTML = contents.notesOldSyllabus;
@@ -1276,7 +1029,6 @@ refBook3: `
         document.getElementById('notesNewSyllabus').addEventListener('click', () => {
             content.innerHTML = contents.notesNewSyllabus;
         });
-
 
         // Set current year in the footer
         document.getElementById('todayDateFoot').textContent = new Date().getFullYear();
