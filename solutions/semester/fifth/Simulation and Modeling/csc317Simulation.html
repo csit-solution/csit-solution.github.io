@@ -721,22 +721,6 @@ refBook1: `
 </iframe>
 `,
 
-refBook2: `      
-<h5> Cryptography and Network Security_ Principles and Practice.pdf </h5>   
-<hr>
-<iframe src="" type="application/pdf" width="100%" style="min-height: 100vh; overflow: auto;">
-    <p>Sorry! PDF cannot be displayed.</p>
-</iframe>  
-`,
-
-refBook3: `      
-<h5> Information Security: Principles and Practice (2nd Edition) - Stamp </h5>   
-<hr>
-<iframe src="" width="100%" style="min-height: 100vh; overflow: auto;">
-    <p>Sorry! PDF cannot be displayed.</p>
-</iframe>  
-`
-,
 
             oldAppVersion: `<h2>Old CSIT Solution App Version</h2><p>Here is the content for the old CSIT solution app version.</p>`,
             // notesOldSyllabus: `<h2>Notes - Old 2074 Syllabus</h2><p>Here is the content for the notes of old 2074 syllabus.</p>`,
@@ -1050,19 +1034,6 @@ refBook3: `
             content.innerHTML = contents.refBooks;
         });
 
-
-        document.getElementById('refBook1').addEventListener('click', () => {
-            content.innerHTML = contents.refBook1;
-        });
-
-        document.getElementById('refBook2').addEventListener('click', () => {
-            content.innerHTML = contents.refBook2;
-        });
-
-
-        document.getElementById('refBook3').addEventListener('click', () => {
-            content.innerHTML = contents.refBook3;
-        });
 
         document.getElementById('questions').addEventListener('click', () => {
             content.innerHTML = contents.questions;
